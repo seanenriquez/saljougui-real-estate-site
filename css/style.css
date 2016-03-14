@@ -2887,7 +2887,7 @@ width: 40%;
     color:#957BB6;
     font-size: 18px;
 
-}
+}   
 
 #quick-search .panel-group .panel + .panel {
     margin: 0px;
@@ -2904,3 +2904,6 @@ width: 40%;
     
 }
 
+.nav-logo {
+    margin: 20px;
+}

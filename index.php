@@ -62,16 +62,19 @@
                                 <div class="row">
                                     <div class="col-md-3 col-sm-3 clearfix">
                                         <!-- insert header logo here -->
-                                        <a href="#" id="logo"><img class="img-responsive" src="img/logo_black.png" alt="" /></a>
+                                        <a href="#" class="logo"><img class="img-responsive nav-logo" src="img/logo_black.png" alt="" /></a>
                                   </div>
                                     <div class="col-md-9 col-sm-9">
                                         <div class="contacts_block">
                                             <!-- edit header address and phone number here -->
                                             <div class="phone styler_color">
-                                                <div>3340 S Highland Dr 89109 | Las Vegas, Nevada</div>
+                                                
+                                                <div>
+                                                    <p>9890 S. MARYLAND PKWY. | SUITE 200 | Las Vegas, NV 89193</p>
+                                                     <p>8704 W. CHARLESTON BLVD. | SUITE 105 | Las Vegas, NV 89117</p>
+                                            </div>
 
-
-                                                <span>214-358-1200</span>
+                                                <span>415-815-9079</span>
                                             </div>
                                             <div class="clear"></div>
                                         </div>
@@ -3338,7 +3341,7 @@
                         </div>
                     </div>
                     
-                    <button class="btn btn-sm btn-primary btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="btn btn-sm styler_bg_color btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="false" aria-controls="collapseExample">
                         More Search Options <i class="fa fa-chevron-up"></i>
                     </button>
                     
@@ -3616,12 +3619,13 @@
                     
                     <div class="form-group " style="margin-bottom: 0;">
                         <div class="col-xs-12 ">
-                            <button type="submit" class="btn btn-primary btn-block-sm pull-right">Search MLS</button>
+                            <button type="submit" class="btn styler_bg_color btn-block-sm pull-right">Search MLS</button>
                             <button type="reset" class="btn btn-beige btn-block-sm pull-right">Reset Form</button>
                             <!-- google Captcha -->
-                            <div class="g-recaptcha" data-sitekey="6LeZqxoTAAAAAGUlFHVPwdhTiKFaNgtiH8rTVZQn"></div>
+                            
                             <!-- /end google Captcha -->
                         </div>
+                        
                     </div>
 
                 </form>
@@ -3678,7 +3682,7 @@
                             
                             <div class="form-group" style="margin-bottom: 0;">
                                 <div class="col-xs-12">
-                                    <button type="submit" class="btn btn-primary btn-block-sm pull-right">Search Street</button>
+                                    <button type="submit" class="btn styler_bg_color btn-block-sm pull-right">Search Street</button>
                                 </div>
                             </div>
                         </form>
@@ -3704,7 +3708,7 @@
                             
                             <div class="form-group" style="margin-bottom: 0;">
                                 <div class="col-xs-12">
-                                    <button type="submit" class="btn btn-primary btn-block-sm pull-right">Search MLS#</button>
+                                    <button type="submit" class="btn styler_bg_color btn-block-sm pull-right">Search MLS#</button>
                                 </div>
                             </div>
                         </form>
@@ -3719,7 +3723,7 @@
                     <div class="wrap">
                         <form action="/new-homes.php">
                             <div class="form-group">
-                                <button class="btn btn-sm btn-primary btn-block" type="submit">New Homes</button>
+                                <button class="btn btn-sm styler_bg_color btn-block" type="submit">New Homes</button>
                             </div>
                         </form>
                         <form action="/new-condos.php">
@@ -3760,59 +3764,35 @@
     </div>
 </div>
         <!-- MLS Search form ends here -->
-                                <!-- the about section starts here -->
-                                <div class="row">
-                                    <div class="col-sm-12 col-ms-12">      
-                                        <div id="about-realtor_marker"></div>
-                                        <div class="promo-block about-block">                                                                                        
-											<!-- edit the about heading text here -->
-                                            <h2 class="block-title styler_color">
-                                                ABOUT MELANIE SALJOUGUI
-                                            </h2>
-                                            <div class="block-separator clearfix"></div>
-                                            <div class="col-sm-8 col-ms-8">
-                                                <!-- edit the about text here -->
-                                                <div class="promo-text">
-                                                    <p>Born and raised in France and with an Iranian background, I have a natural understanding and appreciation for the diversity of cultures. I am also fluent in French, Spanish, English and Farsi.
-                                                    I am a tireless worker and will help you in any way that I can because it is what I truly love to do. </p>
-                                                    <p>My family being so close and important to me, I understand that the right house provides a comfortable place to call your own and a gathering place for relatives and friends.</p>
-                                                    <p>Outside of work, I enjoy the outdoors. I love to travel, hike with my dog, really anything that gets me outside in nature. I love meeting new people and experiencing new places, I also enjoy painting and reading in my free time.
-                                  Please help me help you by providing the basics of what you are looking for and your personal real estate likes and dislikes. I will find you what you are looking for!
-                                                        Sincerely,</p>
-                                                </div>
-                                            </div>
-                                            <!-- realtor about image area starts here -->
-                                            <div class="col-sm-4 col-ms-4">
-                                                <!-- edit edit the realtor about image here -->
-                                                <img class="img-responsive" src="img/mel_stand.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+
+
                                 <!-- awards and associations logo block starts here -->
+<!-- Remove this comment for award sections
                                 <div class="wide-block">
                                     <div class="awards-block">
                                         <div id="awards_marker"></div>
                                         <div class="row">
                                             <div class="col-sm-3 col-ms-3">
-                                                <!-- edit logo #1 here -->
+                                                
                                                 <img src="img/award1.jpg" alt="" />
                                           </div>
                                             <div class="col-sm-3 col-ms-3">
-                                                <!-- edit logo #2 here -->
+                                                
                                                 <img src="img/award2.jpg" alt="" />
                                           </div>
                                             <div class="col-sm-3 col-ms-3">
-                                                <!-- edit logo #3 here -->
+                                                
                                                 <img src="img/award3.jpg" alt="" />
                                           </div>
                                             <div class="col-sm-3 col-ms-3">
-                                                <!-- edit logo #4 here -->
+                                                
                                                 <img src="img/award4.jpg" alt="" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            -->
                                 <!-- begin resources -->                                
                                 <div class="resources clearfix">
                                     <div id="resources_marker"></div>
@@ -3961,7 +3941,7 @@
                                                 <div class="form-group">
                                                     <textarea id="textarea" class="form-control" rows="3"></textarea>
                                                 </div>
-
+                                                <div class="g-recaptcha pull-right" data-sitekey="6LeZqxoTAAAAAGUlFHVPwdhTiKFaNgtiH8rTVZQn"></div>
                                                 <!-- turn captcha on here by removing this comment
 
                                                 <?php
@@ -3981,36 +3961,63 @@
                                         <div class="col-md-4 col-sm-4">
                                             <div class="address">
                                                 <div class="title styler_color">Address, Phone & Email</div>
-                                                <div class="name styler_color">Anderson Realty, Inc.</div>
+                                                <div class="name styler_color">Las Vegas Lux Realty</div>
                                                 <address class="styler_color">
                                                     Melanie Saljougui<br />
-                                                    3340 S Highland Dr <br />
-                                                     Las Vegas, NV 89109<br />
+                                                    9890 S. Maryland Pkwy. Suite 200  <br />
+                                                    Las Vegas, Nevada 89193<br />
                                                     <br />
-                                                    p. 415-509-5822<br />
+                                                    phone. 702-313-7003<br />
+                                                    cell. 415-815-9079
                                                     <!-- $moreinfo
                                                     f. 214.985.9003<br />
                                                 -->
-                                                    <a class="styler_color" href="mailto:e.hello@realestatepro.com">hello@realestatepro.com</a>
+                                                    <a class="styler_color" 
+                                                    href="mailto:melaniesaljougui@gmail.com">melaniesaljougui@gmail.com</a>
                                                 </address>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                                      <!-- the about section starts here -->
+                                
+                                <div class="row">
+                                    <div class="col-sm-12 col-ms-12">      
+                                        <div id="about-realtor_marker"></div>
+                                        <div class="promo-block about-block">                                                                                        
+                                            <!-- edit the about heading text here -->
+                                            <h2 class="block-title styler_color">
+                                                ABOUT MELANIE SALJOUGUI
+                                            </h2>
+                                            <div class="block-separator clearfix"></div>
+                                            <div class="col-sm-8 col-ms-8">
+                                                <!-- edit the about text here -->
+                                                <div class="promo-text">
+                                                    <p>Born and raised in France and with an Iranian background, I have a natural understanding and appreciation for the diversity of cultures. I am also fluent in French, Spanish, English and Farsi.
+                                                    I am a tireless worker and will help you in any way that I can because it is what I truly love to do. </p>
+                                                    <p>My family being so close and important to me, I understand that the right house provides a comfortable place to call your own and a gathering place for relatives and friends.</p>
+                                                    <p>Outside of work, I enjoy the outdoors. I love to travel, hike with my dog, really anything that gets me outside in nature. I love meeting new people and experiencing new places, I also enjoy painting and reading in my free time.
+                                  Please help me help you by providing the basics of what you are looking for and your personal real estate likes and dislikes. I will find you what you are looking for!
+                                                        Sincerely,</p>
+                                                </div>
+                                            </div>
+                                            <!-- realtor about image area starts here -->
+                                            <div class="col-sm-4 col-ms-4">
+                                                <!-- edit edit the realtor about image here -->
+                                                <img class="img-responsive img-circle center-block" src="img/Melanie.png" alt="" />
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>      
+                                <!-- /end the about section starts here -->
                         </div>
+
                     </div>
 
-                </div>
-                <div id="empty"></div>
-            </div>
-
-        </div>
-        <!-- begin footer -->
-
-         <!-- Accordian start-->
+<!-- Accordian start-->
         <div class="container-fluid break-out">
-
             <div class="row">
                 <div class="col-xs-12">
                     <div id="quick-search" class="container">
@@ -4021,6 +4028,7 @@
                                 </h2>
                                 <p>Click on a city/town area below to expand the quick search options.<br class="hidden-sm hidden-xs">
                                     Search MLS by homes, town homes, condos, rentals or commercial properties with a couple easy clicks.</p>
+                                    <br>
                             </div>
                         </div>
                         <div class="row">
@@ -4030,7 +4038,7 @@
                                         <div class="panel-heading" role="tab" id="heading1">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion1" href="#collapse1" aria-expanded="false" aria-controls="collapse1"><i class="fa fa-caret-right"></i>
-                                                    Cape Canaveral
+                                                    Las Vegas
                                                 </a>
                                             </h4>
                                         </div>
@@ -4050,7 +4058,7 @@
                                         <div class="panel-heading" role="tab" id="heading2">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="fa fa-caret-right"></i>
-                                                    Cocoa
+                                                    Henderson
                                                 </a>
                                             </h4>
                                         </div>
@@ -4070,7 +4078,7 @@
                                         <div class="panel-heading" role="tab" id="heading3">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" aria-expanded="false" aria-controls="collapse3"><i class="fa fa-caret-right"></i>
-                                                    Cocoa Beach
+                                                    North Las Vegas
                                                 </a>
                                             </h4>
                                         </div>
@@ -4090,7 +4098,7 @@
                                         <div class="panel-heading" role="tab" id="heading4">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" aria-expanded="false" aria-controls="collapse4"><i class="fa fa-caret-right"></i>
-                                                    Indialantic
+                                                    Pahrump 
                                                 </a>
                                             </h4>
                                         </div>
@@ -4106,26 +4114,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="heading5">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapse5" aria-expanded="false" aria-controls="collapse5"><i class="fa fa-caret-right"></i>
-                                                    Indian Harbour Beach
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                                            <div class="panel-body">
-                                                <ul id="indianharbourbeach" class="list-unstyled">
-                                                    <li><a href="/search/fl/indianharbourbeach/homes/">Homes</a></li>
-                                                    <li><a href="/search/fl/indianharbourbeach/townhomes/">Town Homes</a></li>
-                                                    <li><a href="/search/fl/indianharbourbeach/condos/">Condos</a></li>
-                                                    <li><a href="/search/fl/indianharbourbeach/rental/">Rentals</a></li>
-                                                    <li><a href="/search/fl/indianharbourbeach/commercial/">Commercial</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -4133,8 +4122,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading6">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse6"><i class="fa fa-caret-right"></i>
-                                                    Malabar
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse5" aria-expanded="false" aria-controls="collapse6"><i class="fa fa-caret-right"></i>
+                                                    Boulder City 
                                                 </a>
                                             </h4>
                                         </div>
@@ -4153,8 +4142,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading7">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="false" aria-controls="collapse7"><i class="fa fa-caret-right"></i>
-                                                    Melbourne
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse7"><i class="fa fa-caret-right"></i>
+                                                    Overton
                                                 </a>
                                             </h4>
                                         </div>
@@ -4173,8 +4162,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading8">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse8" aria-expanded="false" aria-controls="collapse8"><i class="fa fa-caret-right"></i>
-                                                    Melbourne Beach
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="false" aria-controls="collapse8"><i class="fa fa-caret-right"></i>
+                                                    Ely
                                                 </a>
                                             </h4>
                                         </div>
@@ -4193,8 +4182,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading9">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse9" aria-expanded="false" aria-controls="collapse9"><i class="fa fa-caret-right"></i>
-                                                    Merritt Island
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse8" aria-expanded="false" aria-controls="collapse9"><i class="fa fa-caret-right"></i>
+                                                    Overton
                                                 </a>
                                             </h4>
                                         </div>
@@ -4210,25 +4199,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="heading10">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse10" aria-expanded="false" aria-controls="collapse10"><i class="fa fa-caret-right"></i>
-                                                    New Homes
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapse10" class="panel-collapse collapse list-unstyled" role="tabpanel" aria-labelledby="heading10">
-                                            <div class="panel-body">
-                                                <ul id="newhomes">
-                                                    <li><a href="http://www.charlesboydconstruction.com/" target="_blank">New Homes</a></li>
-                                                    <li><a href="http://www.charlesboydconstruction.com/custom-builder.html" target="_blank">Custom Design &amp; Build</a></li>
-                                                    <li><a href="http://www.charlesboydconstruction.com/commercial.html" target="_blank">Commercial Building</a></li>
-                                                    <li><a href="http://www.charlesboydconstruction.com/energy-efficiency.html" target="_blank">Energy Efficient Homes</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                
                                 </div>
                             </div>
                             <div class="clearfix visible-md"></div>
@@ -4237,8 +4208,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading11">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse11" aria-expanded="false" aria-controls="collapse11"><i class="fa fa-caret-right"></i>
-                                                    Oceanfront
+                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse9" aria-expanded="false" aria-controls="collapse11"><i class="fa fa-caret-right"></i>
+                                                    Logandale
                                                 </a>
                                             </h4>
                                         </div>
@@ -4257,8 +4228,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading12">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse12" aria-expanded="false" aria-controls="collapse12"><i class="fa fa-caret-right"></i>
-                                                    Riverfront
+                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse10" aria-expanded="false" aria-controls="collapse12"><i class="fa fa-caret-right"></i>
+                                                    Laughlin
                                                 </a>
                                             </h4>
                                         </div>
@@ -4277,8 +4248,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading13">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse13" aria-expanded="false" aria-controls="collapse13"><i class="fa fa-caret-right"></i>
-                                                    Rockledge
+                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse11" aria-expanded="false" aria-controls="collapse13"><i class="fa fa-caret-right"></i>
+                                                    Mesquite
                                                 </a>
                                             </h4>
                                         </div>
@@ -4297,8 +4268,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading14">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse14" aria-expanded="false" aria-controls="collapse14"><i class="fa fa-caret-right"></i>
-                                                    Satellite Beach
+                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse12" aria-expanded="false" aria-controls="collapse14"><i class="fa fa-caret-right"></i>
+                                                    McGill
                                                 </a>
                                             </h4>
                                         </div>
@@ -4314,26 +4285,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="heading15">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion3" href="#collapse15" aria-expanded="false" aria-controls="collapse15"><i class="fa fa-caret-right"></i>
-                                                    Suntree
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
-                                            <div class="panel-body">
-                                                <ul id="suntree" class="list-unstyled">
-                                                    <li><a href="/search/fl/suntree/homes/">Homes</a></li>
-                                                    <li><a href="/search/fl/suntree/townhomes/">Town Homes</a></li>
-                                                    <li><a href="/search/fl/suntree/condos/">Condos</a></li>
-                                                    <li><a href="/search/fl/suntree/rental/">Rentals</a></li>
-                                                    <li><a href="/search/fl/suntree/commercial/">Commercial</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -4341,8 +4293,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading16">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse16" aria-expanded="false" aria-controls="collapse16"><i class="fa fa-caret-right"></i>
-                                                    Titusville
+                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse13" aria-expanded="false" aria-controls="collapse16"><i class="fa fa-caret-right"></i>
+                                                    Indian Springs
                                                 </a>
                                             </h4>
                                         </div>
@@ -4361,8 +4313,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading17">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse17" aria-expanded="false" aria-controls="collapse17"><i class="fa fa-caret-right"></i>
-                                                    Tortoise Island
+                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse14" aria-expanded="false" aria-controls="collapse17"><i class="fa fa-caret-right"></i>
+                                                    Caliente 
                                                 </a>
                                             </h4>
                                         </div>
@@ -4381,8 +4333,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading18">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse18" aria-expanded="false" aria-controls="collapse18"><i class="fa fa-caret-right"></i>
-                                                    Vero Beach
+                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse15" aria-expanded="false" aria-controls="collapse18"><i class="fa fa-caret-right"></i>
+                                                    Pioche
                                                 </a>
                                             </h4>
                                         </div>
@@ -4401,8 +4353,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading19">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse19" aria-expanded="false" aria-controls="collapse19"><i class="fa fa-caret-right"></i>
-                                                    Viera
+                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse16" aria-expanded="false" aria-controls="collapse19"><i class="fa fa-caret-right"></i>
+                                                   Sandy Valley
                                                 </a>
                                             </h4>
                                         </div>
@@ -4418,26 +4370,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="heading20">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion4" href="#collapse20" aria-expanded="false" aria-controls="collapse20"><i class="fa fa-caret-right"></i>
-                                                    West Melbourne
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20">
-                                            <div class="panel-body">
-                                                <ul id="westmelbourne " class="list-unstyled">   
-                                                    <li><a href="/search/fl/westmelbourne/homes/">Homes</a></li>
-                                                    <li><a href="/search/fl/westmelbourne/townhomes/">Town Homes</a></li>
-                                                    <li><a href="/search/fl/westmelbourne/condos/">Condos</a></li>
-                                                    <li><a href="/search/fl/westmelbourne/rental/">Rentals</a></li>
-                                                    <li><a href="/search/fl/westmelbourne/commercial/">Commercial</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -4446,29 +4379,37 @@
             </div>
         </div>
     </div>
+
     <!-- Accordian end-->
+
+                </div>
+                <div id="empty"></div>
+            </div>
+        </div>
+
+
+
+        <!-- begin footer -->
         <div id="footer">
             <div class="top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
                             <!-- edit footer logo here -->
                             <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
-                          <div class="text">
+
+                          
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <!-- edit alt footer logo here -->
+                            <a href="#" class="logo"><img src="img/key-logo-white.png" alt="" /></a>
+                            <div class="text">
                                 <!-- edit equal housing opportunity disclaimer here -->
                                 <p>All properties listed in this web site are available on an equal opportunity basis.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <!-- begin disclaimer here -->
-                            <div class="text">
-                                <div class="header">DISCLAIMER</div>
-                                <!-- edit your disclaimer text here -->
-                                <p>Information is from the multiple listing service and neither suggests nor infers that the [name of agent] or [name of company] participated as either the listing or cooperating agent or broker in the sale or purchase of the properties depicted.</p>
-                            </div>
-                            <!-- /end disclaimer -->
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                       
+                        <div class="col-md-5 col-sm-6 col-xs-12">
                             <!-- begin newsletter form area -->
                             <div class="text">
                                 <div class="header">NEWSLETTER</div>
@@ -4481,6 +4422,15 @@
                                 </form>
                             </div>
                             <!-- /end newsletter form area -->
+                        </div>
+                         <div class="col-md-12 col-sm-6 col-xs-12">
+                            <!-- begin disclaimer here -->
+                            <div class="text">
+                                <div class="header">DISCLAIMER</div>
+                                <!-- edit your disclaimer text here -->
+                                <p>Information is from the multiple listing service and neither suggests nor infers that the [name of agent] or [name of company] participated as either the listing or cooperating agent or broker in the sale or purchase of the properties depicted.</p>
+                            </div>
+                            <!-- /end disclaimer -->
                         </div>
                     </div>
                 </div>
@@ -4495,6 +4445,8 @@
             </div>
         </div>
         <!-- /end footer -->
+
+
 
 
         <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
