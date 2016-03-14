@@ -1,0 +1,4 @@
+#force ssl on membership panel
+#RewriteEngine On 
+#RewriteCond %{SERVER_PORT} 80 
+#RewriteRule ^(.*)$ https://97.74.118.141/user$1 [R,L]

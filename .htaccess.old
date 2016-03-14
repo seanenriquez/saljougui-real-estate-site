@@ -1,0 +1,157 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+
+AddHandler application/x-httpd-php .asp
+AddType application/x-httpd-php .asp .htm .html
+
+#XBitHack full
+
+#browser caching for resources that don't change often
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 week"
+ExpiresByType image/jpeg "access 1 week"
+ExpiresByType image/gif "access 1 week"
+ExpiresByType image/png "access 1 week"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 week"
+</IfModule>
+## EXPIRES CACHING ##
+
+
+#
+#  bot and other blocking
+#
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{QUERY_STRING} (\"|%22).*(<|>|%3) [NC,OR]
+  RewriteCond %{QUERY_STRING} (javascript:).*(\;) [NC,OR]
+  RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3) [NC,OR]
+  RewriteCond %{QUERY_STRING} (\\|\.\./|`|=\'$|=%27$) [NC,OR]
+  RewriteCond %{QUERY_STRING} (\;|\'|\"|%22).*(union|select|insert|drop|update|md5|benchmark|or|and|if) [NC,OR]
+  RewriteCond %{QUERY_STRING} (base64_encode|mosconfig) [NC,OR]
+  RewriteCond %{QUERY_STRING} (boot\.ini|echo.*kae|etc/passwd) [NC,OR]
+  RewriteCond %{QUERY_STRING} (GLOBALS|REQUEST)(=|\[|%) [NC]
+  RewriteRule .* - [F]
+</IfModule>
+
+# [USER AGENTS]
+<IfModule mod_setenvif.c>
+  # SetEnvIfNoCase User-Agent ^$ keep_out
+  SetEnvIfNoCase User-Agent (binlar|casper|cmsworldmap|comodo|diavol|dotbot|feedfinder|flicky|ia_archiver|kmccrew|nutch|planetwork|purebot|pycurl|skygrid|sucker|turnit|vikspider|zmeu) keep_out
+  <limit GET POST PUT>
+    Order Allow,Deny
+    Allow from all
+    Deny from env=keep_out
+  </limit>
+</IfModule>
+
+# [REQUEST STRINGS]
+<IfModule mod_alias.c>
+  RedirectMatch 403 (https?|ftp|php)\://
+  RedirectMatch 403 /(https?|ima|ucp)/
+  RedirectMatch 403 /(Permanent|Better)$
+  RedirectMatch 403 (\=\\\'|\=\\%27|/\\\'/?|\)\.css\()$
+  RedirectMatch 403 (\,|\)\+|/\,/|\{0\}|\(/\(|\.\.\.|\+\+\+|\||\\\"\\\")
+  RedirectMatch 403 \.(cgi|asp|aspx|cfg|dll|exe|jsp|mdb|sql|ini|rar)$
+  RedirectMatch 403 /(contac|fpw|install|pingserver|register)\.php$
+  RedirectMatch 403 (base64|crossdomain|wwwroot|e107\_)
+  RedirectMatch 403 (eval\(|\_vti\_|\(null\)|echo.*kae|config\.xml)
+  RedirectMatch 403 \.well\-known/host\-meta
+  RedirectMatch 403 /function\.array\-rand
+  RedirectMatch 403 \)\;\$\(this\)\.html\(
+  RedirectMatch 403 proc/self/environ
+  RedirectMatch 403 msnbot\.htm\)\.\_
+  RedirectMatch 403 /ref\.outcontrol
+  RedirectMatch 403 com\_cropimage
+  RedirectMatch 403 indonesia\.htm
+  RedirectMatch 403 \{\$itemURL\}
+  RedirectMatch 403 function\(\)
+  RedirectMatch 403 labels\.rdf
+  RedirectMatch 403 /playing.php
+  RedirectMatch 403 muieblackcat
+</IfModule>
+
+# [REQUEST METHOD]
+<ifModule mod_rewrite.c>
+  RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+  RewriteRule .* - [F]
+</IfModule>
+
+# [BAD IPS]
+<limit GET POST PUT>
+  Order Allow,Deny
+  Allow from all
+  # uncomment/edit/repeat next line to block IPs
+  # Deny from 123.456.789
+</limit>
+
+################################################################################
+
+#
+#	put all hardcoded links here
+#
+
+
+#
+# dynamic links here
+#
+
+RewriteRule ^homes/sale/([^.]+)/page([^.]+)/$       search.php?area=$1&proptype=homes&searchtype=Residential&page=$2 [L,QSA]
+RewriteRule ^homes/sale/([^.]+)$                    search.php?area=$1&proptype=homes&searchtype=Residential [L,QSA]
+
+RewriteRule ^fl/([^.]+)/Newest-For-Sale/page([^.]+)/$                   search.php?area=$1&searchtype=Residential&proptype=new&page=$2
+RewriteRule ^fl/([^.]+)/Newest-For-Sale$                                search.php?area=$1&searchtype=Residential&proptype=new
+
+RewriteRule ^fl/([^.]+)/Newest-Rentals/page([^.]+)/$                    search.php?area=$1&searchtype=Rental&proptype=new&page=$2
+RewriteRule ^fl/([^.]+)/Newest-Rentals$                                 search.php?area=$1&searchtype=Rental&proptype=new
+
+RewriteRule ^condos/sale/([^.]+)$             search.php?area=$1&proptype=condo&searchtype=Residential [L,QSA]
+RewriteRule ^villas/sale/([^.]+)$             search.php?area=$1&proptype=townhome&searchtype=Residential [L,QSA]
+RewriteRule ^townhomes/sale/([^.]+)$             search.php?area=$1&proptype=townhome&searchtype=Residential [L,QSA]
+
+RewriteRule ^homes/rent/([^.]+)$               search.php?area=$1&proptype=homes&searchtype=Rental [L,QSA]
+RewriteRule ^condos/rent/([^.]+)$               search.php?area=$1&proptype=homes&searchtype=Rental [L,QSA]
+RewriteRule ^villas/rent/([^.]+)$               search.php?area=$1&proptype=townhome&searchtype=Rental [L,QSA]
+RewriteRule ^townhomes/rent/([^.]+)$               search.php?area=$1&proptype=townhome&searchtype=Rental [L,QSA]
+
+RewriteRule ^mlsid/([^.]+)$                  single.php?mls=$1
+RewriteRule ^mls/([^.]+)$                    single.php?mls=$1
+
+RewriteRule ^fl/([^.]+)/rental/pricebybeds/([^.]+)/([^.]+)/page([^.]+)/$        search.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Rental&url=1&page=$4
+RewriteRule ^fl/([^.]+)/rental/pricebybeds/([^.]+)/([^.]+)$                     search.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Rental&url=1
+RewriteRule ^fl/([^.]+)/residential/pricebybeds/([^.]+)/([^.]+)/page([^.]+)/$   search.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Residential&url=1&page=$4
+RewriteRule ^fl/([^.]+)/residential/pricebybeds/([^.]+)/([^.]+)$                search.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Residential&url=1
+
+
+
+RewriteRule ^fl/([^.]+)/rental/seasonal/([^.]+)/([^.]+)$                  search.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=seasonal&pricerange=$3
+RewriteRule ^fl/([^.]+)/rental/pets/furnished/([^.]+)/([^.]+)$            search.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=petfurn&pricerange=$3
+RewriteRule ^fl/([^.]+)/rental/pets/unfurnished/([^.]+)/([^.]+)$          search.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=petunfurn&pricerange=$3
+
+RewriteRule ^fl/([^.]+)/residential/style/([^.]+)/([^.]+)/page([^.]+)/$   search.php?area=$1&proptype=$2&searchtype=Residential&url=1&pricerange=$3&url=1&page=$4
+RewriteRule ^fl/([^.]+)/residential/style/([^.]+)/([^.]+)$                search.php?area=$1&proptype=$2&searchtype=Residential&url=1&pricerange=$3&url=1
+
+RewriteRule ^fl/([^.]+)/rental/style/([^.]+)/([^.]+)/page([^.]+)/$   		search.php?area=$1&proptype=$2&searchtype=Rental&url=1&pricerange=$3&url=1&page=$4
+RewriteRule ^fl/([^.]+)/rental/style/([^.]+)/([^.]+)$                		search.php?area=$1&proptype=$2&searchtype=Rental&url=1&pricerange=$3&url=1
+
+RewriteRule ^fl/([^.]+)/([^.]+)/Rental$                         				community.php?area=$1&subdiv=$2&searchtype=Rental&url=1&proptype=all [L,QSA]
+RewriteRule ^fl/([^.]+)/([^.]+)/Residential$                    				community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
+RewriteRule ^fl/([^.]+)/([^.]+)/homes-for-sale$                    			community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
+
+RewriteRule ^fl/([^.]+)/([^.]+)/price/([^.]+)$                          search.php?area=$1&proptype=$2&pricerange=$3&searchtype=Residential&url=1
+
+RewriteRule ^fl/([^.]+)/([^.]+)/rental/([^.]+)$                         search.php?area=$1&proptype=$2&pricerange=$3&searchtype=Rental&url=1
+
+RewriteRule ^fl/([^.]+)/([^.]+)/([^.]+)$                                search.php?area=$1&subdiv=&2&pricerange=&3
+
+RewriteRule ^fl/([^.]+)/([^.]+)$                    										community.php?area=$1&subdiv=$2
+
+RewriteRule ^fl/([^.]+)$                            										city.php?area=$1
