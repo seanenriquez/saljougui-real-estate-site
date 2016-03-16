@@ -836,21 +836,21 @@ form {
     font-size:12px;
     color:#46484b;
     font-family:Arial, Helvetica, sans-serif;
-    float:left;
     width:209px;
     margin-right:4px;
+    margin-bottom: 20px;
     font-style:normal;
 }
 #footer .top .subscribe input[type="submit"] {
     height:35px;
     border:0;
-    width:51px;
+    width:40px;
     background:#B378D3;
     color:#fff;
     font-size:12px;
     text-transform:uppercase;
     font-family:Arial, Helvetica, sans-serif;
-    float:left;
+
 }
 #footer .bottom {
     background: #6CBECC;
@@ -2143,6 +2143,7 @@ form {
 }
 .resources .nav-tabs li a:hover {
     border-top: 1px solid #ffffff;
+    color: #6CBECC;;
     border-left: none;
     border-bottom: none;
     background-color: #fff;
@@ -2913,7 +2914,7 @@ width: 40%;
 }
 
 .nav-logo {
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .vcenter {

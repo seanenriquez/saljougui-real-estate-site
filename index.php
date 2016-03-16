@@ -68,7 +68,7 @@
 								<div class="row">
 									<div class="col-md-3 col-sm-3 clearfix">
 										<!-- insert header logo here -->
-										<a href="#" class="logo"><img class="img-responsive nav-logo" src="img/logo_black.png" alt="" /></a>
+										<a href="#" class="logo"><img class="img-responsive center-block nav-logo" src="img/logo_color.png" alt="" /></a>
 									</div>
 									<div class="col-md-9 col-sm-9">
 										<div class="contacts_block">
@@ -3623,9 +3623,7 @@
 																	<div class="col-xs-12 ">
 																		<button type="submit" class="btn styler_bg_color btn-block-sm pull-right">Search MLS</button>
 																		<button type="reset" class="btn btn-beige btn-block-sm pull-right">Reset Form</button>
-																		<!-- google Captcha -->
-
-																		<!-- /end google Captcha -->
+																		
 																	</div>
 
 																</div>
@@ -3921,7 +3919,11 @@
 											<div class="form-group">
 												<textarea id="textarea" class="form-control" rows="3"></textarea>
 											</div>
-											<div class="g-recaptcha pull-right" data-sitekey="6LeZqxoTAAAAAGUlFHVPwdhTiKFaNgtiH8rTVZQn"></div>
+											<!-- google Captcha -->
+										<div class="g-recaptcha center-block" data-sitekey="6LeZqxoTAAAAAGUlFHVPwdhTiKFaNgtiH8rTVZQn" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+											<!-- /end google Captcha -->
+											<br>
+
 											<!-- turn captcha on here by removing this comment
 
 											<?php
@@ -4367,20 +4369,20 @@
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-6">
 							<!-- edit alt footer logo here -->
-							<a href="#" class="logo"><img src="img/key-logo-white.png" alt="" /></a>
+							<a href="#" class="logo"><img src="img/key-logo-white.png"  alt="" /></a>
 							<div class="text">
 								<!-- edit equal housing opportunity disclaimer here -->
 								
 							</div>
 						</div>
 
-						<div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+						<div class="col-md-4 col-sm-6 col-xs-12  text-center" >
 							<!-- begin newsletter form area -->
-							<div class="text text-right">
-								<div class="header">NEWSLETTER</div>
+							<div class="text text-center">
+								<div class="header ">NEWSLETTER</div>
 								<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
 							</div>
-							<div class="subscribe pull-right">
+							<div class="subscribe center-block">
 								<form action="/" method="post">
 									<input type="text" placeholder="Email Address" />
 									<input type="submit" value="GO" class="styler_bg_color" />
@@ -4388,7 +4390,8 @@
 							</div>
 							<!-- /end newsletter form area -->
 						</div>
-						<div class="col-md-12 col-sm-6 col-xs-12">
+
+						<div class="col-md-12 col-sm-6 col-xs-12 text-center">
 							<!-- begin disclaimer here -->
 							<div class="text">
 								<div class="header">DISCLAIMER</div>

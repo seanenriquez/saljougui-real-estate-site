@@ -703,6 +703,12 @@
 	}
 }
 @media (max-width: 480px) {
+    /*sets newsletter to center in footer*/
+    #newsletter {
+        text-align: center;
+    }
+
+
     #logo img {
         display: inline;
     }
