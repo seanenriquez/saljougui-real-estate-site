@@ -517,9 +517,11 @@
     #wrapper .contacts .info + .info {
         margin-left:6%;
     }
+    /* no idea why this is here
     #footer .col-md-4 + .col-md-4 {
         margin-top:40px;
     }
+    */
     .infograph2 .col-md-6 + .col-md-6 {
         width:100%;
         float:none;

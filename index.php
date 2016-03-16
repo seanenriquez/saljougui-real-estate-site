@@ -2644,8 +2644,9 @@
 								====================================================================================================
 								==================================================================================================-->
 								<div class="container">
-
+									<div class="promo-block">
 									<h2 class="block-title styler_color">Advanced Las Vegas MLS Search</h2>
+								</div>	
 									<div class="block-separator clearfix"></div>
 									<div class="row">
 										<div class="col-xs-12">    
@@ -2664,25 +2665,21 @@
 																	<div class="col-xs-12 col-sm-7 col-md-8">
 																		<select name="city" class="form-control">
 																			<option value="">Pick a City</option>
-																			<option value="COCOA">Cocoa</option>
-																			<option value="COCOABEACH">Cocoa Beach</option>
-																			<option value="CAPECANAVERAL">Cape Canaveral</option>
-																			<option value="CLOISTER">Cloister</option>
-																			<option value="INDIANHARBOURBEACH">Indian Harbour Beach</option>
-																			<option value="INDIALANTIC">Indialantic</option>
-																			<option value="LANSINGISLAND">Lansing Island</option>
-																			<option value="MELBOURNE">Melbourne</option>
-																			<option value="MELBOURNEBEACH">Melbourne Beach</option>
-																			<option value="MERRITTISLAND">Merritt Island</option>
-																			<option value="MONTECITO">Montecito</option>
-																			<option value="ROCKLEDGE">Rockledge</option>
-																			<option value="SATELLITEBEACH">Satellite Beach</option>
-																			<option value="SUNTREE">Suntree</option>
-																			<option value="TITUSVILLE">Titusville</option>
-																			<option value="TORTOISEISLAND">Tortoise Island</option>
-																			<option value="WESTMELBOURNE">West Melbourne</option>
-																			<option value="VEROBEACH">Vero Beach</option>
-																			<option value="VIERA">Viera</option>
+																			<option value="LASVEGAS">Las Vegas</option>
+																			<option value="NORTHLASVEGAS">North Las Vegas</option>
+																			<option value="PAHRUMP">Pahrump</option>
+																			<option value="BOULDERCITY">Boulder City</option>
+																			<option value="ELY">Ely</option>
+																			<option value="OVERTON">Overton</option>
+																			<option value="LOGANDALE">Logandale</option>
+																			<option value="LAUGHLIN">Laughlin</option>
+																			<option value="MESQUITE">Mesquite</option>
+																			<option value="MCGILL">McGill</option>
+																			<option value="INDIANSPRINGS">Indian Springs</option>
+																			<option value="CALIENTE">Caliente</option>
+																			<option value="PIOCHE">Pioche</option>
+																			<option value="SANDYVALLEY">Sandy Valley</option>
+																			<option value="OTHER">Other</option>
 																		</select>
 																	</div>
 																</div>
@@ -2695,7 +2692,7 @@
 																			<option value="home">Home</option>
 																			<option value="townhomes">Townhouse</option>
 																			<option value="condo">Condominium</option>
-																			<option value="rental">Rental</option>
+																			<option value="rental">Hi-Rise</option>
 																			<option value="vacantland">Vacant Land</option>
 																		</select>
 																	</div>
@@ -3654,25 +3651,21 @@
 																			<div class="col-xs-12">
 																				<select class="form-control" name="city">
 																					<option value="">Pick a City</option>
-																					<option value="COCOA">Cocoa</option>
-																					<option value="COCOABEACH">Cocoa Beach</option>
-																					<option value="CAPECANAVERAL">Cape Canaveral</option>
-																					<option value="CLOISTER">Cloister</option>
-																					<option value="INDIANHARBOURBEACH">Indian Harbour Beach</option>
-																					<option value="INDIALANTIC">Indialantic</option>
-																					<option value="LANSINGISLAND">Lansing Island</option>
-																					<option value="MELBOURNE">Melbourne</option>
-																					<option value="MELBOURNEBEACH">Melbourne Beach</option>
-																					<option value="MERRITTISLAND">Merritt Island</option>
-																					<option value="MONTECITO">Montecito</option>
-																					<option value="ROCKLEDGE">Rockledge</option>
-																					<option value="SATELLITEBEACH">Satellite Beach</option>
-																					<option value="SUNTREE">Suntree</option>
-																					<option value="TITUSVILLE">Titusville</option>
-																					<option value="TORTOISEISLAND">Tortoise Island</option>
-																					<option value="WESTMELBOURNE">West Melbourne</option>
-																					<option value="VEROBEACH">Vero Beach</option>
-																					<option value="VIERA">Viera</option>
+																						<option value="LASVEGAS">Las Vegas</option>
+																						<option value="NORTHLASVEGAS">North Las Vegas</option>
+																						<option value="PAHRUMP">Pahrump</option>
+																						<option value="BOULDERCITY">Boulder City</option>
+																						<option value="ELY">Ely</option>
+																						<option value="OVERTON">Overton</option>
+																						<option value="LOGANDALE">Logandale</option>
+																						<option value="LAUGHLIN">Laughlin</option>
+																						<option value="MESQUITE">Mesquite</option>
+																						<option value="MCGILL">McGill</option>
+																						<option value="INDIANSPRINGS">Indian Springs</option>
+																						<option value="CALIENTE">Caliente</option>
+																						<option value="PIOCHE">Pioche</option>
+																						<option value="SANDYVALLEY">Sandy Valley</option>
+																						<option value="OTHER">Other</option>
 																				</select>
 																			</div>
 																		</div>
@@ -3743,7 +3736,7 @@
 									</div>
 
 								</div>
-							</div>
+							
 							<!-- MLS Search form ends here -->
 
 
@@ -3962,11 +3955,11 @@
 							</div>
 						</div>
 						<!-- the about section starts here -->
-
+<div class="container"></div>
 						<div class="row">
 							<div class="col-sm-12 col-ms-12">      
 								<div id="about-realtor_marker"></div>
-								<div class="promo-block about-block">                                                                                        
+								<div class=" about-block">                                                                                        
 									<!-- edit the about heading text here -->
 									<h2 class="block-title styler_color">
 										ABOUT MELANIE SALJOUGUI
@@ -3986,8 +3979,8 @@
 									<!-- realtor about image area starts here -->
 									<div class="col-sm-4 col-ms-4">
 										<!-- edit edit the realtor about image here -->
-										<img class="img-responsive img-circle center-block" src="img/Melanie.png" alt="" />
-										<br>
+										<img class="img-responsive vcenter  img-circle center-block" src="img/Melanie.png" alt="" />
+										
 									</div>
 								</div>
 							</div>
@@ -4008,7 +4001,7 @@
 											<nobr>City Search</nobr>
 										</h2>
 										<p>Click on a city/town area below to expand the quick search options.<br class="hidden-sm hidden-xs">
-											Search MLS by homes, town homes, condos, rentals or commercial properties with a couple easy clicks.</p>
+											Search MLS by homes, town homes, condos, or Hi-Rise properties with a couple easy clicks.</p>
 										<br>
 									</div>
 								</div>
@@ -4100,7 +4093,7 @@
 											<div class="panel panel-default">
 												<div class="panel-heading" role="tab" id="heading6">
 													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse7"><i class="fa fa-bars"></i>
+														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse7"><i class="fa fa-caret-right"></i>
 															Boulder City 
 														</a>
 													</h4>
@@ -4119,7 +4112,7 @@
 											<div class="panel panel-default">
 												<div class="panel-heading" role="tab" id="heading7">
 													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="false" aria-controls="collapse8"><i class="fa fa-bars"></i>
+														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="false" aria-controls="collapse8"><i class="fa fa-caret-right"></i>
 															Overton
 														</a>
 													</h4>
@@ -4250,8 +4243,7 @@
 															<li><a href="/search/fl/satellitebeach/homes/">Homes</a></li>
 															<li><a href="/search/fl/satellitebeach/townhomes/">Town Homes</a></li>
 															<li><a href="/search/fl/satellitebeach/condos/">Condos</a></li>
-															<li><a href="/search/fl/satellitebeach/rental/">Rentals</a></li>
-															<li><a href="/search/fl/satellitebeach/commercial/">Commercial</a></li>
+															<li><a href="/search/fl/satellitebeach/rental/">Hi-Rise</a></li>
 														</ul>
 													</div>
 												</div>
@@ -4361,7 +4353,7 @@
 			<div class="top">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="col-md-4 col-sm-6 col-xs-6">
 							<!-- edit footer logo here -->
 							<a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
 
@@ -4372,17 +4364,17 @@
 							<a href="#" class="logo"><img src="img/key-logo-white.png" alt="" /></a>
 							<div class="text">
 								<!-- edit equal housing opportunity disclaimer here -->
-								<p>All properties listed in this web site are available on an equal opportunity basis.</p>
+								
 							</div>
 						</div>
 
-						<div class="col-md-5 col-sm-6 col-xs-12">
+						<div class="col-md-4 col-sm-6 col-xs-12 pull-right">
 							<!-- begin newsletter form area -->
-							<div class="text">
+							<div class="text text-right">
 								<div class="header">NEWSLETTER</div>
 								<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
 							</div>
-							<div class="subscribe">
+							<div class="subscribe pull-right">
 								<form action="/" method="post">
 									<input type="text" placeholder="Email Address" />
 									<input type="submit" value="GO" class="styler_bg_color" />
@@ -4396,6 +4388,7 @@
 								<div class="header">DISCLAIMER</div>
 								<!-- edit your disclaimer text here -->
 								<p>Information is from the multiple listing service and neither suggests nor infers that the [name of agent] or [name of company] participated as either the listing or cooperating agent or broker in the sale or purchase of the properties depicted.</p>
+								<p >All properties listed in this web site are available on an equal opportunity basis.</p>
 							</div>
 							<!-- /end disclaimer -->
 						</div>
