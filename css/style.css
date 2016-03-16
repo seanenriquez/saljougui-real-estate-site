@@ -1,5 +1,7 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
+
+
 
 body * {
     padding:0;
@@ -128,7 +130,7 @@ h2 {
     padding: 10px 0;
 }
 #header .notify-bar p {
-    color: #ffffff;
+    color: #1F1032;
     margin-bottom: 0;
 }
 #header .notify-bar p span {
@@ -175,7 +177,7 @@ h2 {
     font-weight:400;
     padding-top:7px;
     text-align: right;
-    color: #004b67;
+    color: #45D3DC;
 }
 #header .inner .bottom .contacts_block .phone div {
     font-size: 15px;
@@ -243,7 +245,7 @@ h2 {
 }
 #top_menu .nav-pills > .active {}
 #top_menu .nav-pills > .active > a, #top_menu .nav-pills > li > a:hover {
-    background:#004b69;
+    background:#B378D3;
     border-radius:0;
     color:#fff;
 }
@@ -411,7 +413,7 @@ h2 {
 }
 #wrapper .infograph .header {
     font-size:52px;
-    color:#0fc6b0;
+    color:#A431AB;
     text-align:center;
     margin-bottom:35px;}
 #wrapper .infograph .graph {
@@ -839,7 +841,7 @@ form {
     height:35px;
     border:0;
     width:51px;
-    background:#004b69;
+    background:#B378D3;
     color:#fff;
     font-size:12px;
     text-transform:uppercase;
@@ -847,7 +849,7 @@ form {
     float:left;
 }
 #footer .bottom {
-    background:#a1a64a;
+    background: #6CBECC;
     padding:23px 0;
 }
 #footer .bottom .copyrights {
@@ -2061,7 +2063,7 @@ form {
 .block-title {
     text-align: center;
     font-size: 40px;
-    color: #004b67;
+    color: #B378D3;
     font-weight: 800;
     text-transform: uppercase;
     margin: 18px 0 10px 0;
@@ -2085,7 +2087,7 @@ form {
     height: 30px;
 }
 .promo-text {
-    color: #004b67;
+    color: #c044e5;
     font-size: 15px;
 }
 .promo-text p {
@@ -2124,7 +2126,7 @@ form {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    background-color: #004b67;
+    background-color: #6CBECC;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 32px;
@@ -2150,7 +2152,7 @@ form {
 }
 .resources .nav-tabs li.active a {
     border-right: none;
-    color: #004b67;
+    color: #B378D3;
     font-weight: 800;
     background-color: #ffffff !important;
     border-right: none;
@@ -2232,7 +2234,7 @@ form {
     display: block;
 }
 #results-slider {
-    background: #004b69;
+    background: #B378D3;
     position: relative;
     min-height: 265px;
     padding-bottom: 10px;
@@ -2243,7 +2245,7 @@ form {
     left: -100%;
     height: 100%;
     content: '';
-    background: #004b69;
+    background: #B378D3;
     top: 0;
 }
 #results-slider:after {
@@ -2252,7 +2254,7 @@ form {
     right: -100%;
     height: 100%;
     content: '';
-    background: #004b69;
+    background: #B378D3;
     top: 0;
 }
 #results-slider .cs-caption .title {
@@ -2339,7 +2341,7 @@ form {
     margin-bottom: 30px;
 }
 .faq-block .faq-top {
-    background-color: #004b67;
+    background-color: #c044e5;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 18px;
@@ -2466,7 +2468,7 @@ form {
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-    background-color: #000;
+    background-color: #6CBECC;
 }
 .featured-listings .featured-item address {
     background: url(../img/location.png) scroll 0 5px no-repeat;
