@@ -16,8 +16,14 @@
 		<!-- styles -->
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
 		<link type="text/css" rel="stylesheet" href="js/rs-plugin/css/settings.css" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'
+        type='text/css'>
+
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link type="text/css" rel="stylesheet" href="css/media.css" />        
@@ -165,7 +171,7 @@
 										<div class="promo-block">
 											<!-- edit real estate agent's promo block heading here -->
 											<h2 class="block-title styler_color">
-												DISCOVER THE MELANIE SALJOUGUI DIFFERENCE  
+												Discover The Difference 
 											</h2>
 											<!-- promo real estate agent's block line divider here -->
 											<div class="block-separator clearfix"></div>                                            <div class="col-sm-4 col-ms-4">
@@ -198,7 +204,7 @@
 											<div class="col-md-12 col-sm-12 col-xs-12">
 												<!-- edit featured listings headline here -->
 												<h2 class="block-title styler_color">
-													MY FEATURED LISTINGS
+													Featured Listings
 												</h2>
 											</div>
 										</div>
