@@ -1,41 +1,23 @@
-<?
+<?php
+	
+//session_start();
+error_reporting(E_ALL);
+include('mls/controller/retsController.php');
+
+$action=basename(__FILE__, '.php');               // load action from filename for consistancy (index for this case)
+//$controller = new retsController($action);            // register controller with page action and parameter
+//$controller->invoke();                            // invokde controller to get view
+
+$page_title = "Las Vegas Luxe Realty - Luxury Las Vegas, Nevada Real Estate";
+$page_desc = "Real estate agents specializing in Las Vegas and Henderson Nevada Homes and Condos For Sale";
+$page_keys = "real estate, for sale, for rent";
+
+$homepage = true;
+  
+include('includes/header.php');
+   
 
 ?>
-
-<!DOCTYPE HTML>
-<html>
-	<head>        
-
-		<!-- meta data -->
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>Las Vegas Luxe Realty - </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="format-detection" content="telephone=no" />
-		<!-- /end meta data -->        
-
-		<!-- styles -->
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-		<link type="text/css" rel="stylesheet" href="js/rs-plugin/css/settings.css" />
-		
-		<link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'
-        type='text/css'>
-
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
-
-		<link type="text/css" rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link type="text/css" rel="stylesheet" href="css/media.css" />        
-		<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />        
-		<link type="text/css" rel="stylesheet" href="css/owl.theme.css" />      
-		<link type="text/css" rel="stylesheet" href="css/royalslider.css" />        
-		<link type="text/css" rel="stylesheet" href="css/rs-default.css" />  
-
-		<!-- /end styles -->        
-
-
-	</head>
 
 	<body>
 
@@ -121,42 +103,12 @@
 					<div class="fullwidthbanner-container" id="main_slider">
 						<div class="fullwidthbanner">
 							<ul>
-								<!-- slide 1 -->
-								<li class="slide1" data-transition="slotzoom-horizontal" data-slotamount="5"  data-masterspeed="300">
-									<!-- slide 1 image -->
-									<img alt="" src="img/slide1a.jpg" />
-									<!-- slide 1 caption 1 parameters -->
-									<div class="caption sft" data-x="10" data-y="380" data-speed="2500" data-start="1000" data-easing="easeInBack">
-										<!-- slide 1 caption 1 -->
-										<p class="cap-1">6231 Topsfield Lane<br />
-											<span class="price">$535,000</span>
-										</p>
-									</div>
-								</li>                                
-								<!-- slide 2 -->
-								<li class="slide2" data-transition="slotzoom-horizontal" data-slotamount="5"  data-masterspeed="300">
-									<!-- slide 2 image -->
-									<img alt="" src="img/slide2a.jpg" />
-									<!-- slide 2 caption 1 parameters -->
-									<div class="caption sft" data-x="10" data-y="380" data-speed="2500" data-start="1000" data-easing="easeInBack">
-										<!-- slide 2 caption 1 -->
-										<p class="cap-1">8590 Highland Crest<br />
-											<span class="price">$689,000</span>
-										</p>
-									</div>
-								</li>
-								<!-- slide 3 -->
-								<li class="slide2" data-transition="slotzoom-horizontal" data-slotamount="5"  data-masterspeed="300">
-									<!-- slide 3 image -->
-									<img alt="" src="img/slide3a.jpg" />
-									<!-- slide 3 caption 1 parameters -->
-									<div class="caption sft" data-x="10" data-y="380" data-speed="2500" data-start="1000" data-easing="easeInBack">
-										<!-- slide 3 caption 1 -->
-										<p class="cap-1">6800 Sherburne Drive<br />
-											<span class="price">$379,500</span>
-										</p>
-									</div>
-								</li>
+								<?php
+
+				            $controller = new retsController('carousel'); // register controller with page action and parameter
+				            $controller->invoke();                            // invokde controller to get view
+				            
+								?> 
 							</ul>
 						</div>
 					</div>
