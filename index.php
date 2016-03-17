@@ -2651,8 +2651,8 @@
 								==================================================================================================-->
 								<div class="container">
 									<div class="promo-block">
-									<h2 class="block-title styler_color">Advanced Las Vegas MLS Search</h2>
-								</div>	
+										<h2 class="block-title styler_color">Advanced Las Vegas MLS Search</h2>
+									</div>	
 									<div class="block-separator clearfix"></div>
 									<div class="row">
 										<div class="col-xs-12">    
@@ -3655,21 +3655,21 @@
 																			<div class="col-xs-12">
 																				<select class="form-control" name="city">
 																					<option value="">Pick a City</option>
-																						<option value="LASVEGAS">Las Vegas</option>
-																						<option value="NORTHLASVEGAS">North Las Vegas</option>
-																						<option value="PAHRUMP">Pahrump</option>
-																						<option value="BOULDERCITY">Boulder City</option>
-																						<option value="ELY">Ely</option>
-																						<option value="OVERTON">Overton</option>
-																						<option value="LOGANDALE">Logandale</option>
-																						<option value="LAUGHLIN">Laughlin</option>
-																						<option value="MESQUITE">Mesquite</option>
-																						<option value="MCGILL">McGill</option>
-																						<option value="INDIANSPRINGS">Indian Springs</option>
-																						<option value="CALIENTE">Caliente</option>
-																						<option value="PIOCHE">Pioche</option>
-																						<option value="SANDYVALLEY">Sandy Valley</option>
-																						<option value="OTHER">Other</option>
+																					<option value="LASVEGAS">Las Vegas</option>
+																					<option value="NORTHLASVEGAS">North Las Vegas</option>
+																					<option value="PAHRUMP">Pahrump</option>
+																					<option value="BOULDERCITY">Boulder City</option>
+																					<option value="ELY">Ely</option>
+																					<option value="OVERTON">Overton</option>
+																					<option value="LOGANDALE">Logandale</option>
+																					<option value="LAUGHLIN">Laughlin</option>
+																					<option value="MESQUITE">Mesquite</option>
+																					<option value="MCGILL">McGill</option>
+																					<option value="INDIANSPRINGS">Indian Springs</option>
+																					<option value="CALIENTE">Caliente</option>
+																					<option value="PIOCHE">Pioche</option>
+																					<option value="SANDYVALLEY">Sandy Valley</option>
+																					<option value="OTHER">Other</option>
 																				</select>
 																			</div>
 																		</div>
@@ -3740,604 +3740,601 @@
 									</div>
 
 								</div>
-							
-							<!-- MLS Search form ends here -->
+
+								<!-- MLS Search form ends here -->
 
 
 
-							<!-- awards and associations logo block starts here -->
-							<!-- Remove this comment for award sections
-							<div class="wide-block">
-							<div class="awards-block">
-							<div id="awards_marker"></div>
-							<div class="row">
-							<div class="col-sm-3 col-ms-3">
-
-							<img src="img/award1.jpg" alt="" />
-							</div>
-							<div class="col-sm-3 col-ms-3">
-
-							<img src="img/award2.jpg" alt="" />
-							</div>
-							<div class="col-sm-3 col-ms-3">
-
-							<img src="img/award3.jpg" alt="" />
-							</div>
-							<div class="col-sm-3 col-ms-3">
-
-							<img src="img/award4.jpg" alt="" />
-							</div>
-							</div>
-							</div>
-							</div>
-							-->
-							<!-- begin resources -->                                
-							<div class="resources clearfix">
-								<div id="resources_marker"></div>
-								<!-- edit the resources heading here -->
-								<h2 class="block-title styler_color">
-									MOVING RESOURCES
-								</h2>
-								<div class="block-separator clearfix"></div>
-								<div class="resources-wrapper">
-									<div class="col-md-4 col-sm-4">
-										<!-- edit the resources tabs here -->
-										<ul class="nav nav-tabs">
-											<li class="styler_parent_active active"><a class="styler_bg_color styler_active_color" href="#movers" data-toggle="tab">Movers</a></li>
-											<li class="styler_parent_active"><a class="styler_bg_color styler_active_color" href="#contractors" data-toggle="tab">Contractors</a></li>
-											<li class="styler_parent_active"><a class="styler_bg_color styler_active_color" href="#utilities" data-toggle="tab">Utilities</a></li>
-											<li class="styler_parent_active"><a class="styler_bg_color styler_active_color" href="#lenders" data-toggle="tab">Lenders</a></li>
-										</ul>
-									</div>
-									<div class="col-md-8 col-sm-8">
-										<div class="tab-content">
-											<!-- edit tab #1 (movers) content here -->
-											<div class="tab-pane active" id="movers">
-												<div class="top-sector">
-													<div class="title">
-														Around the block moving
-													</div>
-													<address>
-														9535 Forest Lane<br />
-														Dallas, TX 75254<br />
-														(214)348-8888
-													</address>
-													<a class="lnk styler_color" href="#">www.atbmoving.com</a>                                                
-												</div>
-												<div class="bottom-sector">
-													<div class="title">
-														United Moving Company
-													</div>
-													<address>
-														7500 Churchill Road<br />
-														Dallas, TX 75231<br />
-														(214)348-8888
-													</address>
-													<a class="lnk styler_color" href="#">www.umcservices.com</a>                                                
-												</div>
-											</div>
-											<!-- edit tab #2 (contractors) content here -->
-											<div class="tab-pane" id="contractors">
-												<div class="top-sector">
-													<div class="title">
-														NewLeaf Remodeling, Inc.
-													</div>
-													<address>
-														5105 Royal Lane<br />
-														Dallas, TX 75235<br />
-														(214)649-6680
-													</address>
-													<a class="lnk styler_color" href="#">www.newleafremodel.com</a>
-												</div>
-												<div class="bottom-sector">
-													<div class="title">
-														Stevens & Sons Plumbing
-													</div>
-													<address>
-														9935 Forest Lane<br />
-														Dallas, TX 75290<br />
-														(214)348-8888
-													</address>
-													<a class="lnk styler_color" href="#">www.stevensplumbers.com</a>                                                
-												</div>
-											</div>
-											<!-- edit tab #3 (utilities) content here -->
-											<div class="tab-pane" id="utilities">
-												<div class="top-sector">
-													<div class="title">
-														Comcast (Dallas Office)
-													</div>
-													<address>
-														3335 Munger Road<br />
-														Dallas, TX 75235<br />
-														(972)556-7000
-													</address>
-													<a class="lnk styler_color" href="#">www.comcast.com</a>                                                
-												</div>
-												<div class="top-sector">
-													<div class="title">
-														Time Warner Cable (Dallas Office)
-													</div>
-													<address>
-														4500 Luther Lane<br />
-														Dallas, TX 75234<br />
-														(214)888-8888
-													</address>
-													<a class="lnk styler_color" href="#">www.twc.com</a>                                                
-												</div>
-											</div>
-											<!-- edit tab #4 (lenders) content here -->
-											<div class="tab-pane" id="lenders">
-												<div class="top-sector">
-													<div class="title">
-														Prime Lending & Associates
-													</div>
-													<address>
-														9535 Preston Road<br />
-														Suite 600<br />
-														Dallas, TX 75252<br />
-														(214)325-8866
-													</address>
-													<a class="lnk styler_color" href="#">www.primelending.com</a>                                                
-												</div>
-												<div class="top-sector">
-													<div class="title">
-														Texas Lending, LLC.
-													</div>
-													<address>
-														4400 Hillcreat Road<br />
-														Dallas, TX 75245<br />
-														(214)348-8888
-													</address>
-													<a class="lnk styler_color" href="#">www.texaslending.com</a>                                                     
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- /end resources -->
-							<!-- begin contact form -->
-							<div id="contact_marker"></div>
-							<h2 class="block-title styler_color">
-								CONTACT US
-							</h2>
-							<div class="block-separator clearfix"></div>
-							<div class="bottom-contact">
+								<!-- awards and associations logo block starts here -->
+								<!-- Remove this comment for award sections
+								<div class="wide-block">
+								<div class="awards-block">
+								<div id="awards_marker"></div>
 								<div class="row">
-									<div class="col-md-8 col-sm-8">
-										<form role="form" id="validForm">
-											<div class="form-group">
-												<input type="text" class="form-control" id="inputName" placeholder="Name">
-											</div>
-											<div class="form-group">
-												<input type="text" class="form-control" id="inputName2" placeholder="Name">
-											</div>
-											<div class="form-group">
-												<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-											</div>
-											<div class="form-group">
-												<textarea id="textarea" class="form-control" rows="3"></textarea>
-											</div>
-											<!-- google Captcha -->
-										<div class="g-recaptcha center-block" data-sitekey="6LeZqxoTAAAAAGUlFHVPwdhTiKFaNgtiH8rTVZQn" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
-											<!-- /end google Captcha -->
-											<br>
+								<div class="col-sm-3 col-ms-3">
 
-											<!-- turn captcha on here by removing this comment
-
-											<?php
-											require_once('config.php');
-											require_once('recaptchalib.php');
-											if($use_recaptcha === true){
-												echo recaptcha_get_html($publickey);
-											}
-											?>
-
-											-->
-
-											<div id="result"></div>
-											<input type="submit" value="Submit" class="btn btn-primary submit styler_bg_color">
-										</form>
-									</div>
-									<div class="col-md-4 col-sm-4">
-										<div class="address">
-											<div class="title styler_color">Address, Phone & Email</div>
-											<div class="name styler_color">Las Vegas Luxe Realty</div>
-											<address class="styler_color">
-												Melanie Saljougui<br />
-												9890 S. Maryland Pkwy. Suite 200  <br />
-												Las Vegas, Nevada 89193<br />
-												<br />
-												phone. 702-313-7003<br />
-												cell. 415-815-9079
-												<!-- $moreinfo
-												f. 214.985.9003<br />
-												-->
-												<a class="styler_color" 
-													href="mailto:melaniesaljougui@gmail.com">melaniesaljougui@gmail.com</a>
-											</address>
-										</div>
-									</div>
+								<img src="img/award1.jpg" alt="" />
 								</div>
-							</div>
-						</div>
-						<!-- the about section starts here -->
-<div class="container"></div>
-						<div class="row">
-							<div class="col-sm-12 col-ms-12">      
-								<div id="about-realtor_marker"></div>
-								<div class=" about-block">                                                                                        
-									<!-- edit the about heading text here -->
+								<div class="col-sm-3 col-ms-3">
+
+								<img src="img/award2.jpg" alt="" />
+								</div>
+								<div class="col-sm-3 col-ms-3">
+
+								<img src="img/award3.jpg" alt="" />
+								</div>
+								<div class="col-sm-3 col-ms-3">
+
+								<img src="img/award4.jpg" alt="" />
+								</div>
+								</div>
+								</div>
+								</div>
+								-->
+								<!-- begin resources -->                                
+								<div class="resources clearfix">
+									<div id="resources_marker"></div>
+									<!-- edit the resources heading here -->
 									<h2 class="block-title styler_color">
-										ABOUT MELANIE SALJOUGUI
+										MOVING RESOURCES
 									</h2>
 									<div class="block-separator clearfix"></div>
-									<div class="col-sm-8 col-ms-8">
-										<!-- edit the about text here -->
-										<div class="promo-text">
-											<p>Born and raised in France and with an Iranian background, I have a natural understanding and appreciation for the diversity of cultures. I am also fluent in French, Spanish, English and Farsi.
-												I am a tireless worker and will help you in any way that I can because it is what I truly love to do. </p>
-											<p>My family being so close and important to me, I understand that the right house provides a comfortable place to call your own and a gathering place for relatives and friends.</p>
-											<p>Outside of work, I enjoy the outdoors. I love to travel, hike with my dog, really anything that gets me outside in nature. I love meeting new people and experiencing new places, I also enjoy painting and reading in my free time.
-												Please help me help you by providing the basics of what you are looking for and your personal real estate likes and dislikes. I will find you what you are looking for!
-												Sincerely,</p>
+									<div class="resources-wrapper">
+										<div class="col-md-4 col-sm-4">
+											<!-- edit the resources tabs here -->
+											<ul class="nav nav-tabs">
+												<li class="styler_parent_active active"><a class="styler_bg_color styler_active_color" href="#movers" data-toggle="tab">Movers</a></li>
+												<li class="styler_parent_active"><a class="styler_bg_color styler_active_color" href="#contractors" data-toggle="tab">Contractors</a></li>
+												<li class="styler_parent_active"><a class="styler_bg_color styler_active_color" href="#utilities" data-toggle="tab">Utilities</a></li>
+												<li class="styler_parent_active"><a class="styler_bg_color styler_active_color" href="#lenders" data-toggle="tab">Lenders</a></li>
+											</ul>
+										</div>
+										<div class="col-md-8 col-sm-8">
+											<div class="tab-content">
+												<!-- edit tab #1 (movers) content here -->
+												<div class="tab-pane active" id="movers">
+													<div class="top-sector">
+														<div class="title">
+															Around the block moving
+														</div>
+														<address>
+															9535 Forest Lane<br />
+															Dallas, TX 75254<br />
+															(214)348-8888
+														</address>
+														<a class="lnk styler_color" href="#">www.atbmoving.com</a>                                                
+													</div>
+													<div class="bottom-sector">
+														<div class="title">
+															United Moving Company
+														</div>
+														<address>
+															7500 Churchill Road<br />
+															Dallas, TX 75231<br />
+															(214)348-8888
+														</address>
+														<a class="lnk styler_color" href="#">www.umcservices.com</a>                                                
+													</div>
+												</div>
+												<!-- edit tab #2 (contractors) content here -->
+												<div class="tab-pane" id="contractors">
+													<div class="top-sector">
+														<div class="title">
+															NewLeaf Remodeling, Inc.
+														</div>
+														<address>
+															5105 Royal Lane<br />
+															Dallas, TX 75235<br />
+															(214)649-6680
+														</address>
+														<a class="lnk styler_color" href="#">www.newleafremodel.com</a>
+													</div>
+													<div class="bottom-sector">
+														<div class="title">
+															Stevens & Sons Plumbing
+														</div>
+														<address>
+															9935 Forest Lane<br />
+															Dallas, TX 75290<br />
+															(214)348-8888
+														</address>
+														<a class="lnk styler_color" href="#">www.stevensplumbers.com</a>                                                
+													</div>
+												</div>
+												<!-- edit tab #3 (utilities) content here -->
+												<div class="tab-pane" id="utilities">
+													<div class="top-sector">
+														<div class="title">
+															Comcast (Dallas Office)
+														</div>
+														<address>
+															3335 Munger Road<br />
+															Dallas, TX 75235<br />
+															(972)556-7000
+														</address>
+														<a class="lnk styler_color" href="#">www.comcast.com</a>                                                
+													</div>
+													<div class="top-sector">
+														<div class="title">
+															Time Warner Cable (Dallas Office)
+														</div>
+														<address>
+															4500 Luther Lane<br />
+															Dallas, TX 75234<br />
+															(214)888-8888
+														</address>
+														<a class="lnk styler_color" href="#">www.twc.com</a>                                                
+													</div>
+												</div>
+												<!-- edit tab #4 (lenders) content here -->
+												<div class="tab-pane" id="lenders">
+													<div class="top-sector">
+														<div class="title">
+															Prime Lending & Associates
+														</div>
+														<address>
+															9535 Preston Road<br />
+															Suite 600<br />
+															Dallas, TX 75252<br />
+															(214)325-8866
+														</address>
+														<a class="lnk styler_color" href="#">www.primelending.com</a>                                                
+													</div>
+													<div class="top-sector">
+														<div class="title">
+															Texas Lending, LLC.
+														</div>
+														<address>
+															4400 Hillcreat Road<br />
+															Dallas, TX 75245<br />
+															(214)348-8888
+														</address>
+														<a class="lnk styler_color" href="#">www.texaslending.com</a>                                                     
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-									<!-- realtor about image area starts here -->
-									<div class="col-sm-4 col-ms-4">
-										<!-- edit edit the realtor about image here -->
-										<img class="img-responsive vcenter  img-circle center-block" src="img/Melanie.png" alt="" />
-										
+								</div>
+								<!-- /end resources -->
+								<!-- begin contact form -->
+								<div id="contact_marker"></div>
+								<h2 class="block-title styler_color">
+									CONTACT US
+								</h2>
+								<div class="block-separator clearfix"></div>
+								<div class="bottom-contact">
+									<div class="row">
+										<div class="col-md-8 col-sm-8">
+											<form role="form" id="validForm">
+												<div class="form-group">
+													<input type="text" class="form-control" id="inputName" placeholder="Name">
+												</div>
+												<div class="form-group">
+													<input type="text" class="form-control" id="inputName2" placeholder="Name">
+												</div>
+												<div class="form-group">
+													<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+												</div>
+												<div class="form-group">
+													<textarea id="textarea" class="form-control" rows="3"></textarea>
+												</div>
+												<div class="g-recaptcha pull-right" data-sitekey="6LeZqxoTAAAAAGUlFHVPwdhTiKFaNgtiH8rTVZQn"></div>
+												<!-- turn captcha on here by removing this comment
+
+												<?php
+												require_once('config.php');
+												require_once('recaptchalib.php');
+												if($use_recaptcha === true){
+													echo recaptcha_get_html($publickey);
+												}
+												?>
+
+												-->
+
+												<div id="result"></div>
+												<input type="submit" value="Submit" class="btn btn-primary submit styler_bg_color">
+											</form>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="address">
+												<div class="title styler_color">Address, Phone & Email</div>
+												<div class="name styler_color">Las Vegas Luxe Realty</div>
+												<address class="styler_color">
+													Melanie Saljougui<br />
+													9890 S. Maryland Pkwy. Suite 200  <br />
+													Las Vegas, Nevada 89193<br />
+													<br />
+													phone. 702-313-7003<br />
+													cell. 415-815-9079
+													<!-- $moreinfo
+													f. 214.985.9003<br />
+													-->
+													<a class="styler_color" 
+														href="mailto:melaniesaljougui@gmail.com">melaniesaljougui@gmail.com</a>
+												</address>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>      
-						<!-- /end the about section starts here -->
-					</div>
-
-				</div>
-
-				<!-- Accordian start-->
-				<div class="container-fluid break-out">
-					<div class="row">
-						<div class="col-xs-12">
-							<div id="quick-search" class="container">
-								<div class="row">
-									<div class="col-xs-12 text-center">
-										<h2 class="blue-plate">Quick MLS
-											<nobr>City Search</nobr>
+							<!-- the about section starts here -->
+							<div class="container"></div>
+							<div class="row">
+								<div class="col-sm-12 col-ms-12">      
+									<div id="about-realtor_marker"></div>
+									<div class=" about-block">                                                                                        
+										<!-- edit the about heading text here -->
+										<h2 class="block-title styler_color">
+											ABOUT MELANIE SALJOUGUI
 										</h2>
-										<p>Click on a city/town area below to expand the quick search options.<br class="hidden-sm hidden-xs">
-											Search MLS by homes, town homes, condos, or Hi-Rise properties with a couple easy clicks.</p>
-										<br>
+										<div class="block-separator clearfix"></div>
+										<div class="col-sm-8 col-ms-8">
+											<!-- edit the about text here -->
+											<div class="promo-text">
+												<p>Born and raised in France and with an Iranian background, I have a natural understanding and appreciation for the diversity of cultures. I am also fluent in French, Spanish, English and Farsi.
+													I am a tireless worker and will help you in any way that I can because it is what I truly love to do. </p>
+												<p>My family being so close and important to me, I understand that the right house provides a comfortable place to call your own and a gathering place for relatives and friends.</p>
+												<p>Outside of work, I enjoy the outdoors. I love to travel, hike with my dog, really anything that gets me outside in nature. I love meeting new people and experiencing new places, I also enjoy painting and reading in my free time.
+													Please help me help you by providing the basics of what you are looking for and your personal real estate likes and dislikes. I will find you what you are looking for!
+													Sincerely,</p>
+											</div>
+										</div>
+										<!-- realtor about image area starts here -->
+										<div class="col-sm-4 col-ms-4">
+											<!-- edit edit the realtor about image here -->
+											<img class="img-responsive vcenter  img-circle center-block" src="img/Melanie.png" alt="" />
+
+										</div>
 									</div>
 								</div>
-								<div class="row">
-									<div class="col-lg-3 col-md-6 col-sm-12">
-										<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading1">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1" aria-expanded="false" aria-controls="collapse1"><i class="fa fa-caret-right"></i>
-															Las Vegas
-														</a>
-													</h4>
-												</div>
-												<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-													<div class="panel-body">
-														<ul id="capecanaveral" class="list-unstyled">
-															<li><a href="/search/fl/capecanaveral/homes/">Homes</a></li>
-															<li><a href="/search/fl/capecanaveral/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/capecanaveral/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading2">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="fa fa-caret-right"></i>
-															Henderson
-														</a>
-													</h4>
-												</div>
-												<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-													<div class="panel-body">
-														<ul id="cocoa" class="list-unstyled">
-															<li><a href="/search/fl/cocoa/homes/">Homes</a></li>
-															<li><a href="/search/fl/cocoa/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/cocoa/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading3">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" aria-expanded="false" aria-controls="collapse3"><i class="fa fa-caret-right"></i>
-															North Las Vegas
-														</a>
-													</h4>
-												</div>
-												<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-													<div class="panel-body">
-														<ul id="cocoabeach" class="list-unstyled">
-															<li><a href="/search/fl/cocoabeach/homes/">Homes</a></li>
-															<li><a href="/search/fl/cocoabeach/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/cocoabeach/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading4">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" aria-expanded="false" aria-controls="collapse4"><i class="fa fa-caret-right"></i>
-															Pahrump 
-														</a>
-													</h4>
-												</div>
-												<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-													<div class="panel-body">
-														<ul id="indialantic" class="list-unstyled">
-															<li><a href="/search/fl/indialantic/homes/">Homes</a></li>
-															<li><a href="/search/fl/indialantic/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/indialantic/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
+							</div>      
+							<!-- /end the about section starts here -->
+						</div>
 
+					</div>
+
+					<!-- Accordian start-->
+					<div class="container-fluid break-out">
+						<div class="row">
+							<div class="col-xs-12">
+								<div id="quick-search" class="container">
+									<div class="row">
+										<div class="col-xs-12 text-center">
+											<h2 class="blue-plate">Quick MLS
+												<nobr>City Search</nobr>
+											</h2>
+											<p>Click on a city/town area below to expand the quick search options.<br class="hidden-sm hidden-xs">
+												Search MLS by homes, town homes, condos, or Hi-Rise properties with a couple easy clicks.</p>
+											<br>
 										</div>
 									</div>
-									
-									<div class="col-lg-3 col-md-6 col-sm-12">
-										<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading6">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse7"><i class="fa fa-caret-right"></i>
-															Boulder City 
-														</a>
-													</h4>
-												</div>
-												<div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-													<div class="panel-body">
-														<ul id="malabar" class="list-unstyled">
-															<li><a href="/search/fl/malabar/homes/">Homes</a></li>
-															<li><a href="/search/fl/malabar/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/malabar/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
+									<div class="row">
+										<div class="col-lg-3 col-md-6 col-sm-12">
+											<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading1">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1" aria-expanded="false" aria-controls="collapse1"><i class="fa fa-caret-right"></i>
+																Las Vegas
+															</a>
+														</h4>
+													</div>
+													<div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+														<div class="panel-body">
+															<ul id="capecanaveral" class="list-unstyled">
+																<li><a href="/search/fl/capecanaveral/homes/">Homes</a></li>
+																<li><a href="/search/fl/capecanaveral/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/capecanaveral/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading7">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="false" aria-controls="collapse8"><i class="fa fa-caret-right"></i>
-															Overton
-														</a>
-													</h4>
-												</div>
-												<div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-													<div class="panel-body">
-														<ul id="melbourne" class="list-unstyled">
-															<li><a href="/search/fl/melbourne/homes/">Homes</a></li>
-															<li><a href="/search/fl/melbourne/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/melbourne/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading2">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="fa fa-caret-right"></i>
+																Henderson
+															</a>
+														</h4>
+													</div>
+													<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+														<div class="panel-body">
+															<ul id="cocoa" class="list-unstyled">
+																<li><a href="/search/fl/cocoa/homes/">Homes</a></li>
+																<li><a href="/search/fl/cocoa/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/cocoa/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading8">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse8" aria-expanded="false" aria-controls="collapse9"><i class="fa fa-caret-right"></i>
-															Ely
-														</a>
-													</h4>
-												</div>
-												<div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
-													<div class="panel-body">
-														<ul id="melbournebeach" class="list-unstyled">
-															<li><a href="/search/fl/melbournebeach/homes/">Homes</a></li>
-															<li><a href="/search/fl/melbournebeach/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/melbournebeach/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading3">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" aria-expanded="false" aria-controls="collapse3"><i class="fa fa-caret-right"></i>
+																North Las Vegas
+															</a>
+														</h4>
+													</div>
+													<div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+														<div class="panel-body">
+															<ul id="cocoabeach" class="list-unstyled">
+																<li><a href="/search/fl/cocoabeach/homes/">Homes</a></li>
+																<li><a href="/search/fl/cocoabeach/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/cocoabeach/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading9">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse9" aria-expanded="false" aria-controls="collapse10"><i class="fa fa-caret-right"></i>
-															Overton
-														</a>
-													</h4>
-												</div>
-												<div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
-													<div class="panel-body">
-														<ul id="merrittisland" class="list-unstyled">
-															<li><a href="/search/fl/merrittisland/homes/">Homes</a></li>
-															<li><a href="/search/fl/merrittisland/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/merrittisland/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading4">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" aria-expanded="false" aria-controls="collapse4"><i class="fa fa-caret-right"></i>
+																Pahrump 
+															</a>
+														</h4>
+													</div>
+													<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+														<div class="panel-body">
+															<ul id="indialantic" class="list-unstyled">
+																<li><a href="/search/fl/indialantic/homes/">Homes</a></li>
+																<li><a href="/search/fl/indialantic/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/indialantic/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
 													</div>
 												</div>
-											</div>
 
+											</div>
 										</div>
-									</div>
-									<div class="clearfix visible-md"></div>
-									<div class="col-lg-3 col-md-6 col-sm-12">
-										<div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading11">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion3" href="#collapse11" aria-expanded="false" aria-controls="collapse12"><i class="fa fa-caret-right"></i>
-															Logandale
-														</a>
-													</h4>
-												</div>
-												<div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
-													<div class="panel-body">
-														<ul id="titusville" class="list-unstyled">
-															<li><a href="/search/fl/ocean-front/homes/">Homes</a></li>
-															<li><a href="/search/fl/ocean-front/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/ocean-front/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading12">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion3" href="#collapse12" aria-expanded="false" aria-controls="collapse13"><i class="fa fa-caret-right"></i>
-															Laughlin
-														</a>
-													</h4>
-												</div>
-												<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
-													<div class="panel-body">
-														<ul id="tortoiseisland" class="list-unstyled">
-															<li><a href="/search/fl/river-front/homes/">Homes</a></li>
-															<li><a href="/search/fl/river-front/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/river-front/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading13">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion3" href="#collapse13" aria-expanded="false" aria-controls="collapse14"><i class="fa fa-caret-right"></i>
-															Mesquite
-														</a>
-													</h4>
-												</div>
-												<div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
-													<div class="panel-body">
-														<ul id="rockledge" class="list-unstyled">
-															<li><a href="/search/fl/rockledge/homes/">Homes</a></li>
-															<li><a href="/search/fl/rockledge/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/rockledge/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading14">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion3" href="#collapse14" aria-expanded="false" aria-controls="collapse15"><i class="fa fa-caret-right"></i>
-															McGill
-														</a>
-													</h4>
-												</div>
-												<div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
-													<div class="panel-body">
-														<ul id="satellitebeach" class="list-unstyled">
-															<li><a href="/search/fl/satellitebeach/homes/">Homes</a></li>
-															<li><a href="/search/fl/satellitebeach/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/satellitebeach/condos/">Condos</a></li>
-															<li><a href="/search/fl/satellitebeach/rental/">Hi-Rise</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
 
+										<div class="col-lg-3 col-md-6 col-sm-12">
+											<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading6">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion2" href="#collapse6" aria-expanded="false" aria-controls="collapse7"><i class="fa fa-caret-right"></i>
+																Boulder City 
+															</a>
+														</h4>
+													</div>
+													<div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+														<div class="panel-body">
+															<ul id="malabar" class="list-unstyled">
+																<li><a href="/search/fl/malabar/homes/">Homes</a></li>
+																<li><a href="/search/fl/malabar/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/malabar/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading7">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="false" aria-controls="collapse8"><i class="fa fa-caret-right"></i>
+																Overton
+															</a>
+														</h4>
+													</div>
+													<div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+														<div class="panel-body">
+															<ul id="melbourne" class="list-unstyled">
+																<li><a href="/search/fl/melbourne/homes/">Homes</a></li>
+																<li><a href="/search/fl/melbourne/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/melbourne/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading8">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion2" href="#collapse8" aria-expanded="false" aria-controls="collapse9"><i class="fa fa-caret-right"></i>
+																Ely
+															</a>
+														</h4>
+													</div>
+													<div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+														<div class="panel-body">
+															<ul id="melbournebeach" class="list-unstyled">
+																<li><a href="/search/fl/melbournebeach/homes/">Homes</a></li>
+																<li><a href="/search/fl/melbournebeach/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/melbournebeach/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading9">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion2" href="#collapse9" aria-expanded="false" aria-controls="collapse10"><i class="fa fa-caret-right"></i>
+																Overton
+															</a>
+														</h4>
+													</div>
+													<div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+														<div class="panel-body">
+															<ul id="merrittisland" class="list-unstyled">
+																<li><a href="/search/fl/merrittisland/homes/">Homes</a></li>
+																<li><a href="/search/fl/merrittisland/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/merrittisland/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+
+											</div>
 										</div>
-									</div>
-									<div class="col-lg-3 col-md-6 col-sm-12">
-										<div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading16">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion4" href="#collapse16" aria-expanded="false" aria-controls="collapse17"><i class="fa fa-caret-right"></i>
-															Indian Springs
-														</a>
-													</h4>
-												</div>
-												<div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
-													<div class="panel-body">
-														<ul id="titusville" class="list-unstyled">
-															<li><a href="/search/fl/titusville/homes/">Homes</a></li>
-															<li><a href="/search/fl/titusville/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/titusville/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
+										<div class="clearfix visible-md"></div>
+										<div class="col-lg-3 col-md-6 col-sm-12">
+											<div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading11">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion3" href="#collapse11" aria-expanded="false" aria-controls="collapse12"><i class="fa fa-caret-right"></i>
+																Logandale
+															</a>
+														</h4>
+													</div>
+													<div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+														<div class="panel-body">
+															<ul id="titusville" class="list-unstyled">
+																<li><a href="/search/fl/ocean-front/homes/">Homes</a></li>
+																<li><a href="/search/fl/ocean-front/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/ocean-front/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading17">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion4" href="#collapse17" aria-expanded="false" aria-controls="collapse18"><i class="fa fa-caret-right"></i>
-															Caliente 
-														</a>
-													</h4>
-												</div>
-												<div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
-													<div class="panel-body">
-														<ul id="tortoiseisland" class="list-unstyled">
-															<li><a href="/search/fl/tortoiseisland/homes/">Homes</a></li>
-															<li><a href="/search/fl/tortoiseisland/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/tortoiseisland/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading12">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion3" href="#collapse12" aria-expanded="false" aria-controls="collapse13"><i class="fa fa-caret-right"></i>
+																Laughlin
+															</a>
+														</h4>
+													</div>
+													<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+														<div class="panel-body">
+															<ul id="tortoiseisland" class="list-unstyled">
+																<li><a href="/search/fl/river-front/homes/">Homes</a></li>
+																<li><a href="/search/fl/river-front/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/river-front/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading18">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion4" href="#collapse18" aria-expanded="false" aria-controls="collapse19"><i class="fa fa-caret-right"></i>
-															Pioche
-														</a>
-													</h4>
-												</div>
-												<div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
-													<div class="panel-body">
-														<ul id="verobeach" class="list-unstyled">
-															<li><a href="/search/fl/verobeach/homes/">Homes</a></li>
-															<li><a href="/search/fl/verobeach/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/verobeach/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading13">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion3" href="#collapse13" aria-expanded="false" aria-controls="collapse14"><i class="fa fa-caret-right"></i>
+																Mesquite
+															</a>
+														</h4>
+													</div>
+													<div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+														<div class="panel-body">
+															<ul id="rockledge" class="list-unstyled">
+																<li><a href="/search/fl/rockledge/homes/">Homes</a></li>
+																<li><a href="/search/fl/rockledge/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/rockledge/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="heading19">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion4" href="#collapse19" aria-expanded="false" aria-controls="collapse20"><i class="fa fa-caret-right"></i>
-															Sandy Valley
-														</a>
-													</h4>
-												</div>
-												<div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
-													<div class="panel-body">
-														<ul id="viera"  class="list-unstyled">
-															<li><a href="/search/fl/viera/homes/">Homes</a></li>
-															<li><a href="/search/fl/viera/townhomes/">Town Homes</a></li>
-															<li><a href="/search/fl/viera/condos/">Condos</a></li>
-															<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
-														</ul>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading14">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion3" href="#collapse14" aria-expanded="false" aria-controls="collapse15"><i class="fa fa-caret-right"></i>
+																McGill
+															</a>
+														</h4>
+													</div>
+													<div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+														<div class="panel-body">
+															<ul id="satellitebeach" class="list-unstyled">
+																<li><a href="/search/fl/satellitebeach/homes/">Homes</a></li>
+																<li><a href="/search/fl/satellitebeach/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/satellitebeach/condos/">Condos</a></li>
+																<li><a href="/search/fl/satellitebeach/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
 													</div>
 												</div>
-											</div>
 
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-6 col-sm-12">
+											<div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading16">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion4" href="#collapse16" aria-expanded="false" aria-controls="collapse17"><i class="fa fa-caret-right"></i>
+																Indian Springs
+															</a>
+														</h4>
+													</div>
+													<div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+														<div class="panel-body">
+															<ul id="titusville" class="list-unstyled">
+																<li><a href="/search/fl/titusville/homes/">Homes</a></li>
+																<li><a href="/search/fl/titusville/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/titusville/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading17">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion4" href="#collapse17" aria-expanded="false" aria-controls="collapse18"><i class="fa fa-caret-right"></i>
+																Caliente 
+															</a>
+														</h4>
+													</div>
+													<div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+														<div class="panel-body">
+															<ul id="tortoiseisland" class="list-unstyled">
+																<li><a href="/search/fl/tortoiseisland/homes/">Homes</a></li>
+																<li><a href="/search/fl/tortoiseisland/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/tortoiseisland/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading18">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion4" href="#collapse18" aria-expanded="false" aria-controls="collapse19"><i class="fa fa-caret-right"></i>
+																Pioche
+															</a>
+														</h4>
+													</div>
+													<div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
+														<div class="panel-body">
+															<ul id="verobeach" class="list-unstyled">
+																<li><a href="/search/fl/verobeach/homes/">Homes</a></li>
+																<li><a href="/search/fl/verobeach/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/verobeach/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="heading19">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion4" href="#collapse19" aria-expanded="false" aria-controls="collapse20"><i class="fa fa-caret-right"></i>
+																Sandy Valley
+															</a>
+														</h4>
+													</div>
+													<div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
+														<div class="panel-body">
+															<ul id="viera"  class="list-unstyled">
+																<li><a href="/search/fl/viera/homes/">Homes</a></li>
+																<li><a href="/search/fl/viera/townhomes/">Town Homes</a></li>
+																<li><a href="/search/fl/viera/condos/">Condos</a></li>
+																<li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+
+											</div>
 										</div>
 									</div>
 								</div>
@@ -4345,16 +4342,12 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Accordian end-->
+
 			</div>
-
-			<!-- Accordian end-->
-
+			<div id="empty"></div>
 		</div>
-		<div id="empty"></div>
-		</div>
-		</div>
-
-
 
 		<!-- begin footer -->
 		<div id="footer">
@@ -4372,7 +4365,7 @@
 							<a href="#" class="logo"><img src="img/key-logo-white.png"  alt="" /></a>
 							<div class="text">
 								<!-- edit equal housing opportunity disclaimer here -->
-								
+
 							</div>
 						</div>
 
@@ -4418,30 +4411,30 @@
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
-		
-													<script>
-												$(document).ready(function(){
-													/* Reset Button */
-													$('form').on('reset', function() {
-														setTimeout(function() {
-															$('.check-btn > input').each(function() {
-																$(this).parent().removeClass('checked-btn');
-																if($(this).prop('checked') !== false) {
-																	$(this).parent().addClass('checked-btn');
-																}
-															});
-															$('#collapseSearch').removeClass('in');
-															$('html, body').animate({
-																scrollTop: $('header').outerHeight(true) + $('#tag-line').outerHeight(true)
-																}, 500);
-														});
-													});
-												});
-											</script>
+
+		<script>
+			$(document).ready(function(){
+				/* Reset Button */
+				$('form').on('reset', function() {
+					setTimeout(function() {
+						$('.check-btn > input').each(function() {
+							$(this).parent().removeClass('checked-btn');
+							if($(this).prop('checked') !== false) {
+								$(this).parent().addClass('checked-btn');
+							}
+						});
+						$('#collapseSearch').removeClass('in');
+						$('html, body').animate({
+							scrollTop: $('header').outerHeight(true) + $('#tag-line').outerHeight(true)
+							}, 500);
+					});
+				});
+			});
+		</script>
 
 		<!-- start style switcher -->
 		<!-- remove this section when you want to remove the style switcher -->
-<!--		<script type="text/javascript" src="js/style-switcher/style-switcher.js"></script>  -->
+		<!--		<script type="text/javascript" src="js/style-switcher/style-switcher.js"></script>  -->
 		<!-- /end style switcher -->
 
 		<!-- capthca script -->
