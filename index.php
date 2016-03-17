@@ -1,6 +1,6 @@
 <?php
 	
-//session_start();
+session_start();
 error_reporting(E_ALL);
 include('mls/controller/retsController.php');
 
@@ -48,24 +48,24 @@ include('includes/header.php');
 						<div class="bottom">
 							<div class="container">
 								<div class="row">
-									<div class="col-md-3 col-sm-3 clearfix">
-										<!-- insert header logo here -->
-										<a href="#" class="logo"><img class="img-responsive center-block nav-logo" src="img/logo_color.png" alt="" /></a>
-									</div>
-									<div class="col-md-9 col-sm-9">
-										<div class="contacts_block">
+									<div class="col-md-4 col-sm-4 clearfix">
+									<div class="contacts_block">
 											<!-- edit header address and phone number here -->
 											<div class="phone styler_color">
 
 												<div>
-													<p>8704 W. CHARLESTON BLVD. | SUITE 105 | Las Vegas, NV 89117</p> 
+													<p>8704 W. CHARLESTON BLVD. | SUITE 105 | Las Vegas, NV 89117  c:415-815-9079</p> 
 												</div>
 
-												<span>415-815-9079</span>
 
 											</div>
 											<div class="clear"></div>
 										</div>
+										<!-- insert header logo here -->
+									<!--	<a href="#" class="logo"><img class="img-responsive center-block nav-logo" src="img/logo_color.png" alt="" /></a>  -->
+									</div>
+									<div class="col-md-8 col-sm-8">
+
 										<!-- top navigation starts here -->
 										<div id="top_menu">
 											<div class="navbar">
@@ -126,9 +126,10 @@ include('includes/header.php');
 												Discover The Difference 
 											</h2>
 											<!-- promo real estate agent's block line divider here -->
-											<div class="block-separator clearfix"></div>                                            <div class="col-sm-4 col-ms-4">
+											<div class="block-separator clearfix"></div>                                            
+											<div class="col-sm-4 col-ms-4">
 												<!-- edit real estate agent's promo block image here -->
-												<img class="img-responsive block-img" src="img/mel_crop.jpg" alt="" />
+												<img class="img-responsive block-img" src="img/mel_crop1.png" alt="" />
 											</div>
 											<div class="col-sm-8 col-ms-8">
 												<!-- real estate agent's promo block text starts here -->

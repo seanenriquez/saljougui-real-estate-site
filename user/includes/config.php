@@ -23,10 +23,11 @@ if($debug == true)
 ****************
 */
   
+   
 $dbhost = "localhost";
-$dbname = "tsgfl_rets";
-$dbuser = "tsgfl_dbuser";            
-$dbpass = "eOlqo56HsC05";
+$dbname = "admin_lvluxe";
+$dbuser = "admin_lvluxe";            
+$dbpass = "CQTXTvwB6O";
 
 try
 {

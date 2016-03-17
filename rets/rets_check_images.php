@@ -15,7 +15,7 @@ include('database.php');
 //
 $rets_name="palmbeach1.com";
 $rets_from="retsupdater@palmbeach1.com";
-$mls_photo_dir = 'hires/';
+$mls_photo_dir = '../mls/photos/';
 $mls_thumb_dir = 'thumb/';
 // set this to true to force image download from links instead of using photo array - FLEXMLS advises this is best way
 $forceDl=true;

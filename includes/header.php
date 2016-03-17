@@ -12,10 +12,10 @@
 		<!-- styles -->
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
 		<link type="text/css" rel="stylesheet" href="js/rs-plugin/css/settings.css" />
-		
+
 		<link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'
-        type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'
+			type='text/css'>
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>

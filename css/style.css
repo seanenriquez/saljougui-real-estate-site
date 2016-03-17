@@ -127,6 +127,7 @@ h1, h2, h3 {
     width:100%;
     z-index:1000;
     background:#fff;}
+    
 #header .inner .top {
 }
 #header .notify-bar {
@@ -152,11 +153,12 @@ h1, h2, h3 {
     margin-left:15px;
     float:right;
     padding-top:6px;}
+    
 #header .inner .top .contacts_block .social_links li {
     list-style:none;
     display:inline-block;
     vertical-align:middle;
-    margin-left:16px;
+    margin-left:5px;
 }
 #header .inner .top .contacts_block .social_links li a {
     width:16px;
@@ -2103,7 +2105,6 @@ form {
 .promo-text h3 {
     color: #666666;
     font-size: 24px;
-    font-weight: bold;
 }
 .resources {
     margin-bottom: 50px;

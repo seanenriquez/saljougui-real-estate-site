@@ -9,7 +9,7 @@
 									<div class="caption sft" data-x="10" data-y="380" data-speed="2500" data-start="1000" data-easing="easeInBack">
 										<!-- slide 2 caption 1 -->
 										<p class="cap-1"><?= $this->model->getStreetAddress()?><br />
-											<span class="price"><?= $this->model->getPrice()?></span>
+											<?= $this->model->getPrice()?>
 										</p>
 									</div>
 								</li>
