@@ -1,15 +1,16 @@
         
         
         <!-- <div class="item <?=$this->model->isFirst()?"active":"" ?>" style=" background-position: center center;background-image: url(<?= $this->model->getFrontPicFn()?>);"></div>  -->
+                            
+        					<div class="ls-slide<?= $this->model->rowidx ?>" data-ls="transition2d:1;timeshift:-1000; transition2d: 9;">
 
-        					<li class="slide<?= $this->model->rowidx ?>" data-transition="slotzoom-horizontal" data-slotamount="5"  data-masterspeed="300">
-
-									<img alt="" src="<?= $this->model->getFrontPicFn()?>" />
-									<!-- slide 2 caption 1 parameters -->
-									<div class="caption sft" data-x="10" data-y="380" data-speed="2500" data-start="1000" data-easing="easeInBack">
-										<!-- slide 2 caption 1 -->
-										<p class="cap-1"><?= $this->model->getStreetAddress()?><br />
-											<?= $this->model->getPrice()?>
-										</p>
-									</div>
-								</li>
+									    <img  alt="Slide background" class="ls-bg" src="<?= $this->model->getFrontPicFn()?>" />
+									    <!-- slide 2 caption 1 parameters -->
+                                             <h3 class="ls-l" style="padding: 8px;color:white ;background-color:rgba(12,12,12,0.6);  top: 80%; left: 50%; font-size: 20px; text-align:center;"><?= $this->model->getStreetAddress()?><br>
+                                             <?= $this->model->getPrice()?>
+                                             </h3>
+                                                                                               
+                                     
+									   
+								</div>
+                               

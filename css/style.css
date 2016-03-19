@@ -2460,6 +2460,10 @@ form {
     margin: 10px 0 40px;
 }
 .featured-listings .featured-item {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(82,82,82,1);
+-moz-box-shadow: 0px 0px 10px 1px rgba(82,82,82,1);
+box-shadow: 0px 0px 10px 1px rgba(82,82,82,1);
+    
     margin-bottom: 45px;
 }
 .featured-listings .featured-item .img-responsive {

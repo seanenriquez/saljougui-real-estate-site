@@ -30,6 +30,10 @@
 
 		<!-- /end styles -->        
 
+        <!-- LayerSlider stylesheet -->
+            <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
+ 
+
 
 	</head>
 

@@ -125,7 +125,8 @@ class dbRets extends PDOConfig {
   }
 
   public function getFrontPicFn() {
-    return "/mls/photos/".$this->row['sysid']."-1.jpg";
+   // return "/mls/photos/".$this->row['sysid']."-1.jpg";
+    return "http://dev.webwarephpdevelopment.com/mls/photos/".$this->row['sysid']."-1.jpg";    
   }
 
 
@@ -574,7 +575,25 @@ class dbRetsModel extends dbRets {
     return($row['content']);
 
   }
+
   
+  public function getFeaturedListingProps() {
+    
+    $sql = 'SELECT * from master_rets_table 
+            WHERE listing_price > 700000 AND listing_price > 1400000 ORDER BY listing_entry_timestamp DESC LIMIT 9';
+                                     
+    $this->stm = $this->prepare($sql);
+
+    $this->stm->execute();
+    $this->rows= $this->stm->fetchAll(PDO::FETCH_ASSOC);
+    $this->count = $this->stm->rowCount();
+    $this->rowIdx = 0;
+
+    // set row to first
+    $this->row=$this->rows[$this->rowIdx++];
+
+  }
+   
   public function getCarouselProps() {
     
     $sql = 'SELECT * from master_rets_table 

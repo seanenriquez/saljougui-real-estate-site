@@ -15,7 +15,6 @@ $page_keys = "real estate, for sale, for rent";
 $homepage = true;
   
 include('includes/header.php');
-   
 
 ?>
 
@@ -96,22 +95,24 @@ include('includes/header.php');
 						</div>
 					</div>
 				</div>
-
-				<div id="wrapper">
+                
+				
 
 					<!-- begin slider -->
-					<div class="fullwidthbanner-container" id="main_slider">
-						<div class="fullwidthbanner">
-							<ul>
-								<?php
+					<div id="layerslider" class="center-block"  style="width: 800px; height: 400px; max-height:400px; max-width: 800px">
+                              
+                            <!-- slide contents goes here -->
+                                       
+                                <?php
 
-				            $controller = new retsController('carousel'); // register controller with page action and parameter
-				            $controller->invoke();                            // invokde controller to get view
-				            
-								?> 
-							</ul>
-						</div>
-					</div>
+                           $controller = new retsController('carousel'); // register controller with page action and parameter
+                           $controller->invoke();                            // invokde controller to get view
+                            
+                                ?>                    
+                              
+                    </div>
+				  
+					
 					<!-- /end slider -->
 
 					<div class="container">
@@ -163,256 +164,13 @@ include('includes/header.php');
 										</div>
 										<!-- row #1 featured listings summary block --> 
 										<div class="row">
-											<div class="col-md-4 col-sm-4">
-												<!-- featured item  house #1 summary info -->
-												<div class="featured-item">
-													<!-- house #1 image -->
-													<img class="img-responsive" src="img/house1.jpg" alt="">
-													<!-- house #1 headline -->
-													<div class="heading styler_bg_color">POOL & SPA!</div>
-													<!-- house #1 summary content -->
-													<div class="content">
-														<!-- house #1 summary content: address -->
-														<address>
-															8950 Highland Crest<br />
-															Dallas, TX 75208
-														</address>
-														<!-- house #1 summary content: characteristics -->
-														<div class="characteristics">
-															<ul>
-																<li>3,100 s/f</li>
-																<li>4 Bedrooms</li>
-																<li>2.5 Baths</li>
-															</ul>
-														</div>
-														<div class="item-info">
-															<div class="row">
-																<div class="col-md-6 col-sm-6">
-																	<!-- house #1 summary content: price -->
-																	<div class="price styler_color">
-																		$689,000
-																	</div>
-																</div>
-																<div class="col-md-6 col-sm-6">
-																	<!-- link to house #1 featured item detail -->
-																	<div class="more">
-																		<a id="item1" href="javascript:void(0)" class="styler_color property-link">View Details</a>
-																	</div>
-																</div>
-															</div>                                                            
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-4 col-sm-4">
-												<!-- featured item  house #2 summary info -->
-												<div class="featured-item">
-													<!-- house #2 image -->
-													<img class="img-responsive" src="img/house2.jpg" alt="">
-													<!-- house #2 headline -->
-													<div class="heading styler_bg_color">NEW CONSTRUCTION</div>
-													<!-- house #2 summary content -->
-													<div class="content">
-														<!-- house #2 summary content: address -->
-														<address>
-															6231 Topsfield Lane<br />
-															Dallas, TX 75233
-														</address>
-														<!-- house #2 summary content: characteristics -->
-														<div class="characteristics">
-															<ul>
-																<li>2,750 s/f</li>
-																<li>4 Bedrooms</li>
-																<li>2.5 Baths</li>
-															</ul>
-														</div>
-														<div class="item-info">
-															<div class="row">
-																<div class="col-md-6 col-sm-6">
-																	<!-- house #2 summary content: price -->
-																	<div class="price styler_color">
-																		$535,000
-																	</div>
-																</div>
-																<div class="col-md-6 col-sm-6">
-																	<!-- link to house #2 featured item detail -->
-																	<div class="more">
-																		<a id="item2" href="javascript:void(0)" class="styler_color property-link">View Details</a>
-																	</div>
-																</div>
-															</div>                                                            
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-4 col-sm-4">
-												<!-- featured item  house #3 summary info -->
-												<div class="featured-item">
-													<!-- house #3 image -->
-													<img class="img-responsive" src="img/house10.jpg" alt="">
-													<!-- house #3 headline -->
-													<div class="heading styler_bg_color">CONTRACT PENDING</div>
-													<!-- house #3 summary content -->
-													<div class="content">
-														<!-- house #3 summary content: address -->
-														<address>
-															2311 Mira Vista<br />
-															Dallas, TX 75251
-														</address>
-														<!-- house #3 summary content: characteristics -->
-														<div class="characteristics">
-															<ul>
-																<li>3,800 s/f</li>
-																<li>5 Bedrooms</li>
-																<li>3 Baths</li>
-															</ul>
-														</div>
-														<div class="item-info">
-															<div class="row">
-																<div class="col-md-6 col-sm-6">
-																	<!-- house #3 summary content: price -->
-																	<div class="price styler_color">
-																		$819,000
-																	</div>
-																</div>
-																<div class="col-md-6 col-sm-6">
-																	<!-- link to house #3 featured item detail -->
-																	<div class="more">
-																		<a id="item3" href="javascript:void(0)" class="styler_color property-link">View Details</a>
-																	</div>
-																</div>
-															</div>                                                            
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- row #2 featured listings summary block --> 
-										<div class="row">
-											<div class="col-md-4 col-sm-4">
-												<!-- featured item  house #4 summary info -->
-												<div class="featured-item">
-													<!-- house #4 image -->
-													<img class="img-responsive" src="img/house4.jpg" alt="">
-													<!-- house #4 headline -->
-													<div class="heading styler_bg_color">BEAUTIFUL COTTAGE</div>
-													<!-- house #4 summary content -->
-													<div class="content">
-														<!-- house #4 summary content: address -->
-														<address>
-															6800 Sherburne Drive<br />
-															Dallas, TX 75243
-														</address>
-														<!-- house #4 summary content: characteristics -->
-														<div class="characteristics">
-															<ul>
-																<li>2,750 s/f</li>
-																<li>4 Bedrooms</li>
-																<li>2.5 Baths</li>
-															</ul>
-														</div>
-														<div class="item-info">
-															<div class="row">
-																<div class="col-md-6 col-sm-6">
-																	<!-- house #4 summary content: price -->
-																	<div class="price styler_color">
-																		$379,500
-																	</div>
-																</div>
-																<div class="col-md-6 col-sm-6">
-																	<!-- link to house #4 featured item detail -->
-																	<div class="more">
-																		<a id="item4" href="javascript:void(0)" class="styler_color property-link">View Details</a>
-																	</div>
-																</div>
-															</div>                                                            
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-4 col-sm-4">
-												<!-- featured item  house #5 summary info -->
-												<div class="featured-item">
-													<!-- house #5 image -->
-													<img class="img-responsive" src="img/house7.jpg" alt="">
-													<!-- house #5 headline -->
-													<div class="heading styler_bg_color">JUST REDUCED!</div>
-													<!-- house #5 summary content -->
-													<div class="content">
-														<!-- house #5 summary content: address -->
-														<address>
-															6830 Hilltop Lane<br />
-															Dallas, TX 75280
-														</address>
-														<!-- house #5 summary content: characteristics -->
-														<div class="characteristics">
-															<ul>
-																<li>2,900 s/f</li>
-																<li>4 Bedrooms</li>
-																<li>2 Baths</li>
-															</ul>
-														</div>
-														<div class="item-info">
-															<div class="row">
-																<div class="col-md-6 col-sm-6">
-																	<!-- house #5 summary content: price -->
-																	<div class="price styler_color">
-																		$450,000
-																	</div>
-																</div>
-																<div class="col-md-6 col-sm-6">
-																	<!-- link to house #5 featured item detail -->
-																	<div class="more">
-																		<a id="item5" href="javascript:void(0)" class="styler_color property-link">View Details</a>
-																	</div>
-																</div>
-															</div>                                                            
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-4 col-sm-4">
-												<!-- featured item  house #6 summary info -->
-												<div class="featured-item">
-													<!-- house #6 image -->
-													<img class="img-responsive" src="img/house9.jpg" alt="">
-													<!-- house #6 headline -->
-													<div class="heading styler_bg_color">NEW LISTING</div>
-													<!-- house #6 summary content -->
-													<div class="content">
-														<!-- house #6 summary content: address -->
-														<address>
-															4433 Colfax Circle<br />
-															Dallas, TX 75231
-														</address>
-														<!-- house #6 summary content: characteristics -->
-														<div class="characteristics">
-															<ul>
-																<li>2,400 s/f</li>
-																<li>3 Bedrooms</li>
-																<li>2.5 Baths</li>
-															</ul>
-														</div>
-														<div class="item-info">
-															<div class="row">
-																<div class="col-md-6 col-sm-6">
-																	<!-- house #6 summary content: price -->
-																	<div class="price styler_color">
-																		$519,500
-																	</div>
-																</div>
-																<div class="col-md-6 col-sm-6">
-																	<!-- link to house #6 featured item detail -->
-																	<div class="more">
-																		<a id="item6" href="javascript:void(0)" class="styler_color property-link">View Details</a>
-																	</div>
-																</div>
-															</div>                                                            
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+                                        <?php
+
+                                            $controller = new retsController('featured-listing'); // register controller with page action and parameter
+                                            $controller->invoke();                            // invokde controller to get view
+                                    
+                                        ?> 
+                                        </div>
 									</div>
 									<!-- /end featured listings summary block -->
 
@@ -3724,17 +3482,18 @@ include('includes/header.php');
 								</div>
 								</div>
 								-->
-								<!-- begin resources -->                                
+								<!--
+								<!-- begin resources - ->                                
 								<div class="resources clearfix">
 									<div id="resources_marker"></div>
-									<!-- edit the resources heading here -->
+									<!-- edit the resources heading here - ->
 									<h2 class="block-title styler_color">
 										MOVING RESOURCES
 									</h2>
 									<div class="block-separator clearfix"></div>
 									<div class="resources-wrapper">
 										<div class="col-md-4 col-sm-4">
-											<!-- edit the resources tabs here -->
+											<!-- edit the resources tabs here - ->
 											<ul class="nav nav-tabs">
 												<li class="styler_parent_active active"><a class="styler_bg_color styler_active_color" href="#movers" data-toggle="tab">Movers</a></li>
 												<li class="styler_parent_active"><a class="styler_bg_color styler_active_color" href="#contractors" data-toggle="tab">Contractors</a></li>
@@ -3744,7 +3503,7 @@ include('includes/header.php');
 										</div>
 										<div class="col-md-8 col-sm-8">
 											<div class="tab-content">
-												<!-- edit tab #1 (movers) content here -->
+												<!- - edit tab #1 (movers) content here - ->
 												<div class="tab-pane active" id="movers">
 													<div class="top-sector">
 														<div class="title">
@@ -3769,7 +3528,7 @@ include('includes/header.php');
 														<a class="lnk styler_color" href="#">www.umcservices.com</a>                                                
 													</div>
 												</div>
-												<!-- edit tab #2 (contractors) content here -->
+												<!- - edit tab #2 (contractors) content here - ->
 												<div class="tab-pane" id="contractors">
 													<div class="top-sector">
 														<div class="title">
@@ -3794,7 +3553,7 @@ include('includes/header.php');
 														<a class="lnk styler_color" href="#">www.stevensplumbers.com</a>                                                
 													</div>
 												</div>
-												<!-- edit tab #3 (utilities) content here -->
+												<!- - edit tab #3 (utilities) content here - ->
 												<div class="tab-pane" id="utilities">
 													<div class="top-sector">
 														<div class="title">
@@ -3819,7 +3578,7 @@ include('includes/header.php');
 														<a class="lnk styler_color" href="#">www.twc.com</a>                                                
 													</div>
 												</div>
-												<!-- edit tab #4 (lenders) content here -->
+												<!- - edit tab #4 (lenders) content here - ->
 												<div class="tab-pane" id="lenders">
 													<div class="top-sector">
 														<div class="title">
@@ -3849,6 +3608,7 @@ include('includes/header.php');
 										</div>
 									</div>
 								</div>
+								 -->
 								<!-- /end resources -->
 								<!-- begin contact form -->
 								<div id="contact_marker"></div>
@@ -3872,7 +3632,7 @@ include('includes/header.php');
 												<div class="form-group">
 													<textarea id="textarea" class="form-control" rows="3"></textarea>
 												</div>
-												<div class="g-recaptcha pull-right" data-sitekey="6LeZqxoTAAAAAGUlFHVPwdhTiKFaNgtiH8rTVZQn"></div>
+												<div class="g-recaptcha " data-sitekey="6LeZqxoTAAAAAGUlFHVPwdhTiKFaNgtiH8rTVZQn" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
 												<!-- turn captcha on here by removing this comment
 
 												<?php
@@ -4326,7 +4086,7 @@ include('includes/header.php');
 							<!-- begin newsletter form area -->
 							<div class="text text-center">
 								<div class="header ">NEWSLETTER</div>
-								<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+								<p>Enter your e-mail and subscribe to our newsletter.</p>
 							</div>
 							<div class="subscribe center-block">
 								<form action="/" method="post">
@@ -4404,8 +4164,35 @@ include('includes/header.php');
 		<script type="text/javascript" src="js/function.js"></script>
 		<script type="text/javascript" src="js/mail_validation.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-		<script type="text/javascript" src="js/jquery.royalslider.min.js"></script>   
+		<script type="text/javascript" src="js/jquery.royalslider.min.js"></script>
+        <!-- External libraries: jQuery & GreenSock -->
+        <script src="/layerslider/js/jquery.js" type="text/javascript"></script>
+        <script src="/layerslider/js/greensock.js" type="text/javascript"></script>
+         
+        <!-- LayerSlider script files -->
+        <script src="/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+        <script src="/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+                                  
+        <script type="text/javascript">
+ 
+                    // Running the code when the document is ready
+                    $(document).ready(function(){
+                 
+                        // Calling LayerSlider on the target element
+                        $('#layerslider').layerSlider({
+                            
+                            skin:'lightskin'
+                            
+                            // Slider options goes here,
+                            // please check the 'List of slider options' section in the documentation
+                        });
+                    });
+ 
+        </script>
+        
+        
 		<!-- /end scripting -->
 
 	</body>
+    
 </html>

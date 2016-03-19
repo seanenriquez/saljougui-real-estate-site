@@ -88,6 +88,23 @@ class retsController {
 				} while ($this->model->next());
 
 				break;
+                
+                // site landing page...get random properties for display
+            case 'featured-listing':
+
+                $this->model = new dbRetsModel();
+
+                //  get data...
+                $this->model->getFeaturedListingProps();
+
+                // process view
+
+                do {
+                    require ('mls/view/featured-listing.view.php');
+                } while ($this->model->next());
+
+                break;
+
 
 				// site landing page...get random properties for display
 			case 'index-random':
