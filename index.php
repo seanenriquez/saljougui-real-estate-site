@@ -48,8 +48,8 @@ include('includes/header.php');
 							<div class="container">
 								<div class="row">
 									<div class="col-md-4 col-sm-4 clearfix">
-									<div class="contacts_block">
-											<!-- edit header address and phone number here -->
+									<!--<div class="contacts_block">
+											 edit header address and phone number here 
 											<div class="phone styler_color">
 
 												<div>
@@ -61,7 +61,7 @@ include('includes/header.php');
 											<div class="clear"></div>
 										</div>
 										<!-- insert header logo here -->
-									<!--	<a href="#" class="logo"><img class="img-responsive center-block nav-logo" src="img/logo_color.png" alt="" /></a>  -->
+									<a href="#" class="logo"><img class="img-responsive center-block nav-logo" src="img/logo_color.png" alt="" /></a>
 									</div>
 									<div class="col-md-8 col-sm-8">
 
@@ -78,10 +78,10 @@ include('includes/header.php');
 													<ul class="nav nav-pills">
 														<!-- edit navigation menu -->
 														<li class="styler_parent_active active"><a href="#home_anchor" class="styler_hover_bg_color styler_active_bg_color">HOME</a></li>
-														<li class="styler_parent_active"><a href="#about-realtor_anchor" class="styler_hover_bg_color styler_active_bg_color">ABOUT</a></li>
 														<li class="styler_parent_active"><a href="#featured-listings_anchor" class="styler_hover_bg_color styler_active_bg_color">FEATURED LISTINGS</a></li>
-														<li class="styler_parent_active"><a href="#resources_anchor" class="styler_hover_bg_color styler_active_bg_color">RESOURCES</a></li>
+														<li class="styler_parent_active"><a href="#search_anchor" class="styler_hover_bg_color styler_active_bg_color">SEARCH</a></li>
 														<li class="styler_parent_active"><a href="#contact_anchor" class="styler_hover_bg_color styler_active_bg_color">CONTACT US</a></li>
+														<li class="styler_parent_active"><a href="#about-realtor_anchor" class="styler_hover_bg_color styler_active_bg_color">ABOUT</a></li>
 														<!--pop up nav start-->     
 														<!-- /pop up nav -->
 														<!-- /end navigation menu -->
@@ -124,7 +124,7 @@ include('includes/header.php');
 										<div class="promo-block">
 											<!-- edit real estate agent's promo block heading here -->
 											<h2 class="block-title styler_color">
-												Discover The Difference 
+												Discover Melanie's Difference...
 											</h2>
 											<!-- promo real estate agent's block line divider here -->
 											<div class="block-separator clearfix"></div>                                            
@@ -2360,6 +2360,7 @@ include('includes/header.php');
 								====================================================================================================
 								====================================================================================================
 								==================================================================================================-->
+								<div id="search_marker"></div>
 								<div class="container">
 									<div class="promo-block">
 										<h2 class="block-title styler_color">Advanced Las Vegas MLS Search</h2>
