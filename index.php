@@ -123,7 +123,8 @@ include('includes/header.php');
 									<div class="col-sm-12 col-ms-12">                                         
 										<div class="promo-block">
 											<!-- edit real estate agent's promo block heading here -->
-											<h2 class="block-title styler_color">
+                                            <br>
+											<h2 class="block-title styler_color" data-scroll-reveal="enter left and move 50px over 1.8s" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
 												Discover Melanie's Difference...
 											</h2>
 											<!-- promo real estate agent's block line divider here -->
@@ -2371,8 +2372,8 @@ include('includes/header.php');
 											<div class="row">
 
 												<div name="searchform" class="col-xs-12 col-md-12 col-lg-8">
-													<div class="content-box">
-														<h2 class="blue-plate">Las Vegas Real Estate Search - Nevada</h2>
+													<div class="content-box shadow-back">
+														<p class="blue-plate">Las Vegas Real Estate Search - Nevada</p>
 														<div class="wrap">
 															<form id="searchform" class="form-horizontal" name="form" method="post" action="/search_result.php">
 																<input type="hidden" value="1" name="dosearch">
@@ -3055,8 +3056,8 @@ include('includes/header.php');
 																	</div>
 																</div>
 
-																<button class="btn btn-sm styler_bg_color btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="false" aria-controls="collapseExample">
-																	More Search Options <i class="fa fa-chevron-up"></i>
+																<button class="btn btn-gen btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="false" aria-controls="collapseExample">
+																	More Search Options <i class="fa fa-chevron-down"></i>
 																</button>
 
 																<div class="clear"></div>
@@ -3331,10 +3332,11 @@ include('includes/header.php');
 
 																<hr class="dotted">
 
-																<div class="form-group " style="margin-bottom: 0;">
-																	<div class="col-xs-12 ">
-																		<button type="submit" class="btn styler_bg_color btn-block-sm pull-right">Search MLS</button>
-																		<button type="reset" class="btn btn-beige btn-block-sm pull-right">Reset Form</button>
+																<div class="form-group " >
+																	<div class="col-xs-12 ">                 
+                                                                    
+																		<button type="submit" class="btn btn-gen btn-block-sm pull-right">Search</button>                         
+																		<button type="reset" class="btn btn-gen btn-block-sm pull-right">Reset Form</button> 
 																		
 																	</div>
 
@@ -3343,13 +3345,42 @@ include('includes/header.php');
 															</form>
 														</div>
 													</div>
-												</div> 
+												</div>     
+                                                
+                                                
 
 												<div class="col-xs-12 col-md-12 col-lg-4">
+                                                
+                                                
 													<div class="row">
+                                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
+                                                            <div class="content-box shadow-back equal-1 equal-2" style="height: auto;">
+                                                                <p class="blue-plate">MLS Number</p>
+                                                                <div class="wrap">
+                                                                    <form action="/search_result.php" class="form-horizontal" method="POST" id="bymlsform">
+                                                                        <input type="hidden" value="1" name="dosearch">
+                                                                        <input type="hidden" value="mls" name="searchtype">
+                                                                        <div class="form-group">
+                                                                            <label class="col-xs-12" style="text-align: left;">MLS Number:</label>
+                                                                            <div class="col-xs-12">
+                                                                                <input class="form-control" name="mlsnumber" size="6" maxlength="6">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <hr class="dotted">
+
+                                                                        <div class="form-group" >
+                                                                            <div class="col-xs-12">
+                                                                                <button type="submit" class="btn btn-gen styler_bg_color btn-block-sm pull-right">Search MLS#</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 														<div class="col-xs-12 col-sm-12 col-md-4 col-lg-12">
-															<div class="content-box equal-1" style="height: auto;"> 
-																<h2 class="blue-plate">Search by Street</h2>
+															<div class="content-box shadow-back equal-1" style="height: auto;"> 
+																<p class="blue-plate">Search by Street</p>
 																<div class="wrap">
 																	<form action="/search_result.php" method="POST" class="form-horizontal" id="bymlsform">
 																		<input type="hidden" value="1" name="dosearch">
@@ -3388,9 +3419,9 @@ include('includes/header.php');
 
 																		<hr class="dotted">
 
-																		<div class="form-group" style="margin-bottom: 0;">
+																		<div class="form-group" >
 																			<div class="col-xs-12">
-																				<button type="submit" class="btn styler_bg_color btn-block-sm pull-right">Search Street</button>
+																				<button type="submit" class="btn btn-gen btn-block-sm pull-right">Search Street</button>
 																			</div>
 																		</div>
 																	</form>
@@ -3398,47 +3429,28 @@ include('includes/header.php');
 															</div>
 														</div>
 
-														<div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
-															<div class="content-box equal-1 equal-2" style="height: auto;">
-																<h2 class="blue-plate">MLS Number</h2>
-																<div class="wrap">
-																	<form action="/search_result.php" class="form-horizontal" method="POST" id="bymlsform">
-																		<input type="hidden" value="1" name="dosearch">
-																		<input type="hidden" value="mls" name="searchtype">
-																		<div class="form-group">
-																			<label class="col-xs-12" style="text-align: left;">MLS Number:</label>
-																			<div class="col-xs-12">
-																				<input class="form-control" name="mlsnumber" size="6" maxlength="6">
-																			</div>
-																		</div>
-
-																		<hr class="dotted">
-
-																		<div class="form-group" style="margin-bottom: 0;">
-																			<div class="col-xs-12">
-																				<button type="submit" class="btn styler_bg_color btn-block-sm pull-right">Search MLS#</button>
-																			</div>
-																		</div>
-																	</form>
-																</div>
-															</div>
-														</div>
+														
 
 														<div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
-															<div class="content-box equal-1 equal-2" style="height: auto;">
-																<h2 class="blue-plate">Quick Search</h2>
+															<div class="content-box shadow-back equal-1 equal-2" style="height: auto;">
+																<p class="blue-plate">Quick Search</p>
 
 																<div class="wrap">
 																	<form action="/new-homes.php">
 																		<div class="form-group">
-																			<button class="btn btn-sm styler_bg_color btn-block" type="submit">New Homes</button>
+																			<button class="btn  btn-gen btn-block" type="submit">New Homes</button>
 																		</div>
 																	</form>
 																	<form action="/new-condos.php">
 																		<div class="form-group" style="margin-bottom: 11px;">
-																			<button class="btn btn-sm btn-beige btn-block" type="submit">New Condos</button>
+																			<button class="btn btn-gen  btn-block" type="submit">New Condos</button>
 																		</div>
 																	</form>
+                                                                    <form action="/new-hirise.php">
+                                                                        <div class="form-group" style="margin-bottom: 11px;">
+                                                                            <button class="btn btn-gen   btn-block" type="submit">New Hi-Rise</button>
+                                                                        </div>
+                                                                    </form>
 																</div>
 															</div>
 														</div>
@@ -3715,9 +3727,9 @@ include('includes/header.php');
 								<div id="quick-search" class="container">
 									<div class="row">
 										<div class="col-xs-12 text-center">
-											<h2 class="blue-plate">Quick MLS
+											<div class="blue-plate">Quick MLS
 												<nobr>City Search</nobr>
-											</h2>
+											</div>
 											<p>Click on a city/town area below to expand the quick search options.<br class="hidden-sm hidden-xs">
 												Search MLS by homes, town homes, condos, or Hi-Rise properties with a couple easy clicks.</p>
 											<br>
@@ -3725,7 +3737,7 @@ include('includes/header.php');
 									</div>
 									<div class="row">
 										<div class="col-lg-3 col-md-6 col-sm-12">
-											<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+											<div class="panel-group shadow-back" id="accordion1" role="tablist" aria-multiselectable="true">
 												<div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="heading1">
 														<h4 class="panel-title">
@@ -3807,7 +3819,7 @@ include('includes/header.php');
 										</div>
 
 										<div class="col-lg-3 col-md-6 col-sm-12">
-											<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+											<div class="panel-group shadow-back" id="accordion2" role="tablist" aria-multiselectable="true">
 												<div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="heading6">
 														<h4 class="panel-title">
@@ -3889,7 +3901,7 @@ include('includes/header.php');
 										</div>
 										<div class="clearfix visible-md"></div>
 										<div class="col-lg-3 col-md-6 col-sm-12">
-											<div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+											<div class="panel-group shadow-back" id="accordion3" role="tablist" aria-multiselectable="true">
 												<div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="heading11">
 														<h4 class="panel-title">
@@ -3970,7 +3982,7 @@ include('includes/header.php');
 											</div>
 										</div>
 										<div class="col-lg-3 col-md-6 col-sm-12">
-											<div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+											<div class="panel-group shadow-back" id="accordion4" role="tablist" aria-multiselectable="true">
 												<div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="heading16">
 														<h4 class="panel-title">
@@ -4159,7 +4171,7 @@ include('includes/header.php');
 		<script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 		<script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
         <!-- Scroll Reveal js -->
-        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="js/scrollreveal.js"></script>
 
 		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
@@ -4169,7 +4181,7 @@ include('includes/header.php');
 		<script type="text/javascript" src="js/mail_validation.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="js/jquery.royalslider.min.js"></script>        
-        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+        
 
             <!-- External libraries: jQuery & GreenSock -->
     

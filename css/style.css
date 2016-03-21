@@ -2460,10 +2460,6 @@ form {
     margin: 10px 0 40px;
 }
 .featured-listings .featured-item {
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(82,82,82,1);
--moz-box-shadow: 0px 0px 10px 1px rgba(82,82,82,1);
-box-shadow: 0px 0px 10px 1px rgba(82,82,82,1);
-    
     margin-bottom: 45px;
 }
 .featured-listings .featured-item .img-responsive {
@@ -2834,16 +2830,15 @@ width: 40%;
     }
 
 .from-to span{
-    color:#fff;
-    width: 10%;
-    margin: 0px 10px 0px 10px;
-   padding: 5px;
-   border: 1px solid #957BB6;
+   color:#fff;
+   width: 10%;
+   margin: 0px 10px 0px 10px;
+   padding: 5px;    
    border-radius: 3px;
    font-size: 14px;
    text-transform: capitalize;
    text-align: center;
-   background-color: #C6B1D5;
+   background-color:#6CBECC;
    display: inline-block;
 }
 
@@ -2854,19 +2849,20 @@ width: 40%;
 }
 
 .blue-plate {
-    background: ;
-    color:#957BB6;
+    margin-bottom:15px;
     text-align: center;
-    border-radius: 3px;
-    margin:10px; 
+    font-weight: 800;
+    padding: 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #6CBECC;
 
 }
 
 .content-box {
     margin: 5px;
-     border-radius: 5px;
-     background-color: #ECE7EF;
-     padding: 4px;
+     background-color: #fff;
 
 }
 
@@ -2890,8 +2886,8 @@ width: 40%;
 }
 
 #quick-search .panel-heading{
-    border: 1px solid #5F3B88;
-    background-color:#957BB6;
+    border: 1px solid #0A7C90;
+    background-color:#6CBECC;
     color: #fff;
     margin-bottom: 0px;
     border-radius: 0px;
@@ -2927,4 +2923,28 @@ width: 40%;
 
  padding: 10% 0 10% 0; 
 
+}
+
+.shadow-back {
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(82,82,82,0.7);
+-moz-box-shadow: 0px 0px 4px 1px rgba(82,82,82,0.7);
+box-shadow: 0px 0px 4px 1px rgba(82,82,82,0.7);
+}
+
+.btn-gen {
+    background-color:#fff;
+    border:1px solid #6CBECC;
+    margin-bottom:10px;
+}
+
+.btn-gen:hover {
+    color:#fff;
+    background-color: #6CBECC;
+    border:1px solid #6CBECC;
+    margin-bottom:10px;
+}
+                 
+.btn-block {
+    margin:0;
+    border-radius:0;
 }
