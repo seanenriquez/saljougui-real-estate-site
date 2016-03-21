@@ -4158,6 +4158,9 @@ include('includes/header.php');
 		<!-- scripting (at the bottom for faster loading) -->
 		<script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 		<script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+        <!-- Scroll Reveal js -->
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+
 		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 		<script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
@@ -4165,17 +4168,17 @@ include('includes/header.php');
 		<script type="text/javascript" src="js/function.js"></script>
 		<script type="text/javascript" src="js/mail_validation.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-		<script type="text/javascript" src="js/jquery.royalslider.min.js"></script>
-        <!-- External libraries: jQuery & GreenSock -->
+		<script type="text/javascript" src="js/jquery.royalslider.min.js"></script>        
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+
+            <!-- External libraries: jQuery & GreenSock -->
+    
         <script src="/layerslider/js/jquery.js" type="text/javascript"></script>
         <script src="/layerslider/js/greensock.js" type="text/javascript"></script>
-         
-        <!-- LayerSlider script files -->
         <script src="/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
         <script src="/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-                                  
+                    <!-- Layer Slider JS controller (view documentation for refrence) -->
         <script type="text/javascript">
- 
                     // Running the code when the document is ready
                     $(document).ready(function(){
                  
@@ -4188,7 +4191,6 @@ include('includes/header.php');
                             // please check the 'List of slider options' section in the documentation
                         });
                     });
- 
         </script>
         
         

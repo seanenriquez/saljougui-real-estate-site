@@ -1,8 +1,8 @@
-                                            <div class="col-md-4 col-sm-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
                                                 <!-- featured item  house #1 summary info -->
                                                 <div class="featured-item">
                                                     <!-- house #1 image -->
-                                                    <img class="img-responsive" src="<?= $this->model->getFrontPicFn()?>" alt="">
+                                                    <img class="img-responsive" style="" src="<?= $this->model->getFrontPicFn()?>" alt="">
                                                     <!-- house #1 headline -->                        
                                                     <div class="heading styler_bg_color">POOL             & SPA!</div>
                                                     <!-- house #1 summary content -->
@@ -10,7 +10,7 @@
                                                         <!-- house #1 summary content: address -->
                                                         <address>
                                                             <?= $this->model->getStreetAddress()?><br />
-                                                            <?= $this->model->getCityStZip()?>
+                                                            <?= $this->model->getCityStZip()?>   
                                                         </address>
                                                         <!-- house #1 summary content: characteristics -->
                                                         <div class="characteristics">
