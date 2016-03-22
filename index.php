@@ -124,25 +124,25 @@ include('includes/header.php');
 										<div class="promo-block">
 											<!-- edit real estate agent's promo block heading here -->
                                             <br>
-											<h2 class="block-title styler_color" data-scroll-reveal="enter left and move 50px over 1.8s" data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
+											    <h2 class="block-title styler_color sr-header"  >
 												Discover Melanie's Difference...
 											</h2>
 											<!-- promo real estate agent's block line divider here -->
 											<div class="block-separator clearfix"></div>                                            
 											<div class="col-sm-4 col-ms-4">
 												<!-- edit real estate agent's promo block image here -->
-												<img class="img-responsive block-img" src="img/mel_crop1.png" alt="" />
+												<img class="img-responsive block-img ease-right" src="img/mel_crop1.png" alt="" />
 											</div>
 											<div class="col-sm-8 col-ms-8">
 												<!-- real estate agent's promo block text starts here -->
 												<div class="promo-text">
 													<!-- edit real estate agent's promo block sub-heading here -->
-													<h3>An Experienced Real Estate Pro You Can Trust </h3>
+													<h3 class="ease-left ">An Experienced Real Estate Pro You Can Trust </h3>
 													<br/>
 													<!-- edit real estate agent's promo block paragraph text here -->
-													<p>I am dedicated to matching prospective buyers with a house that meets their needs and that they will truly love! I believe in listening to my clients and providing them with listings that are within their price range and matching them with homes that exceed their expectations.</p>
-													<p>I have a diverse skill set with a solid natural sciences and business educational background. I hold a BA in Biology from Sacramento State University and an MBA Marketing from Golden Gate University, San Francisco. <ipsum class=""></ipsum></p>
-													<img style="float: left;" src="img/realtor-signature.jpg" alt="" />
+													<p class="ease-left">I am dedicated to matching prospective buyers with a house that meets their needs and that they will truly love! I believe in listening to my clients and providing them with listings that are within their price range and matching them with homes that exceed their expectations.</p>
+													<p class="ease-left">I have a diverse skill set with a solid natural sciences and business educational background. I hold a BA in Biology from Sacramento State University and an MBA Marketing from Golden Gate University, San Francisco. <ipsum class=""></ipsum></p>
+													<img class="ease-left" style="float: left;" src="img/realtor-signature.jpg" alt="" />
 												</div>
 											</div>
 
@@ -158,7 +158,7 @@ include('includes/header.php');
 										<div class="row">
 											<div class="col-md-12 col-sm-12 col-xs-12">
 												<!-- edit featured listings headline here -->
-												<h2 class="block-title styler_color">
+												<h2 class="block-title styler_color sr-header">
 													Featured Listings
 												</h2>
 											</div>
@@ -2364,7 +2364,7 @@ include('includes/header.php');
 								<div id="search_marker"></div>
 								<div class="container">
 									<div class="promo-block">
-										<h2 class="block-title styler_color">Advanced Las Vegas MLS Search</h2>
+										<h2 class="block-title styler_color sr-header">Advanced Las Vegas MLS Search</h2>
 									</div>	
 									<div class="block-separator clearfix"></div>
 									<div class="row">
@@ -2372,7 +2372,7 @@ include('includes/header.php');
 											<div class="row">
 
 												<div name="searchform" class="col-xs-12 col-md-12 col-lg-8">
-													<div class="content-box shadow-back">
+													<div class="content-box shadow-back  ease-right">
 														<p class="blue-plate">Las Vegas Real Estate Search - Nevada</p>
 														<div class="wrap">
 															<form id="searchform" class="form-horizontal" name="form" method="post" action="/search_result.php">
@@ -3354,7 +3354,7 @@ include('includes/header.php');
                                                 
 													<div class="row">
                                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
-                                                            <div class="content-box shadow-back equal-1 equal-2" style="height: auto;">
+                                                            <div class="content-box shadow-back equal-1 equal-2 ease-left" style="height: auto;">
                                                                 <p class="blue-plate">MLS Number</p>
                                                                 <div class="wrap">
                                                                     <form action="/search_result.php" class="form-horizontal" method="POST" id="bymlsform">
@@ -3379,7 +3379,7 @@ include('includes/header.php');
                                                             </div>
                                                         </div>
 														<div class="col-xs-12 col-sm-12 col-md-4 col-lg-12">
-															<div class="content-box shadow-back equal-1" style="height: auto;"> 
+															<div class="content-box shadow-back equal-1 ease-left" style="height: auto;"> 
 																<p class="blue-plate">Search by Street</p>
 																<div class="wrap">
 																	<form action="/search_result.php" method="POST" class="form-horizontal" id="bymlsform">
@@ -3432,7 +3432,7 @@ include('includes/header.php');
 														
 
 														<div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
-															<div class="content-box shadow-back equal-1 equal-2" style="height: auto;">
+															<div class="content-box shadow-back equal-1 equal-2 ease-left" style="height: auto;">
 																<p class="blue-plate">Quick Search</p>
 
 																<div class="wrap">
@@ -3724,7 +3724,7 @@ include('includes/header.php');
 					<div class="container-fluid break-out">
 						<div class="row">
 							<div class="col-xs-12">
-								<div id="quick-search" class="container">
+								<div id="quick-search" class="container jump-container">
 									<div class="row">
 										<div class="col-xs-12 text-center">
 											<div class="blue-plate">Quick MLS
@@ -3737,7 +3737,7 @@ include('includes/header.php');
 									</div>
 									<div class="row">
 										<div class="col-lg-3 col-md-6 col-sm-12">
-											<div class="panel-group shadow-back" id="accordion1" role="tablist" aria-multiselectable="true">
+											<div class="panel-group shadow-back jump" id="accordion1" role="tablist" aria-multiselectable="true">
 												<div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="heading1">
 														<h4 class="panel-title">
@@ -3819,7 +3819,7 @@ include('includes/header.php');
 										</div>
 
 										<div class="col-lg-3 col-md-6 col-sm-12">
-											<div class="panel-group shadow-back" id="accordion2" role="tablist" aria-multiselectable="true">
+											<div class="panel-group shadow-back jump" id="accordion2" role="tablist" aria-multiselectable="true">
 												<div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="heading6">
 														<h4 class="panel-title">
@@ -3901,7 +3901,7 @@ include('includes/header.php');
 										</div>
 										<div class="clearfix visible-md"></div>
 										<div class="col-lg-3 col-md-6 col-sm-12">
-											<div class="panel-group shadow-back" id="accordion3" role="tablist" aria-multiselectable="true">
+											<div class="panel-group shadow-back jump" id="accordion3" role="tablist" aria-multiselectable="true">
 												<div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="heading11">
 														<h4 class="panel-title">
@@ -3982,7 +3982,7 @@ include('includes/header.php');
 											</div>
 										</div>
 										<div class="col-lg-3 col-md-6 col-sm-12">
-											<div class="panel-group shadow-back" id="accordion4" role="tablist" aria-multiselectable="true">
+											<div class="panel-group shadow-back jump" id="accordion4" role="tablist" aria-multiselectable="true">
 												<div class="panel panel-default">
 													<div class="panel-heading" role="tab" id="heading16">
 														<h4 class="panel-title">
@@ -4078,7 +4078,7 @@ include('includes/header.php');
 		<!-- begin footer -->
 		<div id="footer">
 			<div class="top">
-				<div class="container">
+				<div class="container appear">
 					<div class="row">
 						<div class="col-md-4 col-sm-6 col-xs-6">
 							<!-- edit footer logo here -->
@@ -4157,6 +4157,8 @@ include('includes/header.php');
 				});
 			});
 		</script>
+         <!-- Scroll Reveal js -->
+        
 
 		<!-- start style switcher -->
 		<!-- remove this section when you want to remove the style switcher -->
@@ -4170,8 +4172,7 @@ include('includes/header.php');
 		<!-- scripting (at the bottom for faster loading) -->
 		<script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 		<script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-        <!-- Scroll Reveal js -->
-        <script type="text/javascript" src="js/scrollreveal.js"></script>
+       
 
 		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
@@ -4204,6 +4205,56 @@ include('includes/header.php');
                         });
                     });
         </script>
+        
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+        <script>
+            var up = {
+                     delay    : 200,
+                     distance : '120px',
+                     easing   : 'ease-in-out',
+                     scale    : 1.1,
+                     };
+                     
+            var appear ={
+                    delay      :500,
+                    distance   :"0px",
+                    easting    :"ease-out",
+                    scale      : 1,
+                
+            }
+            var header = {
+                    origin: "bottom",
+                    duration:2000,
+            }
+            
+            var easeLeft = {
+                    origin     :"right",
+                    distance   :"100px",
+                    delay      :1000,
+                    duration   :800,
+                    reset      :"true",
+            }
+            var easeRight = {
+                    origin     :"left",
+                    distance   :"100px",
+                    delay      :1000,
+                    duration   :800,
+                    reset      :"true"
+            } 
+               window.sr = ScrollReveal();
+            sr.reveal(".sr-header", header);
+            sr.reveal(".box-seq", { duration: 2000 }, 200);
+            sr.reveal(".jump", up, 100 );
+            sr.reveal(".jump-container", {delay: +100},up);
+            sr.reveal(".appear", appear);
+            sr.reveal(".ease-left", easeLeft,150);
+            sr.reveal(".ease-right", easeRight,150);
+            
+                
+            
+            
+        </script>
+         <!-- /End Scroll Reveal js -->
         
         
 		<!-- /end scripting -->
