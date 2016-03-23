@@ -23,7 +23,7 @@ include('includes/header.php');
 		<div id="container" class="main">
 			<div id="out">
 				<div id="home_marker"></div>
-				<div id="header">
+				<div id="header" class="sr-down">
 					<div class="inner">
 
 						<!-- turn top notification bar on here by removing this comment
@@ -131,18 +131,18 @@ include('includes/header.php');
 											<div class="block-separator clearfix"></div>                                            
 											<div class="col-sm-4 col-ms-4">
 												<!-- edit real estate agent's promo block image here -->
-												<img class="img-responsive block-img ease-right" src="img/mel_crop1.png" alt="" />
+												<img class="img-responsive block-img ease-right-1" src="img/mel_crop1.png" alt="" />
 											</div>
 											<div class="col-sm-8 col-ms-8">
 												<!-- real estate agent's promo block text starts here -->
 												<div class="promo-text">
 													<!-- edit real estate agent's promo block sub-heading here -->
-													<h3 class="ease-left ">An Experienced Real Estate Pro You Can Trust </h3>
+													<h3 class="ease-left-1 ">An Experienced Real Estate Pro You Can Trust </h3>
 													<br/>
 													<!-- edit real estate agent's promo block paragraph text here -->
-													<p class="ease-left">I am dedicated to matching prospective buyers with a house that meets their needs and that they will truly love! I believe in listening to my clients and providing them with listings that are within their price range and matching them with homes that exceed their expectations.</p>
-													<p class="ease-left">I have a diverse skill set with a solid natural sciences and business educational background. I hold a BA in Biology from Sacramento State University and an MBA Marketing from Golden Gate University, San Francisco. <ipsum class=""></ipsum></p>
-													<img class="ease-left" style="float: left;" src="img/realtor-signature.jpg" alt="" />
+													<p class="ease-left-1">I am dedicated to matching prospective buyers with a house that meets their needs and that they will truly love! I believe in listening to my clients and providing them with listings that are within their price range and matching them with homes that exceed their expectations.</p>
+													<p class="ease-left-1">I have a diverse skill set with a solid natural sciences and business educational background. I hold a BA in Biology from Sacramento State University and an MBA Marketing from Golden Gate University, San Francisco. <ipsum class=""></ipsum></p>
+													<img class="ease-left-1" style="float: left;" src="img/realtor-signature.jpg" alt="" />
 												</div>
 											</div>
 
@@ -209,7 +209,7 @@ include('includes/header.php');
 															<div id="rs_gallery1" class="royalSlider rsDefault">
 																<!-- edit featured property #1 photo #1 here -->
 																<a class="rsImg bugaga" data-rsw="540" data-rsh="374" data-rsBigImg="img/gal1-house1.jpg" href="img/gal1-house1.jpg">Gallery 1: House Image #1<img width="96" height="72" class="rsTmb" src="img/gal1-house1_t.jpg" alt="" /></a>
-																<!-- edit featured property #1 photo #2 here -->
+																<!-- edit featured property #1 photo #2 here -->     
 																<a class="rsImg" data-rsw="540" data-rsh="374" data-rsBigImg="img/gal1-house2.jpg" href="img/gal1-house2.jpg">Gallery 1: House Image #2<img width="96" height="72" class="rsTmb" src="img/gal1-house2_t.jpg" alt="" /></a>
 																<!-- edit featured property #1 photo #3 here -->
 																<a class="rsImg" data-rsw="540" data-rsh="374" data-rsBigImg="img/gal1-house3.jpg" href="img/gal1-house3.jpg">Gallery 1: House Image #3<img width="96" height="72" class="rsTmb" src="img/gal1-house3_t.jpg" alt="" /></a>
@@ -2372,7 +2372,7 @@ include('includes/header.php');
 											<div class="row">
 
 												<div name="searchform" class="col-xs-12 col-md-12 col-lg-8">
-													<div class="content-box shadow-back  ease-right">
+													<div class="content-box shadow-back  ease-right-2">
 														<p class="blue-plate">Las Vegas Real Estate Search - Nevada</p>
 														<div class="wrap">
 															<form id="searchform" class="form-horizontal" name="form" method="post" action="/search_result.php">
@@ -3067,7 +3067,7 @@ include('includes/header.php');
 																	<br>
 
 																	<label>Interior Features:</label>
-																	<div class="form-group">
+																	<div class="form-group box-seq">
 																		<div class="col-xs-12 col-sm-6 col-md-4">
 																			<div class="checkbox-inline">  
 																				<span class="check-btn">
@@ -3354,7 +3354,7 @@ include('includes/header.php');
                                                 
 													<div class="row">
                                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
-                                                            <div class="content-box shadow-back equal-1 equal-2 ease-left" style="height: auto;">
+                                                            <div class="content-box shadow-back equal-1 equal-2 ease-left-2" style="height: auto;">
                                                                 <p class="blue-plate">MLS Number</p>
                                                                 <div class="wrap">
                                                                     <form action="/search_result.php" class="form-horizontal" method="POST" id="bymlsform">
@@ -3379,7 +3379,7 @@ include('includes/header.php');
                                                             </div>
                                                         </div>
 														<div class="col-xs-12 col-sm-12 col-md-4 col-lg-12">
-															<div class="content-box shadow-back equal-1 ease-left" style="height: auto;"> 
+															<div class="content-box shadow-back equal-1 ease-left-2" style="height: auto;"> 
 																<p class="blue-plate">Search by Street</p>
 																<div class="wrap">
 																	<form action="/search_result.php" method="POST" class="form-horizontal" id="bymlsform">
@@ -3432,7 +3432,7 @@ include('includes/header.php');
 														
 
 														<div class="col-xs-12 col-sm-6 col-md-4 col-lg-12">
-															<div class="content-box shadow-back equal-1 equal-2 ease-left" style="height: auto;">
+															<div class="content-box shadow-back equal-1 equal-2 ease-left-2" style="height: auto;">
 																<p class="blue-plate">Quick Search</p>
 
 																<div class="wrap">
@@ -4214,6 +4214,13 @@ include('includes/header.php');
                      easing   : 'ease-in-out',
                      scale    : 1.1,
                      };
+            var down = {
+                     delay    :100,
+                     distance :"10px",
+                     easing   :"ease-in",
+                     scale    :1,
+                     origin   :"top",
+            }         
                      
             var appear ={
                     delay      :500,
@@ -4232,23 +4239,26 @@ include('includes/header.php');
                     distance   :"100px",
                     delay      :1000,
                     duration   :800,
-                    reset      :"true",
+                    
             }
             var easeRight = {
                     origin     :"left",
                     distance   :"100px",
                     delay      :1000,
                     duration   :800,
-                    reset      :"true"
+                   
             } 
                window.sr = ScrollReveal();
             sr.reveal(".sr-header", header);
-            sr.reveal(".box-seq", { duration: 2000 }, 200);
+            sr.reveal(".box-seq", { duration: 3000 }, 200);
             sr.reveal(".jump", up, 100 );
             sr.reveal(".jump-container", {delay: +100},up);
             sr.reveal(".appear", appear);
-            sr.reveal(".ease-left", easeLeft,150);
-            sr.reveal(".ease-right", easeRight,150);
+            sr.reveal(".ease-left-1", easeLeft,150);
+            sr.reveal(".ease-right-1", easeRight,150);
+            sr.reveal(".ease-left-2", easeLeft,150);
+            sr.reveal(".ease-right-2", easeRight,150);
+             sr.reveal(".sr-down", down);
             
                 
             

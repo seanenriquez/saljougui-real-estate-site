@@ -1,6 +1,6 @@
-                                            <div class="col-lg-4 col-md-4 col-sm-4 box-seq">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 ">
                                                 <!-- featured item  house #1 summary info -->
-                                                <div class="featured-item shadow-back">
+                                                <div class="featured-item box-seq shadow-back">
                                                     <!-- house #1 image -->
                                                     <img class="img-responsive" style="" src="<?= $this->model->getFrontPicFn()?>" alt="">
                                                     <!-- house #1 headline -->                        
