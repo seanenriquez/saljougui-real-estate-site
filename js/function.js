@@ -324,15 +324,6 @@ $(document).ready(function(){
         return false;
     });
         
-    $(document).ready(function() {
-        $("#clients-slider, #results-slider, #awards-slider").owlCarousel({
-            navigation : false, // Show next and prev buttons
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            singleItem:true,
-            pagination: true
-        }); 
-    });
  
     $( "#item1" ).click(function() {
         $( "#property-item1" ).removeClass("property-hidden")
