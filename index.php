@@ -21,10 +21,8 @@ include('includes/header.php');
 <body>
 
 	<div id="container" class="main">
-		<div id="out">
-			<div id="home_marker"></div>
-			<div id="header" class="sr-down">
-				<div class="inner">
+		<div id="out">                         
+			
 
 					<!-- turn top notification bar on here by removing this comment
 
@@ -40,61 +38,15 @@ include('includes/header.php');
 					</div>
 
 					-->
+                             <?php
+                            
+                            include('includes/nav-bar.php');
 
-					<div class="top">
-						<a href="#" class="scrollup"></a>
-					</div>
-					<div class="bottom">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-4 col-sm-4 clearfix">
-									<!--<div class="contacts_block">
-									edit header address and phone number here 
-									<div class="phone styler_color">
-
-									<div>
-									<p>8704 W. CHARLESTON BLVD. | SUITE 105 | Las Vegas, NV 89117  c:415-815-9079</p> 
-									</div>
-
-
-									</div>
-									<div class="clear"></div>
-									</div>
-									<!-- insert header logo here -->
-									<a href="#" class="logo"><img class="img-responsive center-block nav-logo" src="img/logo_color.png" alt="" /></a>
-								</div>
-								<div class="col-md-8 col-sm-8">
-
-									<!-- top navigation starts here -->
-									<div id="top_menu">
-										<div class="navbar">
-											<a class="btn navbar-btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-												<span class="menu-btn-name">Menu</span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-											</a>
-											<div class="navbar-collapse collapse">
-												<ul class="nav nav-pills">
-													<!-- edit navigation menu -->
-													<li class="styler_parent_active active"><a href="#home_anchor" class="styler_hover_bg_color styler_active_bg_color">HOME</a></li>
-													<li class="styler_parent_active"><a href="#featured-listings_anchor" class="styler_hover_bg_color styler_active_bg_color">FEATURED LISTINGS</a></li>
-													<li class="styler_parent_active"><a href="#search_anchor" class="styler_hover_bg_color styler_active_bg_color">SEARCH</a></li>
-													<li class="styler_parent_active"><a href="#contact_anchor" class="styler_hover_bg_color styler_active_bg_color">CONTACT US</a></li>
-													<li class="styler_parent_active"><a href="#about-realtor_anchor" class="styler_hover_bg_color styler_active_bg_color">ABOUT</a></li>
-													<!--pop up nav start-->     
-													<!-- /pop up nav -->
-													<!-- /end navigation menu -->
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                            ?>
+						        
+                        
+					
+			   
 
 
 
@@ -117,7 +69,8 @@ include('includes/header.php');
 
 			<div class="container">
 				<div class="row">
-					<div <!-- begin real estate agents promo block -->class="col-sm-12 col-ms-12">
+                <!-- begin real estate agents promo block -->
+					<div class="col-sm-12 col-ms-12">
 
 					<div class="row">
 						<div class="col-sm-12 col-ms-12">                                         
@@ -4076,198 +4029,16 @@ include('includes/header.php');
 	</div>
 
 	<!-- begin footer -->
-	<div id="footer">
-		<div class="top">
-			<div class="container appear">
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-6">
-						<!-- edit footer logo here -->
-						<a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
-
-
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-6">
-						<!-- edit alt footer logo here -->
-						<a href="#" class="logo"><img src="img/key-logo-white.png"  alt="" /></a>
-						<div class="text">
-							<!-- edit equal housing opportunity disclaimer here -->
-
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xs-12  text-center" >
-						<!-- begin newsletter form area -->
-						<div class="text text-center">
-							<div class="header ">NEWSLETTER</div>
-							<p>Enter your e-mail and subscribe to our newsletter.</p>
-						</div>
-						<div class="subscribe center-block">
-							<form action="/" method="post">
-								<input type="text" placeholder="Email Address" />
-								<input type="submit" value="GO" class="styler_bg_color" />
-							</form>
-						</div>
-						<!-- /end newsletter form area -->
-					</div>
-
-					<div class="col-md-12 col-sm-6 col-xs-12 text-center">
-						<!-- begin disclaimer here -->
-						<div class="text">
-							<div class="header">DISCLAIMER</div>
-							<!-- edit your disclaimer text here -->
-							<p>Information is from the multiple listing service and neither suggests nor infers that the [name of agent] or [name of company] participated as either the listing or cooperating agent or broker in the sale or purchase of the properties depicted.</p>
-							<p >All properties listed in this web site are available on an equal opportunity basis.</p>
-						</div>
-						<!-- /end disclaimer -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bottom styler_bg_color">
-			<div class="container">
-				<div class="row">
-					<!-- edit copyright notice here -->
-					<div class="copyrights">Design / RETS by Webware Development 2016</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<?php
+       include('includes/footer_new.php'); 
+    ?>
 	<!-- /end footer -->
 
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-
-	<script>
-		$(document).ready(function(){
-			/* Reset Button */
-			$('form').on('reset', function() {
-				setTimeout(function() {
-					$('.check-btn > input').each(function() {
-						$(this).parent().removeClass('checked-btn');
-						if($(this).prop('checked') !== false) {
-							$(this).parent().addClass('checked-btn');
-						}
-					});
-					$('#collapseSearch').removeClass('in');
-					$('html, body').animate({
-						scrollTop: $('header').outerHeight(true) + $('#tag-line').outerHeight(true)
-						}, 500);
-				});
-			});
-		});
-	</script>
-	<!-- Scroll Reveal js -->
-
-
-	<!-- start style switcher -->
-	<!-- remove this section when you want to remove the style switcher -->
-	<!--		<script type="text/javascript" src="js/style-switcher/style-switcher.js"></script>  -->
-	<!-- /end style switcher -->
-
-	<!-- capthca script -->
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-	<!-- /end capthca script -->
-
-	<!-- scripting (at the bottom for faster loading) -->
-	<script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-
-
-	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
-	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-	<script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
-	<script type="text/javascript" src="js/library.js"></script>
-	<script type="text/javascript" src="js/function.js"></script>
-	<script type="text/javascript" src="js/mail_validation.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.royalslider.min.js"></script>        
-
-
-	<!-- External libraries: jQuery & GreenSock -->
-
-	<script src="/layerslider/js/jquery.js" type="text/javascript"></script>
-	<script src="/layerslider/js/greensock.js" type="text/javascript"></script>
-	<script src="/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
-	<script src="/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-	<!-- Layer Slider JS controller (view documentation for refrence) -->
-	<script type="text/javascript">
-		// Running the code when the document is ready
-		$(document).ready(function(){
-
-			// Calling LayerSlider on the target element
-			$('#layerslider').layerSlider({
-
-				skin:'lightskin'
-
-				// Slider options goes here,
-				// please check the 'List of slider options' section in the documentation
-			});
-		});
-	</script>
-
-	<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
-	<script>
-		var up = {
-			delay    : 200,
-			distance : '120px',
-			easing   : 'ease-in-out',
-			scale    : 1.1,
-		};
-		var down = {
-			delay    :100,
-			distance :"10px",
-			easing   :"ease-in",
-			scale    :1,
-			origin   :"top",
-		}         
-
-		var appear ={
-			delay      :500,
-			distance   :"0px",
-			easting    :"ease-out",
-			scale      : 1,
-
-		}
-		var header = {
-			origin: "bottom",
-			duration:2000,
-		}
-
-		var easeLeft = {
-			origin     :"right",
-			distance   :"100px",
-			delay      :1000,
-			duration   :800,
-
-		}
-		var easeRight = {
-			origin     :"left",
-			distance   :"100px",
-			delay      :1000,
-			duration   :800,
-
-		} 
-		window.sr = ScrollReveal();
-		sr.reveal(".sr-header", header);
-		sr.reveal(".box-seq", { duration: 3000 }, 200);
-		sr.reveal(".jump", up, 100 );
-		sr.reveal(".jump-container", {delay: +100},up);
-		sr.reveal(".appear", appear);
-		sr.reveal(".ease-left-1", easeLeft,150);
-		sr.reveal(".ease-right-1", easeRight,150);
-		sr.reveal(".ease-left-2", easeLeft,150);
-		sr.reveal(".ease-right-2", easeRight,150);
-		sr.reveal(".sr-down", down);
-
-
-
-
-	</script>
-	<!-- /End Scroll Reveal js -->
-
-
-	<!-- /end scripting -->
+    <!-- Javascript/bootstrap + all other scripts -->
+	<?php
+       include('includes/bottom_scripts_new.php'); 
+    ?>
+    <!-- /End Scripts -->
 
 </body>
 
