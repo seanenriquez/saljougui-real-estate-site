@@ -2,35 +2,31 @@
  
                
 
-                    <!-- turn top notification bar on here by removing this comment
+<!-- turn top notification bar on here by removing this comment
 
-                    <div class="notify-bar">
-                    <div class="container">
-                    <div class="row">
-                    <div class="col-md-11">
-                    <p>Optional notification bar for displaying important messages to your site vistors. It only shows when you want it to.</p>
-                    </div>
-                    <div class="col-md-1"><a href="#" class="notify-close"><i class="icon-remove-sign"></i></a></div>
-                    </div>
-                    </div>
-                    </div>
-                     -->
+<div class="notify-bar">
+<div class="container">
+<div class="row">
+<div class="col-md-11">
+<p>Optional notification bar for displaying important messages to your site vistors. It only shows when you want it to.</p>
+</div>
+<div class="col-md-1"><a href="#" class="notify-close"><i class="icon-remove-sign"></i></a></div>
+</div>
+</div>
+</div> -->
                      
-                     
-                     
-    <div id="home_marker"></div>
-            <div id="header" class="sr-down">
-                <div class="inner">                 
-                     
-        <div class="top">
-                        <a href="#" class="scrollup"></a>
-                    </div>             
-           <div class="bottom">        
-            <div class="container">
-               <div class="row">
-                    <div class="top">
-                        <a href="#" class="scrollup"></a>
-                    </div>
+<div id="home_marker"></div>                     
+<div id="header" class="">               
+<div class="inner">                                               
+<div class="top">
+            <a href="#" class="scrollup"></a>
+</div>          
+    <div class="bottom">        
+        <div class="container">
+            <div class="row">
+                <div class="top">
+                    <a href="#" class="scrollup"></a>
+                </div>
                     <div class="bottom">
                         <div class="container">
                             <div class="row">
@@ -67,7 +63,7 @@
                                                     <li class="styler_parent_active active"><a href="#home_anchor" class="styler_hover_bg_color styler_active_bg_color">HOME</a></li>
                                                     <li class="styler_parent_active"><a href="#featured-listings_anchor" class="styler_hover_bg_color styler_active_bg_color">FEATURED LISTINGS</a></li>
                                                     <li class="styler_parent_active"><a href="#search_anchor" class="styler_hover_bg_color styler_active_bg_color">SEARCH</a></li>
-                                                    <li class="styler_parent_active"><a href="#contact_anchor" class="styler_hover_bg_color styler_active_bg_color">CONTACT US</a></li>
+                                                    <li class="styler_parent_active"><a href="#contact_anchor" class="styler_hover_bg_color styler_active_bg_color">CONTACT ME</a></li>
                                                     <li class="styler_parent_active"><a href="#about-realtor_anchor" class="styler_hover_bg_color styler_active_bg_color">ABOUT</a></li>
                                                     <!--pop up nav start-->     
                                                     <!-- /pop up nav -->
@@ -80,8 +76,8 @@
                             </div>
                         </div>
                     </div>
-                  </div>
-               </div>
-             </div>
             </div>
-           </div>
+        </div>
+    </div>
+  </div>          
+</div>         

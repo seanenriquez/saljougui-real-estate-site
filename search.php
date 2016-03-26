@@ -35,22 +35,38 @@ include('includes/header.php');
                     </div>
 
                     -->
-                             <?php
+                            <?php
                             
-                            include('includes/nav-bar.php');
+                                include('includes/nav-bar.php');
 
                             ?>
 
+            
+            
+            
+                            <?php
 
+                                include('includes/search-form.php');
 
+                            ?>
+                                
+ 
+            </div>
+           <div id="empty"></div>
+           <br>
+  </div>
+  
+  <!-- begin footer -->
+    <?php
+       include('includes/footer_new.php'); 
+    ?>
+    <!-- /end footer -->
 
-
-
-
-
-
-
-   </div>
+    <!-- Javascript/bootstrap + all other scripts -->
+    <?php
+       include('includes/bottom_scripts_new.php'); 
+    ?>
+    <!-- /End Scripts -->
 </body>
 
 </html>

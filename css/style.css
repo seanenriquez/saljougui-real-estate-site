@@ -193,9 +193,11 @@ h1, h2, h3 {
     font-weight: 800;
     font-size: 30px;
 }
+ /*
 .fixed .inner .bottom {
     box-shadow: 0 4px 5px #cccccc;
 }
+   */
 #logo {
     display: block;
     margin:15px 0;
@@ -2886,8 +2888,8 @@ width: 40%;
 }
 
 #quick-search .panel-heading{
-    border: 1px solid #0A7C90;
-    background-color:#6CBECC;
+    border: 1px solid #1F1032;
+    background-color:#B378D3;
     color: #fff;
     margin-bottom: 0px;
     border-radius: 0px;
