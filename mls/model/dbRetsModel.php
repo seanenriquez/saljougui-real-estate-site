@@ -75,7 +75,7 @@ class dbRets extends PDOConfig {
   }
 
   public function getBaths() {
-    return ($this->row['bathrooms'].".".$this->row['3_4_baths'].".".$this->row['halfbaths']);
+    return ($this->row['bathrooms'].".".$this->row['3_4_bath'].".".$this->row['halfbaths']);
   }
 
   public function getLat() {
