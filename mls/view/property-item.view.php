@@ -84,7 +84,7 @@
                                                     </div>
                                                     <!-- edit featured property #1 details summary info (listing agent name, address and phone number) -->
                                                     <div class="col-md-6 col-sm-6">
-                                                        <div class="details-name"><?= $this->model->get_data("agent_id"); ?></div>
+                                                        <div class="details-name"></div>
                                                         <div class="details-place">Anderson Realty</div>
                                                         <div class="details-phone">214.435.0987</div>
                                                     </div>
