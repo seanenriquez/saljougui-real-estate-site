@@ -104,6 +104,22 @@ class retsController {
                 } while ($this->model->next());
 
                 break;
+                
+                // site landing page...get display data for properties!
+            case 'property-item':
+
+                $this->model = new dbRetsModel();
+
+                //  get data...
+                $this->model->getFeaturedListingProps();
+
+                // process view
+
+                do {
+                    require ('mls/view/property-item.view.php');
+                } while ($this->model->next());
+
+                break;
 
 
 				// site landing page...get random properties for display
