@@ -101,7 +101,7 @@ foreach ($rets_config as $key => $config)
 
 
 		// this loop controls the number of months to import
-		for ($i=0;$i<=24;$i++) {
+		for ($i=0;$i<=12;$i++) {
 
 			$start_date =  date('Y-m-d',strtotime("-$i months"));
 			$end=$i+1;

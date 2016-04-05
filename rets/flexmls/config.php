@@ -52,17 +52,9 @@ $rets_config['FLEXMLS']['data']['residential'] = array(
   "keyfield" => "sysid",
   // "query" => "(1=|RES),(242=|ER,EA,AU,C)"
   "query" => "(242=|ER,C)"
-  );
-
-  $rets_config['FLEXMLS']['data']['rental'] = array(
-  "resource" => "Property",
-  "create_table" => true,
-  "class" => "9",
-  "keyfield" => "sysid",
-  "query" => "(1=RNT)"
-  );
-  
-  $rets_config['FLEXMLS']['data']['hirise'] = array(
+  );                                                               
+    
+$rets_config['FLEXMLS']['data']['hirise'] = array(
   "resource" => "Property",
   "create_table" => true,
   "class" => "16",
@@ -71,7 +63,14 @@ $rets_config['FLEXMLS']['data']['residential'] = array(
   );
 
 
-
+ /* $rets_config['FLEXMLS']['data']['rental'] = array(
+  "resource" => "Property",
+  "create_table" => true,
+  "class" => "9",
+  "keyfield" => "sysid",
+  "query" => "(1=RNT)"
+  );
+  */
 /////////////////////////////////////////////////////////////////////////////////////////////////
 //  end of time-chunked residential data download
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -167,7 +166,7 @@ function flexmls_updateResidential()
       $master_check =0;
 
       if($master_check <= 0)
-      {
+      {                                                                                                    
 
         /** Insert new record into master table */
         $sql = "INSERT INTO `master_rets_table_update` SET       
@@ -186,7 +185,7 @@ function flexmls_updateResidential()
         city = '".mysql_real_escape_string($row['City/Town_2909'])."',
         state_province = '".mysql_real_escape_string($row['State_2963'])."',
         postal_code = '".mysql_real_escape_string($row['Zip_Code_10'])."',
-        property_sub_type = '".mysql_real_escape_string($row['property_sub_type_9'])."',
+        property_sub_type = '".mysql_real_escape_string($row['Property_Subtype_2452'])."',
         sqft_living = '".mysql_real_escape_string($row['Approx_Total_Liv_Area_2953'])."',
         sqft_tot = '".mysql_real_escape_string($row['Lot_Sqft_154'])."',
         bedrooms = '".mysql_real_escape_string($row['Bedrooms_(Total_Possible_#)_2379'])."',
@@ -242,7 +241,7 @@ function flexmls_updateResidential()
         over_55 = '".mysql_real_escape_string($row['Age_Restricted_Y/N_2983'])."',
         water_type = '".mysql_real_escape_string($row['Water_261'])."',
         fireplace_desc = '".mysql_real_escape_string($row['Fireplace_Description_294'])."',
-        fence_type = '".mysql_real_escape_string($row['Fence_112'])."',
+        fence_type = '".mysql_real_escape_string($row['Fence_Type_295'])."',
         landscape_desc = '".mysql_real_escape_string($row['Landscape_Description_300'])."',
         sid_lid_yn  = '".mysql_real_escape_string($row['SID/LID_Y/N_2463'])."',
         assessment_amount_type  = '".mysql_real_escape_string($row['Assessment_Amount_Type_2465'])."',
@@ -347,7 +346,6 @@ function flexmls_updateResidential()
         disposal_inc = '".mysql_real_escape_string($row['Disposal_Included_31'])."',
         fridge_inc = '".mysql_real_escape_string($row['Refrigerator_Included_33'])."',
 
-
         hoa_dues = '".mysql_real_escape_string($row['Association_Fee_1_39'])."',
         hoa_dues_term = '".mysql_real_escape_string($row['Association_Fee_1_-_M,Q,Y,N_127'])."',
 
@@ -378,8 +376,10 @@ function flexmls_updateResidential()
         longitude = '".mysql_real_escape_string($row['longitude'])."',
         pets =  '".mysql_real_escape_string($row['pets'])."',        
         design =  '".mysql_real_escape_string($row['design'])."',
-        home_style = '".mysql_real_escape_string($row['home_style'])."'
+        home_style = '".mysql_real_escape_string($row['home_style'])."',
 
+        solar = '".mysql_real_escape_string($row['Solar_Electric_2978'])."',
+        active_DOM = '".mysql_real_escape_string($row['Active_DOM_2940'])."'
 
         ";
             //if hoa dues + hoa dues term is wrong, fix.

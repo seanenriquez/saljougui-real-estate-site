@@ -6,10 +6,10 @@
                             <div class="row">
                                 <div class="col-xs-12 text-center">
                                     <h2 class="block-title styler_color sr-header">
-                                    Quick MLS City Search
+                                    Greater Las Vegas Real Estate Quicksearch
                                         </h2>
                                     <p>Click on a city/town area below to expand the quick search options.<br class="hidden-sm hidden-xs">
-                                        Search MLS by homes, town homes, condos, or Hi-Rise properties with a couple easy clicks.</p>
+                                        Search MLS by homes, townhomes, condos, or hi-Rise properties with a few easy clicks!</p>
                                     <br>
                                 </div>
                             </div>
@@ -30,7 +30,7 @@
                                                         <li><a href="/search/fl/capecanaveral/homes/">Homes</a></li>
                                                         <li><a href="/search/fl/capecanaveral/townhomes/">Town Homes</a></li>
                                                         <li><a href="/search/fl/capecanaveral/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                        <li><a href="/search/fl/ocean-front/rental/">Hirise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -87,7 +87,6 @@
                                                         <li><a href="/search/fl/indialantic/homes/">Homes</a></li>
                                                         <li><a href="/search/fl/indialantic/townhomes/">Town Homes</a></li>
                                                         <li><a href="/search/fl/indialantic/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

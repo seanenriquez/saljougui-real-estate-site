@@ -12,30 +12,24 @@
           
 		<!-- styles -->
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-		<link type="text/css" rel="stylesheet" href="js/rs-plugin/css/settings.css" />
+		<!-- <link type="text/css" rel="stylesheet" href="js/rs-plugin/css/settings.css" />  -->
 
 		<link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'
-			type='text/css'>
-            
-
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet'type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link type="text/css" rel="stylesheet" href="css/media.css" />        
-		<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />        
-		<link type="text/css" rel="stylesheet" href="css/owl.theme.css" />      
+		<!-- <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />        
+		<link type="text/css" rel="stylesheet" href="css/owl.theme.css" />                -->
 		<link type="text/css" rel="stylesheet" href="css/royalslider.css" />        
 		<link type="text/css" rel="stylesheet" href="css/rs-default.css" />  
+		<!-- LayerSlider stylesheet -->
+		<link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
 
 		<!-- /end styles -->        
-
-        <!-- LayerSlider stylesheet -->
-            <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
- 
-
 
 	</head>
 

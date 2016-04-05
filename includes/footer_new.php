@@ -1,6 +1,7 @@
 <div id="footer">
         <div class="top">
-            <div class="container appear">
+<!--            <div class="container appear">  -->
+            <div class="container"> 
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-6">
                         <!-- edit footer logo here -->

@@ -66,14 +66,18 @@ function begin_rets_image_update($rets_object, $rets_name, $rets_config) {
 	// ok.. create update time table if needed
 	makeTable();
 
-	// pull listing_ids for all properties without update flag being set...    photo_timestamp >= (select DATE(start_time) from photo_dl_info order by id DESC limit 1) AND
+	// pull listing_ids for all properties without update flag being set...    
 	$rets_results = mysql_query(
-		"select * from `master_rets_table_update` WHERE  photo_count > 0 
-			AND property_status = 'Contingent Offer' OR property_status = 'Active-Exclusive Right'
-			 ORDER BY photo_timestamp DESC;");
+		"SELECT * FROM master_rets_table_update where photo_timestamp >= (select end_time from photo_dl_info order by id DESC limit 1) 
+			AND photo_count > 0
+			AND property_status IN  ( 'Contingent Offer', 'Active-Exclusive Right' )
+			ORDER BY photo_timestamp DESC"
+		);
 			 
 	$totRows = mysql_num_rows($rets_results);
 	$curRow=0;
+	
+	echo "Found $totRows properties for image download." . PHP_EOL;
 
 	// get images
 	if ($totRows > 0) {
@@ -86,8 +90,15 @@ function begin_rets_image_update($rets_object, $rets_name, $rets_config) {
 		else {
 			$timeRecId = mysql_insert_id();
 		}
+		
+		$first = true;
 
 		while ($row = mysql_fetch_assoc($rets_results)) {
+			
+			if ($first) {
+				$end_time = $row['photo_timestamp'];
+				$first = false;
+			}
 
 			get_images($row['sysid'], $row['photo_count'], $row['sysid'], $rets_object, $rets_config);
 
@@ -99,8 +110,9 @@ function begin_rets_image_update($rets_object, $rets_name, $rets_config) {
 		} 
 
 		// update timestamp only if we processed some records
-		$sql= "UPDATE photo_dl_info set end_time = now() where id = $timeRecId";
+		$sql= "UPDATE photo_dl_info set end_time = '$end_time' where id = $timeRecId";
 		$endUpdate = mysql_query($sql);
+		
 		if (!$endUpdate) {
 			throw new Exception("RETS_UPDATE_IMAGES.PHP - unable to update end time record...SQL = $sql ");
 		}

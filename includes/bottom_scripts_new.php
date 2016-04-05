@@ -31,22 +31,9 @@
     <!-- /end style switcher -->
 
     <!-- capthca script -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- /end capthca script -->
 
     <!-- scripting (at the bottom for faster loading) -->
-    <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-
-
-    <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
-    <script type="text/javascript" src="js/library.js"></script>
-    <script type="text/javascript" src="js/function.js"></script>
-    <script type="text/javascript" src="js/mail_validation.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.royalslider.min.js"></script>        
 
 
     <!-- External libraries: jQuery & GreenSock -->
@@ -55,6 +42,21 @@
     <script src="/layerslider/js/greensock.js" type="text/javascript"></script>
     <script src="/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
     <script src="/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+
+    
+    <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
+    <script type="text/javascript" src="js/mail_validation.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.royalslider.min.js"></script>        
+
+    <script type="text/javascript" src="js/library.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
     
     <!-- Layer Slider JS controller (view documentation for refrence) -->
     <script type="text/javascript">

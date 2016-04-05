@@ -2,7 +2,7 @@
 
 require('database.php');
   
-$sql= "DROP table mrt_bu";
+$sql= " DROP table IF EXISTS mrt_bu";
 mysql_query($sql) or die(mysql_error() . $sql); 
 
 $sql= "RENAME TABLE master_rets_table TO mrt_bu";

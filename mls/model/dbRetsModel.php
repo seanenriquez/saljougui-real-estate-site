@@ -41,14 +41,15 @@ class dbRets extends PDOConfig {
   }
 
   public function getStreetAddress() {
-    $str = $this->row['street_number']." ".$this->row['street_dir']." ".$this->row['street_name']." ".$this->row['street_suffix'];
+    //$str = $this->row['street_number']." ".$this->row['street_dir']." ".$this->row['street_name']." ".$this->row['street_suffix'];
+    $str= $this->row['public_address'];
     if ($str=="   ")
       $str="No Address Found";
     return $str;
   }
 
   public function getCityStZip() {
-    return $this->row['city'].", FL ".$this->row['postal_code'];
+    return $this->row['city'].", NV ".$this->row['postal_code'];
   }
 
   public function getMLS() {
@@ -74,7 +75,7 @@ class dbRets extends PDOConfig {
   }
 
   public function getBaths() {
-    return ($this->row['bathrooms'].".".$this->row['halfbaths']);
+    return ($this->row['bathrooms'].".".$this->row['3_4_baths'].".".$this->row['halfbaths']);
   }
 
   public function getLat() {
@@ -580,7 +581,7 @@ class dbRetsModel extends dbRets {
   public function getFeaturedListingProps() {
     
     $sql = 'SELECT * from master_rets_table 
-            WHERE listing_price > 700000 AND listing_price > 1400000 ORDER BY listing_entry_timestamp DESC LIMIT 9';
+            WHERE listing_price > 700000 AND listing_price < 1500000 AND photo_count > 0 ORDER BY listing_entry_timestamp DESC LIMIT 9';
                                      
     $this->stm = $this->prepare($sql);
 

@@ -4,7 +4,7 @@
                                                     <!-- house #1 image -->
                                                     <img class="img-responsive" style="" src="<?= $this->model->getFrontPicFn()?>" alt="">
                                                     <!-- house #1 headline -->                        
-                                                    <div class="heading styler_bg_color">POOL             & SPA!</div>
+                                                    <div class="heading styler_bg_color"><?= $this->model->getPrice()?></div>
                                                     <!-- house #1 summary content -->
                                                     <div class="content">
                                                         <!-- house #1 summary content: address -->
@@ -15,9 +15,9 @@
                                                         <!-- house #1 summary content: characteristics -->
                                                         <div class="characteristics">
                                                             <ul>
-                                                                <li>3,100 s/f</li>
-                                                                <li>4 Bedrooms</li>
-                                                                <li>2.5 Baths</li>
+                                                                <li><?= $this->model->getSqFt() ?> sqFt</li>
+                                                                <li><?= $this->model->getBeds() ?> Bedrooms</li>
+                                                                <li><?= $this->model->getBaths() ?> Baths</li>
                                                             </ul>
                                                         </div>
                                                         <div class="item-info">
@@ -25,13 +25,13 @@
                                                                 <div class="col-md-6 col-sm-6">
                                                                     <!-- house #1 summary content: price -->
                                                                     <div class="price styler_color">
-                                                                        <?= $this->model->getCityStZip()?>
+                                                                        MLS #: <?= $this->model->getMLS()?>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6 col-sm-6">
                                                                     <!-- link to house #1 featured item detail -->
                                                                     <div class="more">
-                                                                        <a id="item1" href="javascript:void(0)" class="styler_color property-link">View Details</a>
+                                                                        <a id="item<?= $this->model->rowIdx ?>" href="javascript:void(0)" class="styler_color property-link">View Details</a>
                                                                     </div>
                                                                 </div>
                                                             </div>                                                            

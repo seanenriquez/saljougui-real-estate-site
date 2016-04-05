@@ -343,7 +343,18 @@ $(document).ready(function(){
     $( "#item6" ).click(function() {
         $( "#property-item6" ).removeClass("property-hidden")
     });
-    
+    $( "#item7" ).click(function() {
+        $( "#property-item7" ).removeClass("property-hidden")
+    });
+    $( "#item8" ).click(function() {
+        $( "#property-item8" ).removeClass("property-hidden")
+    });
+    $( "#item9" ).click(function() {
+        $( "#property-item9" ).removeClass("property-hidden")
+    });
+     
+      
+ 
     $(".close-details").click(function() {
         $(".property-item").slideUp(500);
     });
