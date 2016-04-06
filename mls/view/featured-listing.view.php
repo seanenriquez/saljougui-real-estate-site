@@ -5,7 +5,7 @@
                                                     <!-- house #1 image -->
                                                     <img class="img-responsive" style="" src="<?= $this->model->getFrontPicFn()?>" alt="">
                                                     <!-- house #1 headline -->                        
-                                                    <div class="heading styler_bg_color"><?= $this->model->getPrice()?></div>
+                                                    <div class="heading styler_bg_color lead"><?= $this->model->getPrice()?></div>
                                                     <!-- house #1 summary content -->
                                                     <div class="content">
                                                         <!-- house #1 summary content: address -->
