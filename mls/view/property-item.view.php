@@ -85,8 +85,9 @@
                                                     <!-- edit featured property #1 details summary info (listing agent name, address and phone number) -->
                                                     <div class="col-md-6 col-sm-6">
                                                         <div class="details-name">Melanie Saljougui</div>
-                                                        <div class="details-place"><?= $this->model-> getData("listing_office_name")?></div>
-                                                        <div class="details-phone"><?= $this->model-> getData("listing_office_phone")?></div>
+                                                        <div class="details-place">Ley Realty</div>        
+                                                        <div class="details-phone"><i class="fa fa-mobile-phone"></i> 415-815-9079<br><i class="fa fa-phone"></i> 702-313-7003</div>
+                                                        <div class="details-phone"><a href="mailto:Melaniesaljougui@gmail.com?Subject=Intrested%20buyer" target="_top">Melaniesaljougui@gmail.com</a> </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -141,6 +142,15 @@
                                                                                         <td><strong>Pet info:</strong></td>
                                                                                         <td><?= $this->model-> getData("pets")?>  <?= $this->model-> getData("pet_fee")?></td>
                                                                                     </tr>
+                                                                                    <tr>
+                                                                                        <td><strong>Age restricted:</strong></td>
+                                                                                        <td> <?= $this->model-> getData("over_55")?>   </td> 
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><strong>Accessibility features:</strong></td>
+                                                                                        <td> <?= $this->model-> getData("accessibility_desc")?>   </td> 
+                                                                                    </tr>
+                                                                                    
                                                                                 </table>
                                                                             </div>
                                                                         </div>
@@ -169,8 +179,8 @@
                                                                                         <td><?= $this->model-> getData("garage")?> cars | <?= $this->model-> getData("garage_desc")?>  <?= $this->model-> getData("parking")?>  </td> 
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><strong>Age restricted:</strong></td>
-                                                                                        <td> <?= $this->model-> getData("over_55")?>   </td> 
+                                                                                        <td><strong>Carport:</strong></td>
+                                                                                        <td><?= $this->model-> getData("carport")?> | <?= $this->model-> getData("carport_desc")?>   </td> 
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Construction info:</strong></td>
@@ -221,6 +231,11 @@
                                                                                     <tr>
                                                                                         <td><strong>Flooring:</strong></td>
                                                                                         <td><?= $this->model-> getData("floor")?></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><strong>Furnishing:</strong></td>
+                                                                                        <td><?= $this->model-> getData("furnishing")?> <br>
+                                                                                       <?= $this->model-> getData("furnishing_desc")?> </td>
                                                                                     </tr>
                                                                                 </table>
                                                                             </div>
@@ -290,6 +305,14 @@
                                                                                         <td><strong>Pool:</strong></td>
                                                                                         <td><?= $this->model-> getData("pool_features")?> <?= $this->model-> getData("private_pool")?></td>
                                                                                     </tr>
+                                                                                     <tr>
+                                                                                        <td><strong>Pool Dimensions:</strong></td>
+                                                                                        <td><?= $this->model-> getData("pool_length")?> x <?= $this->model-> getData("pool_width")?></td>
+                                                                                    </tr>
+                                                                                     <tr>
+                                                                                        <td><strong>Private Spa:</strong></td>
+                                                                                        <td><?= $this->model-> getData("pv_spa_yn")?>  <?= $this->model-> getData("spa_desc")?></td>
+                                                                                    </tr>
                                                                                     <tr>
                                                                                         <td><strong>Roof:</strong></td>
                                                                                         <td></td>
@@ -306,8 +329,8 @@
                                                                                         <td><?= $this->model-> getData("street_dir")?></td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><strong>Patio:</strong></td>
-                                                                                        <td>Yes - Covered</td>
+                                                                                        <td><strong>Landscaping:</strong></td>
+                                                                                        <td><?= $this->model-> getData("landscape_desc")?></td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Balcony:</strong></td>
@@ -343,21 +366,31 @@
                                                                                         <td><?= $this->model-> getData("property_status")?></td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td><strong>Cooling:</strong></td>
-                                                                                        <td><?= $this->model-> getData("cooling")?></td>
+                                                                                        <td><strong>Water info:</strong></td>
+                                                                                        <td><?= $this->model-> getData("water_type")?></td>
                                                                                     </tr>
-                                                                                    <tr>
-                                                                                        <td><strong>Heating:</strong></td>
-                                                                                        <td><?= $this->model-> getData("heating")?></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td><strong>Security:</strong></td>
-                                                                                        <td><?= $this->model-> getData("security")?></td>
+                                                                                     <tr>
+                                                                                        <td><strong>Sewer info:</strong></td>
+                                                                                        <td><?= $this->model-> getData("sewer")?></td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Utility info:</strong></td>
                                                                                         <td><?= $this->model-> getData("utilities")?></td>
                                                                                     </tr>
+                                                                                    <tr>
+                                                                                        <td><strong>Cooling:</strong></td>
+                                                                                        <td><?= $this->model-> getData("cooling")?> <br> Type: <?= $this->model-> getData("heating_fuel")?></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><strong>Heating:</strong></td>
+                                                                                        <td><?= $this->model-> getData("heating")?> <br> Type: <?= $this->model-> getData("heating_fuel")?></td>
+                                                                                    </tr>
+                                                                                    
+                                                                                    <tr>
+                                                                                        <td><strong>Internet:</strong></td>
+                                                                                        <td><?= $this->model-> getData("internet_yn")?></td>
+                                                                                    </tr>
+                                                                                    
                                                                                 </table>     
                                                                             </div>
                                                                         </div>
@@ -368,6 +401,11 @@
                                                                                     <tr>
                                                                                         <td><strong>School District:</strong></td>
                                                                                         <td></td>
+                                                                                    </tr>
+                                                                                    
+                                                                                    <tr>
+                                                                                        <td><strong>Year Round School:</strong></td>
+                                                                                        <td><?= $this->model-> getData("yr_round_school")?></td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Elementary School:</strong></td>
@@ -380,6 +418,10 @@
                                                                                     <tr>
                                                                                         <td><strong>High School:</strong></td>
                                                                                         <td><?= $this->model-> getData("high_school")?></td>
+                                                                                    </tr>
+                                                                                     <tr>
+                                                                                        <td><strong>Security:</strong></td>
+                                                                                        <td><?= $this->model-> getData("sewer")?></td>
                                                                                     </tr>
                                                                                 </table>
                                                                             </div>
