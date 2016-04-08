@@ -1,9 +1,9 @@
                              
-                                            <div class="col-lg-4 col-md-4 col-sm-4 ">
+                                            <div class="col-lg-4 col-md-4 col-sm-6">
                                                 <!-- featured item  house #1 summary info -->
                                                 <div class="featured-item box-seq shadow-back">
                                                     <!-- house #1 image -->
-                                                    <img class="img-responsive" style="" src="<?= $this->model->getFrontPicFn()?>" alt="">
+                                                   <a id="item<?= $this->model->rowIdx ?>" href="javascript:void(0)" class="property-link"> <img class="img-responsive" style=" " src="<?= $this->model->getFrontPicFn()?>" alt=""></a>
                                                     <!-- house #1 headline -->                        
                                                     <div class="heading styler_bg_color lead"><?= $this->model->getPrice()?></div>
                                                     <!-- house #1 summary content -->

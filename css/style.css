@@ -2467,6 +2467,7 @@ form {
 .featured-listings .featured-item .img-responsive {
 	width:100%;
     display:initial;
+    height:250px;
 }
 .featured-listings .featured-item .content {
     padding: 17px 20px 9px;

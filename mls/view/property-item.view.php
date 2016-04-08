@@ -124,16 +124,9 @@
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Property Type:</strong></td>
-                                                                                        <td><?= $this->model-> getData("zoning")?></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td><strong>Property Class:</strong></td>
                                                                                         <td><?= $this->model-> getData("property_sub_type")?></td>
                                                                                     </tr>
-                                                                                     <tr>
-                                                                                        <td><strong>Property Class:</strong></td>
-                                                                                        <td><?= $this->model-> getData("property_sub_type")?></td>
-                                                                                    </tr>
+                                                                                    
                                                                                     <tr>
                                                                                         <td><strong>Property Tax:</strong></td>
                                                                                         <td>$<?= $this->model-> getData("tax_amount")?></td>
@@ -331,7 +324,7 @@
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Roof:</strong></td>
-                                                                                        <td></td>
+                                                                                        <td><?= $this->model-> getData("roof_type")?></td>
                                                                                     </tr>
                                                                                 </table>                     
                                                                             </div>
@@ -349,8 +342,12 @@
                                                                                         <td><?= $this->model-> getData("landscape_desc")?></td>
                                                                                     </tr>
                                                                                     <tr>
+                                                                                        <td><strong>Solar:</strong></td>
+                                                                                        <td> <?= $this->model-> getData("solar")?></td>
+                                                                                    </tr>
+                                                                                    <tr>
                                                                                         <td><strong>Balcony:</strong></td>
-                                                                                        <td>Yes</td>
+                                                                                        <td><?= $this->model-> getData("interior_improvements")?></td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Gutters:</strong></td>
@@ -380,6 +377,10 @@
                                                                                     <tr>
                                                                                         <td><strong>Listing Status:</strong></td>
                                                                                         <td><?= $this->model-> getData("property_status")?></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><strong>Days On Market:</strong></td>
+                                                                                        <td><?= $this->model-> getData("active_DOM")?></td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Water info:</strong></td>
