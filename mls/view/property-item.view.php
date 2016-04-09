@@ -461,7 +461,7 @@
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Washer included:</strong></td>
-                                                                                        <td><?= $this->model-> getData("inc_washer_yn")?></td>
+                                                                                        <td><?= $this->model-> getData("inc_washer_yn")?> | Location: <?= $this->model-> getData("washer_dryer_loc")?></td>
                                                                                     </tr>
                                                                                     <tr>
                                                                                         <td><strong>Dryer included:</strong></td>
