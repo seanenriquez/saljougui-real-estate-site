@@ -83,13 +83,16 @@
                                                         </div>
                                                     </div>
                                                     <!-- edit featured property #1 details summary info (listing agent name, address and phone number) -->
-                                                    <div class="col-md-6 col-sm-6">
+                                                    <div class="col-md-6 col-sm-6">                                                                                                                                                                                                                                                                             
                                                         <div class="details-name">Melanie Saljougui</div>
                                                         <div class="details-place">Ley Realty</div>        
                                                         <div class="details-phone"><i class="fa fa-mobile-phone"></i> 415-815-9079<br><i class="fa fa-phone"></i> 702-313-7003</div>
                                                         <div class="details-phone"><a href="mailto:Melaniesaljougui@gmail.com?Subject=Intrested%20buyer" target="_top">Melaniesaljougui@gmail.com</a> </div>
+                                                    
+                                                        
                                                     </div>
                                                 </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -105,8 +108,18 @@
                                                 </ul>
                                                 <div class="tab-content tabs_blocks">
                                                     <div class="active" id="details1">
+                                                    
                                                         <!-- featured listings house #1 property details tab info slides start here -->
                                                         <ul class="info_slides">
+                                                          <div class="row">
+                                                                
+                                                                <div class="col-md-12">
+                                                                   
+                                                                    <a TARGET="_blank" class="email-btn pull-left" href="mailto:someone@yoursite.com?&subject=Intrested%20in%20<?= $this->model->getStreetAddress()?>,%20<?= $this->model->getCityStZip()?>,%20MLS#%20<?= $this->model-> getMLS()?>&body=Hi%20Melanie,"><i class="fa fa-envelope"></i> Email me for more info</a>
+                                                                
+                                                                </div>    
+                                                            
+                                                            </div>
                                                             <li class="active">
                                                                 <!-- edit featured listings house #1 property tab info slide #1 (details) label here -->
                                                                 <a href="#" class="styler_color"><i class="arr styler_color"></i>Details</a>
@@ -473,6 +486,7 @@
                                                                 </div>
                                                             </li>                                                                
                                                         </ul>
+                                                      
                                                     </div>
                                                     <!-- edit featured listings house #1 map tab info here -->
                                                     <div class="tab-map">
