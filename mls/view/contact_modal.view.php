@@ -10,10 +10,10 @@
                         <h4 class="modal-title text-center">Contact me about <?= $this->model->getStreetAddress()?>, <?= $this->model->getCityStZip()?></h4>
                       </div>
                       <div class="modal-body">
-  <div class="container "> 
+ 
     <div class="bottom-contact">
         <div class="row">
-            <div class="col-md-12 col-sm-12 center-block">
+            <div class="col-md-12 col-  sm-12 center-block">
                 <form role="form" id="validForm">
                     <div class="form-group">
                         <input type="text" class="form-control" id="inputName"  placeholder="Name">
@@ -68,7 +68,7 @@
                 </div>                    
         
     </div>
-</div>
+
 </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-lg btn-default center-block" data-dismiss="modal">Close</button>

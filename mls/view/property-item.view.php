@@ -14,7 +14,7 @@
                                                 <div class="address-bottom">
                                                     <?= $this->model->getCityStZip()?>
                                                 </div>
-                                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal<?= $this->model->rowIdx ?>">Contact me about this property</button> 
+                                                
                                                      
                                             </div>                                                
                                         </div>
@@ -89,10 +89,13 @@
                                                         <div class="details-name">Melanie Saljougui</div>
                                                         <div class="details-place">Key Realty</div>        
                                                         <div class="details-phone"><a href="tel:415-815-9079"><i class="fa fa-mobile-phone"></i> 415-815-9079</a><br><a href="tel:702-313-7003"><i class="fa fa-phone"></i> 702-313-7003</a></div>
-                                                        <div class="details-phone"><a TARGET="_blank"  href="mailto:Melaniesaljougui@gmail.com?&subject=Intrested%20in%20<?= $this->model->getStreetAddress()?>,%20<?= $this->model->getCityStZip()?>,%20MLS#%20<?= $this->model-> getMLS()?>&body=Hi%20Melanie,">Melaniesaljougui@gmail.com</a> </div>
-                                                          
+                                                        <div class="details-phone"><a TARGET="_blank"  href="mailto:Melaniesaljougui@gmail.com?&subject=Intrested%20in%20<?= $this->model->getStreetAddress()?>,%20<?= $this->model->getCityStZip()?>,%20MLS#%20<?= $this->model-> getMLS()?>&body=Hi%20Melanie,">Melaniesaljougui@gmail.com</a> </div>      <br />
+                                                         
                                                         
                                                     </div>
+                                                    <div class="col-md-12 col-xs-12">
+                                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal<?= $this->model->rowIdx ?>"><i class="fa fa-envelope" aria-hidden="true"></i> Contact me about this property</button>  
+                                                    </div>  
                                                 </div>
                                                 
                                             </div>

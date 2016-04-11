@@ -2417,7 +2417,6 @@ form {
 }
 .bottom-contact .form-group {
     margin-bottom: 25px;
-    width:90%;
 }
 .bottom-contact .disclaimer {
     color: #004b6a;
@@ -2701,7 +2700,7 @@ form {
     font-size: 15px;
     min-width: 184px;
     text-align: center;
-    color: #ffffff;
+    color: #6B6B6B;
 }
 .details-tabs .tabs li.active a {
     border-left: 1px solid #dedddd;

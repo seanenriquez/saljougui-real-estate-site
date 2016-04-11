@@ -2158,7 +2158,7 @@ include('includes/header.php');
 						<!-- /end  about section  here -->
 						
 						<!-- begin contact form -->
-						  <?php include('includes/contact.php');  ?>
+						  
                              
                                            
 					</div>
@@ -2172,7 +2172,9 @@ include('includes/header.php');
 	</div>
 
 	<!-- begin footer -->
-	
+	<?php
+    include('includes/footer_new.php'); 
+    ?>
 	<!-- /end footer -->
 
 	<!-- Javascript/bootstrap + all other scripts -->
