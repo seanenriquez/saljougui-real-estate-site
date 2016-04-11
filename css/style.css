@@ -2370,7 +2370,8 @@ form {
     margin-bottom: 20px;
 }
 .bottom-contact input[type="text"], .bottom-contact input[type="email"] {    
-    color: #cfcfcf;
+    color: #000;
+    font-weight:500;
     height: 50px;
     padding: 0 20px;
     -webkit-border-radius: 0;
@@ -2379,7 +2380,8 @@ form {
     line-height: 20px;
 }
 .bottom-contact textarea {
-    color: #cfcfcf;
+    color: #000;
+    font-weight:500;
     padding: 20px;
     min-height: 120px;
     -webkit-border-radius: 0;
@@ -2403,7 +2405,10 @@ form {
 .bottom-contact {
     margin: 40px;
 }
-.bottom-contact address {
+.bottom-contact {
+    margin: 0px;
+}
+.modal-body>.bottom-contact address {
     font-weight: normal;
     color: #004b6a;
     font-size: 13px;
@@ -2412,6 +2417,7 @@ form {
 }
 .bottom-contact .form-group {
     margin-bottom: 25px;
+    width:90%;
 }
 .bottom-contact .disclaimer {
     color: #004b6a;

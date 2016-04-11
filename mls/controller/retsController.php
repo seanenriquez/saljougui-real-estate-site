@@ -120,6 +120,21 @@ class retsController {
                 } while ($this->model->next());
 
                 break;
+                
+                 // Dynamic Contact Modal for details tablet
+            case 'contact-modal':
+
+                $this->model = new dbRetsModel();
+
+                $this->model->getFeaturedListingProps();
+
+                // process view
+
+                do {
+                    require ('mls/view/contact_modal.view.php');
+                } while ($this->model->next());
+
+                break;
 
 
 				// site landing page...get random properties for display

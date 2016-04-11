@@ -5153,6 +5153,7 @@ button.close {
 }
 .modal-header .close {
   margin-top: -2px;
+  font-size:30px;
 }
 .modal-title {
   margin: 0;

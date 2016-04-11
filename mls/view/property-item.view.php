@@ -3,7 +3,7 @@
                                     <a class="close-details" href="javascript:void(0)"></a>
                                 </div>
                                 <div class="inner-block">
-
+                                              
                                     <div class="row">
                                         <div class="col-md-8 col-sm-8">
                                             <!-- edit featured property #1 address -->
@@ -13,7 +13,9 @@
                                                 </div>    
                                                 <div class="address-bottom">
                                                     <?= $this->model->getCityStZip()?>
-                                                </div>    
+                                                </div>
+                                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal<?= $this->model->rowIdx ?>">Contact me about this property</button> 
+                                                     
                                             </div>                                                
                                         </div>
                                         <div class="col-md-4 col-sm-4">
@@ -85,10 +87,10 @@
                                                     <!-- edit featured property #1 details summary info (listing agent name, address and phone number) -->
                                                     <div class="col-md-6 col-sm-6">                                                                                                                                                                                                                                                                             
                                                         <div class="details-name">Melanie Saljougui</div>
-                                                        <div class="details-place">Ley Realty</div>        
-                                                        <div class="details-phone"><i class="fa fa-mobile-phone"></i> 415-815-9079<br><i class="fa fa-phone"></i> 702-313-7003</div>
-                                                        <div class="details-phone"><a href="mailto:Melaniesaljougui@gmail.com?Subject=Intrested%20buyer" target="_top">Melaniesaljougui@gmail.com</a> </div>
-                                                    
+                                                        <div class="details-place">Key Realty</div>        
+                                                        <div class="details-phone"><a href="tel:415-815-9079"><i class="fa fa-mobile-phone"></i> 415-815-9079</a><br><a href="tel:702-313-7003"><i class="fa fa-phone"></i> 702-313-7003</a></div>
+                                                        <div class="details-phone"><a TARGET="_blank"  href="mailto:Melaniesaljougui@gmail.com?&subject=Intrested%20in%20<?= $this->model->getStreetAddress()?>,%20<?= $this->model->getCityStZip()?>,%20MLS#%20<?= $this->model-> getMLS()?>&body=Hi%20Melanie,">Melaniesaljougui@gmail.com</a> </div>
+                                                          
                                                         
                                                     </div>
                                                 </div>
@@ -102,7 +104,7 @@
                                             <div class="col-md-12 col-sm-12">
                                                 <ul class="tabs">
                                                     <!-- edit featured listings house #1 property tab label #1 (property details) here -->
-                                                    <li class="active"><a class="styler_bg_color" href="#details1" data-toggle="tab">PROPERTY DETAILS</a></li>
+                                                    <li class="active"><a class="styler_bg_color" href="#details1" data-toggle="tab">PROPERTY DETAILS </a></li>
                                                     <!-- edit featured listings house #1 property tab label #2 (map) here -->
                                                     <li><a class="styler_bg_color" href="#tab-map" data-toggle="tab">MAP</a></li>
                                                 </ul>
@@ -115,8 +117,9 @@
                                                                 
                                                                 <div class="col-md-12">
                                                                    
-                                                                    <a TARGET="_blank" class="email-btn pull-left" href="mailto:someone@yoursite.com?&subject=Intrested%20in%20<?= $this->model->getStreetAddress()?>,%20<?= $this->model->getCityStZip()?>,%20MLS#%20<?= $this->model-> getMLS()?>&body=Hi%20Melanie,"><i class="fa fa-envelope"></i> Email me for more info</a>
-                                                                
+                                                                    
+                                                                    <!-- Trigger the modal with a button -->
+                                                      
                                                                 </div>    
                                                             
                                                             </div>
@@ -454,6 +457,7 @@
                                                                                         <td><strong>High School:</strong></td>
                                                                                         <td><?= $this->model-> getData("high_school")?></td>
                                                                                     </tr>
+                                                                                     
                                                                                      
                                                                                      <tr>
                                                                                         <td><strong>Internet:</strong></td>
