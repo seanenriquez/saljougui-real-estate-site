@@ -498,7 +498,8 @@
                                                     <!-- edit featured listings house #1 map tab info here -->
                                                     <div class="tab-map">
                                                         <!-- begin map -->
-                                                        <div class="map" data-coordinates="32.83823,-96.775347" data-title="5321 E Mockingbird Ln, Dallas, TX 75206"></div>
+                                                       
+                                                        <iframe width="%100" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.it/maps?q=<?= $this->model->getStreetAddress()?> <?= $this->model->getCityStZip()?>&output=embed"></iframe>
                                                         <!-- /end map -->
                                                     </div>
                                                 </div>
