@@ -498,8 +498,7 @@
                                                     <!-- edit featured listings house #1 map tab info here -->
                                                     <div class="tab-map">
                                                         <!-- begin map -->
-                                                       
-                                                        <iframe width="%100" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.it/maps?q=<?= $this->model->getStreetAddress()?> <?= $this->model->getCityStZip()?>&output=embed"></iframe>
+                                                        <iframe width="1000px" height="480px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.it/maps?q=<?= $this->model->getStreetAddress()?> <?= $this->model->getCityStZip()?>&output=embed"></iframe>
                                                         <!-- /end map -->
                                                     </div>
                                                 </div>
