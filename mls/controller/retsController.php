@@ -82,62 +82,61 @@ class retsController {
 				$this->model->getCarouselProps();
 
 				// process view
-
 				do {
 					require ('mls/view/carousel.view.php');
 				} while ($this->model->next());
 
 				break;
-                
-                // site landing page...get random properties for display
-            case 'featured-listing':
-
-                $this->model = new dbRetsModel();
-
-                //  get data...
-                $this->model->getFeaturedListingProps();
-
-                // process view
-
-                do {
-                    require ('mls/view/featured-listing.view.php');
-                } while ($this->model->next());
-
-                break;
-                
-                // site landing page...get display data for properties!
-            case 'property-item':
-
-                $this->model = new dbRetsModel();
-
-                //  get data...
-                $this->model->getFeaturedListingProps();
-
-                // process view
-
-                do {
-                    require ('mls/view/property-item.view.php');
-                } while ($this->model->next());
-
-                break;
-                
-                 // Dynamic Contact Modal for details tablet
-            case 'contact-modal':
-
-                $this->model = new dbRetsModel();
-
-                $this->model->getFeaturedListingProps();
-
-                // process view
-
-                do {
-                    require ('mls/view/contact_modal.view.php');
-                } while ($this->model->next());
-
-                break;
-
 
 				// site landing page...get random properties for display
+			case 'featured-listing':
+
+				$this->model = new dbRetsModel();
+
+				//  get data...
+				$this->model->getFeaturedListingProps();
+
+				// process view
+
+				do {
+					require ('mls/view/featured-listing.view.php');
+				} while ($this->model->next());
+
+				break;
+
+				// site landing page...get display data for properties!
+			case 'property-item':
+
+				$this->model = new dbRetsModel();
+
+				//  get data...
+				$this->model->getFeaturedListingProps();
+
+				// process view
+
+				do {
+					require ('mls/view/property-item.view.php');
+				} while ($this->model->next());
+
+				break;
+
+				// Dynamic Contact Modal for details tablet
+			case 'contact-modal':
+
+				$this->model = new dbRetsModel();
+
+				$this->model->getFeaturedListingProps();
+
+				// process view
+
+				do {
+					require ('mls/view/contact_modal.view.php');
+				} while ($this->model->next());
+
+				break;
+
+
+
 			case 'index-random':
 
 				$this->model = new dbRetsModel();
@@ -293,14 +292,42 @@ class retsController {
 			case 'city-search':
 
 				// load model need for this action
-				//$this->model = new dbRetsModel();
+				$this->model = new dbRetsModel();
 
-				$city = fixDashes($_GET['area']);
+				$city = fixDashes($_GET['city']);
+				$this->model->setCity($city);
+				$this->model->getAreaListings();
 
-				require ('includes/city-quick-search.php');
+				if ($this->model->count > 0) {
+					do {
+						require ('mls/view/city-listing.view.php');
+					} while ($this->model->next());
+				}
+				else {
+					require ('mls/view/searchNoFound.php');
+
+				}
+
+				//require ('includes/city-quick-search.php');
+				break;
+				
+			// for the city-search loop
+			case 'city-property-item':
+
+				$this->model = new dbRetsModel();
+
+				//  get data...
+				//$this->model->getFeaturedListingProps();
+
+				// process view
+            do {
+					require ('mls/view/property-item.view.php');
+					require ('mls/view/contact_modal.view.php');
+				} while ($this->model->next());
 
 
 				break;
+
 
 
 			case 'city-sale-search':

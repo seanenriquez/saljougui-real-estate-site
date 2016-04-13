@@ -7,7 +7,7 @@ $action=basename(__FILE__, '.php');               // load action from filename f
 //$controller = new retsController($action);            // register controller with page action and parameter
 //$controller->invoke();                            // invokde controller to get view
 
-$page_title = "Las Vegas Luxe Realty - Luxury Las Vegas, Nevada Real Estate";
+$page_title = "Las Vegas Luxe Realty - ";
 $page_desc = "Real estate agents specializing in Las Vegas and Henderson Nevada Homes and Condos For Sale";
 $page_keys = "real estate, for sale, for rent";
 
@@ -34,11 +34,7 @@ include('includes/header.php');
 			</div>
 
 			-->
-			<?php
-
-			include('includes/nav-bar.php');
-
-			?>
+			<?php include('includes/nav-bar.php'); ?>
 
 
 
@@ -56,15 +52,11 @@ include('includes/header.php');
 	</div>
 
 	<!-- begin footer -->
-	<?php
-	include('includes/footer_new.php'); 
-	?>
+	<?php include('includes/footer_new.php');  ?>
 	<!-- /end footer -->
 
 	<!-- Javascript/bootstrap + all other scripts -->
-	<?php
-	include('includes/bottom_scripts_new.php'); 
-	?>
+	<?php include('includes/bottom_scripts_new.php'); ?>
 	<!-- /End Scripts -->
 </body>
 

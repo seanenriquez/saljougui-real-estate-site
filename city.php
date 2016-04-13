@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 error_reporting(E_ALL);
 include('mls/controller/retsController.php');
@@ -8,20 +7,18 @@ $action=basename(__FILE__, '.php');               // load action from filename f
 //$controller = new retsController($action);            // register controller with page action and parameter
 //$controller->invoke();                            // invokde controller to get view
 
-$page_title = "Las Vegas Luxe Realty - Luxury Las Vegas, Nevada Real Estate";
+$page_title = "Las Vegas Luxe Realty - ";
 $page_desc = "Real estate agents specializing in Las Vegas and Henderson Nevada Homes and Condos For Sale";
 $page_keys = "real estate, for sale, for rent";
 
-$homepage = true;
+$homepage = false;
 
 include('includes/header.php');
-
 ?>
-
 <body>
 
 	<div id="container" class="main">
-		<div id="out">
+		<div id="out">                         
 
 			<!-- turn top notification bar on here by removing this comment
 
@@ -38,71 +35,17 @@ include('includes/header.php');
 
 			-->
 			<?php include('includes/nav-bar.php'); ?>
-
-			<!-- begin slider -->
-			<div id="layerslider" class="center-block"  style="width: 800px; height: 400px; max-height:400px; max-width: 800px">
-
-				<!-- slide contents goes here -->
-
-				<?php
-
-					$controller = new retsController('carousel');    	// register controller with page action and parameter
-					$controller->invoke();                            // invokde controller to get view
-
-				?>                    
-
-			</div>
-
-
-			<!-- /end slider -->
-
-			<div class="container">
-				<div class="row">
-					<!-- begin real estate agents promo block -->
-					<div class="col-sm-12 col-ms-12">
-
-						<div class="row">
-							<div class="col-sm-12 col-ms-12">                                         
-								<div class="promo-block">
-									<!-- edit real estate agent's promo block heading here -->
-									<br>
-									<h2 class="block-title styler_color sr-header"  >
-										Discover Melanie's Difference...
-									</h2>
-									<!-- promo real estate agent's block line divider here -->
-									<div class="block-separator clearfix"></div>                                            
-									<div class="col-sm-4 col-ms-4">
-										<!-- edit real estate agent's promo block image here -->
-										<img class="img-responsive block-img ease-right-1" src="img/mel_crop1.png" alt="" />
-									</div>
-									<div class="col-sm-8 col-ms-8">
-										<!-- real estate agent's promo block text starts here -->
-										<div class="promo-text">
-											<!-- edit real estate agent's promo block sub-heading here -->
-											<h3 class="ease-left-1 ">Trust An Experienced Las Vegas MLS Agent.</h3>
-											<br/>
-											<!-- edit real estate agent's promo block paragraph text here -->
-											<p class="ease-left-1">I am dedicated to matching prospective buyers with a house that meets their needs and that they will truly love! I believe in listening to my clients and providing them with listings that are within their price range and matching them with homes that exceed their expectations.</p>
-											<p class="ease-left-1">I have a diverse skill set with a solid natural sciences and business educational background. I hold a BA in Biology from Sacramento State University and an MBA Marketing from Golden Gate University, San Francisco. <ipsum class=""></ipsum></p>
-											<img class="ease-left-1" style="float: left;" src="img/realtor-signature.jpg" alt="" />
-
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<!-- /end promo text block -->
-
+			
 						<!-- begin featured listings summary block -->                                
 						<div class="wide-block">
+						
 							<div class="featured-listings">
 								<div class="row">
 									<div id="featured-listings_marker"></div>
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<!-- edit featured listings headline here -->
 										<h2 class="block-title styler_color sr-header">
-											Las Vegas & Henderson NV Top MLS Listings
+											<?= $_GET['city'] ?> MLS Listings
 										</h2>
 									</div>
 								</div>
@@ -111,7 +54,7 @@ include('includes/header.php');
 								<div class="row">
 									<?php
 
-										$controller = new retsController('featured-listing'); // register controller with page action and parameter
+										$controller = new retsController('city-search'); // register controller with page action and parameter
 										$controller->invoke();                            // invokde controller to get view
 
 									?> 
@@ -122,17 +65,11 @@ include('includes/header.php');
 							<!-- featured property #1 details start here -->
 							<?php
 
-								$controller = new retsController('property-item'); // register controller with page action and parameter
+								$controller = new retsController('city-property-item'); // register controller with page action and parameter
 								$controller->invoke();                           // invokde controller to get view
 
 							?>
 
-							<?php
-
-								$controller = new retsController('contact-modal');        // register controller with page action and parameter
-								$controller->invoke();                            // invokde controller to get view
-
-							?>
 							
 						<!-- ==========================MLS Search form starts here=======================================-->
 						<!-- Disabled php, remove the "//" before include to activate -->
@@ -299,64 +236,28 @@ include('includes/header.php');
 						<!-- /end resources -->
 						<?php include('includes/accordion.php'); ?>
 
-						<!-- the about section starts here -->
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-12 col-ms-12">      
-									<div id="about-realtor_marker"></div>
-									<div class=" about-block">                                                                                        
-										<!-- edit the about heading text here -->
-										<h2 class="block-title styler_color sr-header">
-											About Melanie Saljougui 
-										</h2>
-										<div class="block-separator clearfix"></div>
-										<div class="col-sm-8 col-ms-8">
-											<!-- edit the about text here -->
-											<div class="promo-text ease-right-2">
-												<p>Born and raised in France and with an Iranian background, I have a natural understanding and appreciation for the diversity of cultures. I am also fluent in French, Spanish, English and Farsi.
-													I am a tireless worker and will help you in any way that I can because it is what I truly love to do. </p>
-												<p>My family being so close and important to me, I understand that the right house provides a comfortable place to call your own and a gathering place for relatives and friends.</p>
-												<p>Outside of work, I enjoy the outdoors. I love to travel, hike with my dog, really anything that gets me outside in nature. I love meeting new people and experiencing new places, I also enjoy painting and reading in my free time.
-													Please help me help you by providing the basics of what you are looking for and your personal real estate likes and dislikes. I will find you what you are looking for!
-													Sincerely,</p>
-											</div>
-										</div>
-										<!-- realtor about image area starts here -->
-										<div class="col-sm-4 col-ms-4">
-											<!-- edit edit the realtor about image here -->
-											<img class="img-responsive vcenter  img-circle center-block ease-left-2" src="img/Melanie.png" alt="Melanie Saljougui, your real estate pro!" />
+			
+			<?php
+				$controller = new retsController("city-search");            // register controller with page action and parameter
+				$controller->invoke();        
+				
+			?>
 
-										</div>
-									</div>
-								</div>
-							</div>      
-						</div>
-						<!-- /end  about section  here -->
+			<?php include('includes/search-form.php'); ?>
 
-						<!-- begin contact form -->
-
-
-
-					</div>
-				</div>
-			</div>
-
-			<!-- Accordian end-->
 
 		</div>
 		<div id="empty"></div>
+		<br>
 	</div>
 
 	<!-- begin footer -->
-	<?php
-	include('includes/footer_new.php'); 
-	?>
+	<?php include('includes/footer_new.php');  ?>
 	<!-- /end footer -->
 
 	<!-- Javascript/bootstrap + all other scripts -->
-	<?php include('includes/bottom_scripts_new.php');  ?>
+	<?php include('includes/bottom_scripts_new.php'); ?>
 	<!-- /End Scripts -->
-
 </body>
 
 </html>
