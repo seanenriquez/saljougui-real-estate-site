@@ -212,13 +212,26 @@ h1, h2, h3 {
 #top_menu {
     float:right;
     margin-right:-16px;
-}
+}  
 .navbar {
     margin-bottom:20px;
 }
 .container > .navbar-collapse {
     padding:0;
+    text-align:center;  
 }
+
+nav.navbar{
+  background-color:#ccc;
+   // Animation
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+nav.navbar.shrink {
+  min-height: 35px ; 
+}
+/*
 #top_menu .nav-pills {
     padding-top:15px;
     margin-bottom:0;
@@ -273,6 +286,7 @@ h1, h2, h3 {
 .dropdown-submenu:focus > a {
     background:#0eae9b;
 }
+*/
 #wrapper {}
 #main_slider {
 }

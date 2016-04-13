@@ -2,7 +2,7 @@
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-
+    
     <script>
         $(document).ready(function(){
             /* Reset Button */
@@ -42,7 +42,7 @@
     <script src="/layerslider/js/greensock.js" type="text/javascript"></script>
     <script src="/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
     <script src="/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-
+    
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
@@ -57,7 +57,17 @@
 
     <script type="text/javascript" src="js/library.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
-    
+    <!-- Navbar Shrink JS -->
+    <script type="text/javascript">
+                $(window).scroll(function() {
+              if ($(document).scrollTop() > 50) {
+                $('nav').addClass('shrink');
+              } else {
+                $('nav').removeClass('shrink');
+              }
+});
+    </script>
+    <!-- /End of Navbar Shrink JS -->
     <!-- Layer Slider JS controller (view documentation for refrence) -->
     <script type="text/javascript">
         // Running the code when the document is ready

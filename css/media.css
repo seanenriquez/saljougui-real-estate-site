@@ -580,15 +580,15 @@
         background-color: #000000;
     }
     .navbar-collapse .nav > li > a, .navbar-collapse .dropdown-menu a {
-        color: #ffffff;
+        
+        color: #B378D3;
         text-transform: none;
-        font-weight: lighter;
         text-shadow: none;
         margin: 0;
     }
     .navbar-collapse .nav > li > a:hover, .navbar-collapse .nav > li > a:focus, .navbar-collapse .dropdown-menu a:hover, .navbar-collapse .dropdown-menu a:focus {
-        background-color: #000000;
-        color: #038989;
+        background-color: #B378D3;
+        color: #fff;
     }
     #top_menu .nav-pills > li > ul a {
         font-size:12px;

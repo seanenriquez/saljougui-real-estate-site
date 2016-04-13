@@ -17,10 +17,10 @@
                      
 <div id="home_marker"></div>                     
 <div id="header" class="">               
-<div class="inner">                                               
-<div class="top">
-            <a href="#" class="scrollup"></a>
-</div>          
+    <div class="inner">                                               
+    <div class="top">
+        <a href="#" class="scrollup"></a>
+    </div>          
     <div class="bottom">        
         <div class="container">
             <div class="row">
