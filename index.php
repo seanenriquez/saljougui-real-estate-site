@@ -98,7 +98,7 @@ include('includes/header.php');
 						<div class="wide-block">
 							<div class="featured-listings">
 								<div class="row">
-									<div id="featured-listings_marker"></div>
+									<div id="featured_marker"></div>
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<!-- edit featured listings headline here -->
 										<h2 class="block-title styler_color sr-header">
@@ -303,7 +303,7 @@ include('includes/header.php');
 						<div class="container">
 							<div class="row">
 								<div class="col-sm-12 col-ms-12">      
-									<div id="about-realtor_marker"></div>
+									<div id="about_marker"></div>
 									<div class=" about-block">                                                                                        
 										<!-- edit the about heading text here -->
 										<h2 class="block-title styler_color sr-header">

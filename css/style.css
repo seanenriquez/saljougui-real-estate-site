@@ -242,11 +242,10 @@ h1, h2, h3 {
 }
 
 
-
-nav.navbar.shrink a>.logo-name {
-    padding-bottom: 1px !important;
-    background-color:red;
+nav.navbar.shrink a img {
+   height:40px;
 }
+
 
 nav a {
         font-size: 18px;
@@ -272,7 +271,7 @@ nav.navbar.shrink a {
 
 
 nav.navbar.shrink .navbar-toggle {
-    margin: 8px 15px 8px 0;
+    margin: 8px 20px 8px 0;
     padding: 4px 5px;
 }
 /*
