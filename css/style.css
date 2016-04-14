@@ -217,19 +217,63 @@ h1, h2, h3 {
     margin-bottom:20px;
 }
 .container > .navbar-collapse {
-    padding:0;
+    padding:10px;
     text-align:center;  
 }
 
-nav.navbar{
-  background-color:#ccc;
-   // Animation
-   -webkit-transition: all 0.4s ease;
-   transition: all 0.4s ease;
+.logo-name {
+    font-size:30px;
+    font-weight:600;
+    color:#000;
+    
 }
 
+.logo-name::after {
+    margin-top:7px;
+    letter-spacing: 1px;
+    text-align:center;
+    display:block;  
+    padding:2px;
+    font-size:20px;
+    font-weight: 400;
+    background-color: #B378D3;
+    color:#fff;
+    content: "Call Now: 415-815-9079";
+}
+
+
+
+nav.navbar.shrink a>.logo-name {
+    padding-bottom: 1px !important;
+    background-color:red;
+}
+
+nav a {
+        font-size: 18px;
+        padding-bottom: 20px !important;
+        padding-top: 20px !important;
+        transition: all 0.3s ease;
+    }
+
+nav.navbar-toggle {
+    
+    margin: 13px 15px 13px 0;
+}
+  
 nav.navbar.shrink {
-  min-height: 35px ; 
+    min-height: 35px;
+}
+
+nav.navbar.shrink a {
+    font-size: 15px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+}
+
+
+nav.navbar.shrink .navbar-toggle {
+    margin: 8px 15px 8px 0;
+    padding: 4px 5px;
 }
 /*
 #top_menu .nav-pills {

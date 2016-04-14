@@ -37,10 +37,10 @@ include('includes/header.php');
 			</div>
 
 			-->
-			<?php include('includes/nav-bar.php'); ?>
+			<?php include('includes/nav-bar_new.php'); ?>
 
 			<!-- begin slider -->
-			<div id="layerslider" class="center-block"  style="width: 800px; height: 400px; max-height:400px; max-width: 800px">
+			<div id="layerslider" class="center-block"  style="margin-top:80px; width: 800px; height: 400px; max-height:400px; max-width: 800px">
 
 				<!-- slide contents goes here -->
 

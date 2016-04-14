@@ -24,13 +24,14 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                           </button>
-                          <a class="navbar-brand" href="#">Logo</a>
+                          <a class="navbar-brand logo-name text-center pull-left">Melanie Saljougui</a>
                         </div>
                         <div class="collapse navbar-collapse">
-                          <ul class="nav navbar-nav pull-right">
-                            <li class="active"><a href="#">About</a></li>
-                            <li ><a href="#">Featured</a></li>
-                            <li ><a href="#">Search</a></li>
+                          <ul class="nav navbar-nav ">
+                            <li class=""><a href="#featured-listings_marker">Featured</a></li>
+                            <li ><a href="#search_marker">Search</a></li>
+                            <li ><a href="">About</a></li>
+                            
                           </ul>                                       
                         </div><!--/.nav-collapse -->
                       </div>
