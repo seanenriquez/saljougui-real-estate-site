@@ -40,7 +40,7 @@ include('includes/header.php');
 			<?php include('includes/nav-bar_new.php'); ?>
 
 			<!-- begin slider -->
-			<div id="layerslider" class="center-block"  style="margin-top:80px; width: 800px; height: 400px; max-height:400px; max-width: 800px">
+			<div id="layerslider" class="center-block"  style="margin-top:100px; width: 800px; height: 400px; max-height:400px; max-width: 800px">
 
 				<!-- slide contents goes here -->
 
