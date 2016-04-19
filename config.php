@@ -8,4 +8,5 @@ $email_subject = "Feedback form submitted";
 $use_recaptcha = true;
 $publickey = "6LdPBxQTAAAAAGVdkl1KyHZpCqw6rU52fWoKOD7v";
 $privatekey = "6LdPBxQTAAAAAOJmgwZrSIZ1Zt2xIff8fVIW5pCl";
-?>
+
+?>                           

@@ -1,21 +1,22 @@
 <?php
 
-session_start();
+//session_start();                  0
 error_reporting(E_ALL);
+include('includes/globals.php');
 include('mls/controller/retsController.php');
 
-$action=basename(__FILE__, '.php');               // load action from filename for consistancy (index for this case)
+//$action=basename(__FILE__, '.php');               // load action from filename for consistancy (index for this case)
 //$controller = new retsController($action);            // register controller with page action and parameter
 //$controller->invoke();                            // invokde controller to get view
 
-$page_title = "Las Vegas Luxe Realty - Luxury Las Vegas, Nevada Real Estate";
+$page_title = "Las Vegas Luxe Realty - Epic Las Vegas and Henderson Nevada Real Estate";
 $page_desc = "Real estate agents specializing in Las Vegas and Henderson Nevada Homes and Condos For Sale";
-$page_keys = "real estate, for sale, for rent";
+$page_keys = "real estate, for sale, mls, las vegas, henderson";
 
 $homepage = true;
 
-include('includes/header.php');
 
+include('includes/header.php');
 ?>
 
 <body>
