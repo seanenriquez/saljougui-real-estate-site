@@ -34,7 +34,7 @@ include('includes/header.php');
 		</div>
 
 		-->
-		<?php include('includes/nav-bar.php'); ?>
+		<?php include('includes/nav-bar_new.php'); ?>
 
 		<!-- begin featured listings summary block -->    
 		<div class="container">
@@ -66,6 +66,8 @@ include('includes/header.php');
 						<!-- /end featured listings summary block -->
 
 						<!-- featured property #1 details start here -->
+                        
+                         
 						<?php
 
 						$controller = new retsController('city-property-item'); // register controller with page action and parameter
@@ -73,11 +75,11 @@ include('includes/header.php');
 
 						?>
 
-
+                         
 						<!-- ==========================MLS Search form starts here=======================================-->
 						<!-- Disabled php, remove the "//" before include to activate -->
 
-						<?php //include('includes/search-form.php'); ?>
+						<?php //include('includes/search-form.php'); ?>                                             
 
 						<!-- MLS Search form ends here -->
 
@@ -238,7 +240,8 @@ include('includes/header.php');
 						-->
 						<!-- /end resources -->
 						<?php include('includes/accordion.php'); ?>
-
+                        
+                        
 
 						<?php include('includes/search-form.php'); ?>
 
@@ -250,8 +253,9 @@ include('includes/header.php');
 		<div id="empty"></div>
 		<br>
 	</div>
-
-	<!-- begin footer -->
+    </div>
+	<!-- begin footer --> 
+    
 	<?php include('includes/footer_new.php');  ?>
 	<!-- /end footer -->
 

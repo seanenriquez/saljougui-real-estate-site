@@ -34,7 +34,7 @@ include('includes/header.php');
 			</div>
 
 			-->
-			<?php include('includes/nav-bar.php'); ?>
+			<?php include('includes/nav-bar_new.php'); ?>
 
 
 

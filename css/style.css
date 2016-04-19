@@ -21,6 +21,7 @@ html {
     visibility:hidden;
 }
 body {
+    padding-top:70px;
     line-height:20px;
 }
 
@@ -251,8 +252,12 @@ nav a {
         font-size: 18px;
         padding-bottom: 20px !important;
         padding-top: 20px !important;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
-    }
+}
+  
     
 nav a:hover{
     background-color:red;

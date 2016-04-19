@@ -36,7 +36,7 @@ include('includes/header.php');
             -->
             <?php
 
-            include('includes/nav-bar.php');
+            include('includes/nav-bar_new.php');
 
             ?>
 

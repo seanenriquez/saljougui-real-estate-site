@@ -38,10 +38,12 @@ include('includes/header.php');
 			</div>
 
 			-->
+            
+           
 			<?php include('includes/nav-bar_new.php'); ?>
 
 			<!-- begin slider -->
-			<div id="layerslider" class="center-block"  style="margin-top:100px; width: 800px; height: 400px; max-height:400px; max-width: 800px">
+			<div id="layerslider" class="center-block"  style="margin-top:50px; width: 800px; height: 400px; max-height:400px; max-width: 800px">
 
 				<!-- slide contents goes here -->
 
@@ -80,7 +82,7 @@ include('includes/header.php');
 										<!-- real estate agent's promo block text starts here -->
 										<div class="promo-text">
 											<!-- edit real estate agent's promo block sub-heading here -->
-											<h3 class="ease-left-1 ">Trust An Experienced Las Vegas MLS Agent.</h3>
+											<h3 class="ease-left-1">Trust An Experienced Las Vegas MLS Agent.</h3>
 											<br/>
 											<!-- edit real estate agent's promo block paragraph text here -->
 											<p class="ease-left-1">I am dedicated to matching prospective buyers with a house that meets their needs and that they will truly love! I believe in listening to my clients and providing them with listings that are within their price range and matching them with homes that exceed their expectations.</p>
@@ -349,9 +351,7 @@ include('includes/header.php');
 	</div>
 
 	<!-- begin footer -->
-	<?php
-	include('includes/footer_new.php'); 
-	?>
+	<?php include('includes/footer_new.php'); ?>
 	<!-- /end footer -->
 
 	<!-- Javascript/bootstrap + all other scripts -->
