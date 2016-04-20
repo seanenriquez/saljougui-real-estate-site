@@ -1,8 +1,9 @@
+    <!-- scripting (at the bottom for faster loading) -->
 
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/bootstrap.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery.smooth-scroll.js"></script>
     <script>
         $(document).ready(function(){
             /* Reset Button */
@@ -23,42 +24,28 @@
         });
     </script>
   
-
-
-    <!-- start style switcher -->
-    <!-- remove this section when you want to remove the style switcher -->
-    <!--        <script type="text/javascript" src="js/style-switcher/style-switcher.js"></script>  -->
-    <!-- /end style switcher -->
-
-    <!-- capthca script -->
-    <!-- /end capthca script -->
-
-    <!-- scripting (at the bottom for faster loading) -->
-
-
     <!-- External libraries: jQuery & GreenSock -->
-
-    <script src="/layerslider/js/jquery.js" type="text/javascript"></script>
-    <script src="/layerslider/js/greensock.js" type="text/javascript"></script>
-    <script src="/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
-    <script src="/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script src="<?= $BASE_WEB_URL ?>/layerslider/js/jquery.js" type="text/javascript"></script>
+    <script src="<?= $BASE_WEB_URL ?>/layerslider/js/greensock.js" type="text/javascript"></script>
+    <script src="<?= $BASE_WEB_URL ?>/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="<?= $BASE_WEB_URL ?>/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
     
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 
-                                                                                     
+    <script type="text/javascript" src='https://www.googl0e.com/recaptcha/api.js'></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="js/jquery.easy-pie-chart.js"></script>
-    <script type="text/javascript" src="js/mail_validation.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/jquery.royalslider.min.js"></script>        
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery.easy-pie-chart.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/mail_validation.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery.royalslider.min.js"></script>        
 
-    <script type="text/javascript" src="js/library.js"></script>
-    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/library.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/function.js"></script>
+    
     <!-- Navbar Shrink JS -->
-    <script type="text/javascript" src="js/nav-shrink.js">
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/nav-shrink.js">
                
     </script>
     <!-- /End of Navbar Shrink JS -->
@@ -80,7 +67,7 @@
     <!-- /End  Layer Slider JS controller -->
     
     <!--Scroll Reveal Classes -->
-    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
     <script>
         var up = {
             delay    : 200,
@@ -133,9 +120,6 @@
         sr.reveal(".ease-left-2", easeLeft,150);
         sr.reveal(".ease-right-2", easeRight,150);
         sr.reveal(".sr-down", down);
-
-
-
 
     </script>
     <!-- /End Scroll Reveal js -->
