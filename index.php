@@ -76,7 +76,7 @@ include('includes/header.php');
 									<div class="block-separator clearfix"></div>                                            
 									<div class="col-sm-4 col-ms-4">
 										<!-- edit real estate agent's promo block image here -->
-										<img class="img-responsive block-img ease-right-1" src="img/mel_crop1.png" alt="" />
+										<img class="img-responsive block-img ease-right-1" src="img/mel_crop2.png" alt="" />
 									</div>
 									<div class="col-sm-8 col-ms-8">
 										<!-- real estate agent's promo block text starts here -->

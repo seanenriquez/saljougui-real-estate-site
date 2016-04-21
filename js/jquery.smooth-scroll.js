@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function setBindings() {
-    $("nav a").click(function(e){
+    $("nav .navbar-nav a").click(function(e){
         e.preventDefault();
         
         var sectionID = e.currentTarget.id + "_marker";

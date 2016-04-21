@@ -338,6 +338,12 @@
 }
 
 @media (max-width: 767px) {
+    .nav-phone {
+        float:inherit !important;
+        background-color:#B378D3;
+        padding:0 40px 0 40px;
+    }
+    
     .navbar{
         min-height:0;
     }

@@ -38,7 +38,7 @@
                         <div class="text">
                             <div class="header">DISCLAIMER</div>
                             <!-- edit your disclaimer text here -->
-                            <p>Information is from the multiple listing service and neither suggests nor infers that the [name of agent] or [name of company] participated as either the listing or cooperating agent or broker in the sale or purchase of the properties depicted.</p>
+                            <p>Information is from the multiple listing service and neither suggests nor infers that the Melanie Saljougui or Key Realty participated as either the listing or cooperating agent or broker in the sale or purchase of the properties depicted.</p>
                             <p >All properties listed in this web site are available on an equal opportunity basis.</p>
                         </div>
                         <!-- /end disclaimer -->
