@@ -1,17 +1,24 @@
 <?php
-session_start();
+//session_start();
 error_reporting(E_ALL);
 include('mls/controller/retsController.php');
+include('mls/controller/seoController.php');
+
+$city = ucwords(fixDashes($_GET['city']));
+$proptype = ucwords(fixDashes($_GET['proptype']));
+
 
 $action=basename(__FILE__, '.php');               // load action from filename for consistancy (index for this case)
 //$controller = new retsController($action);            // register controller with page action and parameter
 //$controller->invoke();                            // invokde controller to get view
 
-$page_title = "Las Vegas Luxe Realty - ";
-$page_desc = "Real estate agents specializing in Las Vegas and Henderson Nevada Homes and Condos For Sale";
-$page_keys = "real estate, for sale, for rent";
+if (isset($_GET['loprice'])) $stg = "Between $$_GET[loprice] And $$_GET[hiprice]";
 
-$homepage = false;
+$page_title = "Las Vegas Luxe Realty - $city $proptype Properties For Sale $stg";
+$page_desc = "Luxury custom $proptype for sale in $city $stg";
+$page_keys = "$city, $proptype, real estate, for sale, $stg";
+
+$homepage = false;                              
 
 include('includes/header.php');
 ?>
@@ -37,81 +44,51 @@ include('includes/header.php');
 		<?php include('includes/nav-bar_new.php'); ?>
 
 		<!-- begin featured listings summary block -->    
+        <div id="featured-listings_marker"></div>
 		<div class="container">
 			<div class="row">
-				<!-- begin real estate agents promo block -->
-				<div class="col-sm-12 col-ms-12">                            
+				<div class="col-sm-12 col-ms-12">                               
 					<div class="wide-block">
 						<div class="featured-listings">
 							<div class="row">
 								<div id="featured-listings_marker"></div>
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<!-- edit featured listings headline here -->
-									<h2 class="block-title styler_color sr-header">
-										<?= $_GET['city'] ?> MLS Listings
+									<h2 class="block-title sr-header">
+										<?= $city." ".$proptype." For Sale" ?>
 									</h2>
 								</div>
 							</div>
-							<!-- row #1 featured listings summary block --> 
-							<div id="featured-listings_marker"></div>
+							<!-- row #1 featured listings summary block -->
+                            
 							<div class="row">
-								<?php
+								<?php                     
 
-								$controller = new retsController('city-search'); // register controller with page action and parameter
-								$controller->invoke();                            // invokde controller to get view
+								    $controller = new retsController('city-search');    // register controller with page action and parameter
+								    $controller->invoke();                              // invokde controller to get view
 
 								?> 
-							</div>
+						    </div>
 						</div>
 						<!-- /end featured listings summary block -->
 
 						<!-- featured property #1 details start here -->
-                        
-                         
+                                                 
 						<?php
 
-						$controller = new retsController('city-property-item'); // register controller with page action and parameter
-						$controller->invoke();                           // invokde controller to get view
+					//	    $controller = new retsController('city-property-item'); // register controller with page action and parameter
+					//	    $controller->invoke();                           // invokde controller to get view
 
 						?>
-
-                         
+    
 						<!-- ==========================MLS Search form starts here=======================================-->
 						<!-- Disabled php, remove the "//" before include to activate -->
 
 						<?php //include('includes/search-form.php'); ?>                                             
 
 						<!-- MLS Search form ends here -->
-
-
-
-						<!-- awards and associations logo block starts here -->
-						<!-- Remove this comment for award sections
-						<div class="wide-block">
-						<div class="awards-block">
-						<div id="awards_marker"></div>
-						<div class="row">
-						<div class="col-sm-3 col-ms-3">
-
-						<img src="img/award1.jpg" alt="" />
-						</div>
-						<div class="col-sm-3 col-ms-3">
-
-						<img src="img/award2.jpg" alt="" />
-						</div>
-						<div class="col-sm-3 col-ms-3">
-
-						<img src="img/award3.jpg" alt="" />
-						</div>
-						<div class="col-sm-3 col-ms-3">
-
-						<img src="img/award4.jpg" alt="" />
-						</div>
-						</div>
-						</div>
-						</div>
-						-->
-						<!--
+                        
+                        <!--
 						<!-- begin resources - ->                                
 						<div class="resources clearfix">
 						<div id="resources_marker"></div>
@@ -241,10 +218,7 @@ include('includes/header.php');
 						<!-- /end resources -->
 						<?php include('includes/accordion.php'); ?>
                         
-                        
-
 						<?php include('includes/search-form.php'); ?>
-
 
 					</div>
 				</div>

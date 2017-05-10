@@ -109,56 +109,60 @@ ExpiresDefault "access 1 week"
 # dynamic links here
 #
 
-RewriteRule ^homes/sale/([^.]+)/page([^.]+)/$       search.php?area=$1&proptype=homes&searchtype=Residential&page=$2 [L,QSA]
-RewriteRule ^homes/sale/([^.]+)$                    search.php?area=$1&proptype=homes&searchtype=Residential [L,QSA]
+RewriteRule ^nv/quicksearch/([^.]+)/([^.]+)-for-sale/page([^.]+)/$             city.php?city=$1&proptype=$2&page=$3
+RewriteRule ^nv/quicksearch/([^.]+)/([^.]+)-for-sale$                          city.php?city=$1&proptype=$2
 
-RewriteRule ^nv/([^.]+)/Newest-For-Sale/page([^.]+)/$                   search.php?area=$1&searchtype=Residential&proptype=new&page=$2
-RewriteRule ^nv/([^.]+)/Newest-For-Sale$                                search.php?area=$1&searchtype=Residential&proptype=new
+RewriteRule ^pricesearch/nv/([^.]+)/([^.]+)-([^.]+)/([^.]+)-for-sale/page([^.]+)/$             city.php?city=$1&proptype=$2&page=$3
+RewriteRule ^pricesearch/nevada/([^.]+)/([^.]+)-([^.]+)/([^.]+)-for-sale/page([^.]+)/$             city.php?city=$1&proptype=$2&page=$3
+RewriteRule ^pricesearch/nv/([^.]+)/([^.]+)-([^.]+)/([^.]+)-for-sale$                          city.php?city=$1&loprice=$2&hiprice=$3&proptype=$4
+RewriteRule ^pricesearch/nevada/([^.]+)/([^.]+)-([^.]+)/([^.]+)-for-sale$                          city.php?city=$1&loprice=$2&hiprice=$3&proptype=$4
 
-#RewriteRule ^fl/([^.]+)/Newest-Rentals/page([^.]+)/$                    search.php?area=$1&searchtype=Rental&proptype=new&page=$2
-#RewriteRule ^fl/([^.]+)/Newest-Rentals$                                 search.php?area=$1&searchtype=Rental&proptype=new
+RewriteRule ^nv/([^.]+)/Newest-For-Sale/page([^.]+)/$                   search-result.php?area=$1&searchtype=Residential&proptype=new&page=$2
+RewriteRule ^nv/([^.]+)/Newest-For-Sale$                                search-result.php?area=$1&searchtype=Residential&proptype=new
 
-RewriteRule ^condos/sale/([^.]+)$             search.php?area=$1&proptype=condo&searchtype=Residential [L,QSA]
-RewriteRule ^hirise/sale/([^.]+)$             search.php?area=$1&proptype=townhome&searchtype=Residential [L,QSA]
-RewriteRule ^townhomes/sale/([^.]+)$             search.php?area=$1&proptype=townhome&searchtype=Residential [L,QSA]
+#RewriteRule ^nv/([^.]+)/Newest-Rentals/page([^.]+)/$                    search-result.php?area=$1&searchtype=Rental&proptype=new&page=$2
+#RewriteRule ^nv/([^.]+)/Newest-Rentals$                                 search-result.php?area=$1&searchtype=Rental&proptype=new
 
-#RewriteRule ^homes/rent/([^.]+)$               search.php?area=$1&proptype=homes&searchtype=Rental [L,QSA]
-#RewriteRule ^condos/rent/([^.]+)$               search.php?area=$1&proptype=homes&searchtype=Rental [L,QSA]
-#RewriteRule ^villas/rent/([^.]+)$               search.php?area=$1&proptype=townhome&searchtype=Rental [L,QSA]
-#RewriteRule ^townhomes/rent/([^.]+)$               search.php?area=$1&proptype=townhome&searchtype=Rental [L,QSA]
+RewriteRule ^condos/sale/([^.]+)$             search-result.php?area=$1&proptype=condo&searchtype=Residential [L,QSA]
+RewriteRule ^hirise/sale/([^.]+)$             search-result.php?area=$1&proptype=townhome&searchtype=Residential [L,QSA]
+RewriteRule ^townhomes/sale/([^.]+)$             search-result.php?area=$1&proptype=townhome&searchtype=Residential [L,QSA]
 
-RewriteRule ^mlsid/([^.]+)$                  single.php?mls=$1
-RewriteRule ^mls/([^.]+)$                    single.php?mls=$1
+#RewriteRule ^homes/rent/([^.]+)$               search-result.php?area=$1&proptype=homes&searchtype=Rental [L,QSA]
+#RewriteRule ^condos/rent/([^.]+)$               search-result.php?area=$1&proptype=homes&searchtype=Rental [L,QSA]
+#RewriteRule ^villas/rent/([^.]+)$               search-result.php?area=$1&proptype=townhome&searchtype=Rental [L,QSA]
+#RewriteRule ^townhomes/rent/([^.]+)$               search-result.php?area=$1&proptype=townhome&searchtype=Rental [L,QSA]
 
-#RewriteRule ^fl/([^.]+)/rental/pricebybeds/([^.]+)/([^.]+)/page([^.]+)/$        search.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Rental&url=1&page=$4
-#RewriteRule ^fl/([^.]+)/rental/pricebybeds/([^.]+)/([^.]+)$                     search.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Rental&url=1
+RewriteRule ^mlsid/([^.]+)$                  detail-listing.php?mls=$1
+RewriteRule ^mls/([^.]+)$                    detail-listing.php?mls=$1
 
-RewriteRule ^fl/([^.]+)/residential/pricebybeds/([^.]+)/([^.]+)/page([^.]+)/$   search.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Residential&url=1&page=$4
-RewriteRule ^fl/([^.]+)/residential/pricebybeds/([^.]+)/([^.]+)$                search.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Residential&url=1
+#RewriteRule ^nv/([^.]+)/rental/pricebybeds/([^.]+)/([^.]+)/page([^.]+)/$        search-result.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Rental&url=1&page=$4
+#RewriteRule ^nv/([^.]+)/rental/pricebybeds/([^.]+)/([^.]+)$                     search-result.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Rental&url=1
 
-#RewriteRule ^fl/([^.]+)/rental/seasonal/([^.]+)/([^.]+)$                  search.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=seasonal&pricerange=$3
-#RewriteRule ^fl/([^.]+)/rental/pets/furnished/([^.]+)/([^.]+)$            search.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=petfurn&pricerange=$3
-#RewriteRule ^fl/([^.]+)/rental/pets/unfurnished/([^.]+)/([^.]+)$          search.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=petunfurn&pricerange=$3
+RewriteRule ^nv/([^.]+)/residential/pricebybeds/([^.]+)/([^.]+)/page([^.]+)/$   search-result.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Residential&url=1&page=$4
+RewriteRule ^nv/([^.]+)/residential/pricebybeds/([^.]+)/([^.]+)$                search-result.php?area=$1&proptype=all&bedrange=$2&pricerange=$3&searchtype=Residential&url=1
 
-RewriteRule ^fl/([^.]+)/residential/style/([^.]+)/([^.]+)/page([^.]+)/$   search.php?area=$1&proptype=$2&searchtype=Residential&url=1&pricerange=$3&url=1&page=$4
-RewriteRule ^fl/([^.]+)/residential/style/([^.]+)/([^.]+)$                search.php?area=$1&proptype=$2&searchtype=Residential&url=1&pricerange=$3&url=1
+#RewriteRule ^nv/([^.]+)/rental/seasonal/([^.]+)/([^.]+)$                  search-result.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=seasonal&pricerange=$3
+#RewriteRule ^nv/([^.]+)/rental/pets/furnished/([^.]+)/([^.]+)$            search-result.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=petfurn&pricerange=$3
+#RewriteRule ^nv/([^.]+)/rental/pets/unfurnished/([^.]+)/([^.]+)$          search-result.php?area=$1&proptype=all&bedrange=$2&searchtype=Rental&url=1&searchsubtype=petunfurn&pricerange=$3
 
-#RewriteRule ^fl/([^.]+)/rental/style/([^.]+)/([^.]+)/page([^.]+)/$   		search.php?area=$1&proptype=$2&searchtype=Rental&url=1&pricerange=$3&url=1&page=$4
-#RewriteRule ^fl/([^.]+)/rental/style/([^.]+)/([^.]+)$                		search.php?area=$1&proptype=$2&searchtype=Rental&url=1&pricerange=$3&url=1
+RewriteRule ^nv/([^.]+)/residential/style/([^.]+)/([^.]+)/page([^.]+)/$   search-result.php?area=$1&proptype=$2&searchtype=Residential&url=1&pricerange=$3&url=1&page=$4
+RewriteRule ^nv/([^.]+)/residential/style/([^.]+)/([^.]+)$                search-result.php?area=$1&proptype=$2&searchtype=Residential&url=1&pricerange=$3&url=1
 
-#RewriteRule ^fl/([^.]+)/([^.]+)/Rental$                         				community.php?area=$1&subdiv=$2&searchtype=Rental&url=1&proptype=all [L,QSA]
-RewriteRule ^fl/([^.]+)/([^.]+)/residential$                    				community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
-RewriteRule ^fl/([^.]+)/([^.]+)/homes-for-sale$                    			community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
-RewriteRule ^fl/([^.]+)/([^.]+)/condos-for-sale$                    			community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
-RewriteRule ^fl/([^.]+)/([^.]+)/townhomes-for-sale$                    			community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
+#RewriteRule ^nv/([^.]+)/rental/style/([^.]+)/([^.]+)/page([^.]+)/$   		search-result.php?area=$1&proptype=$2&searchtype=Rental&url=1&pricerange=$3&url=1&page=$4
+#RewriteRule ^nv/([^.]+)/rental/style/([^.]+)/([^.]+)$                		search-result.php?area=$1&proptype=$2&searchtype=Rental&url=1&pricerange=$3&url=1
 
-RewriteRule ^fl/([^.]+)/([^.]+)/price/([^.]+)$                          search.php?area=$1&proptype=$2&pricerange=$3&searchtype=Residential&url=1
+#RewriteRule ^nv/([^.]+)/([^.]+)/Rental$                         				community.php?area=$1&subdiv=$2&searchtype=Rental&url=1&proptype=all [L,QSA]
+RewriteRule ^nv/([^.]+)/([^.]+)/residential$                    				community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
+RewriteRule ^nv/([^.]+)/([^.]+)/homes-for-sale$                    			community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
+RewriteRule ^nv/([^.]+)/([^.]+)/condos-for-sale$                    			community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
+RewriteRule ^nv/([^.]+)/([^.]+)/townhomes-for-sale$                    			community.php?area=$1&subdiv=$2&searchtype=Residential&url=1&proptype=all [L,QSA]
 
-#RewriteRule ^fl/([^.]+)/([^.]+)/rental/([^.]+)$                         search.php?area=$1&proptype=$2&pricerange=$3&searchtype=Rental&url=1
+RewriteRule ^nv/([^.]+)/([^.]+)/price/([^.]+)$                          search-result.php?area=$1&proptype=$2&pricerange=$3&searchtype=Residential&url=1
 
-RewriteRule ^fl/([^.]+)/([^.]+)/([^.]+)$                                search.php?area=$1&subdiv=&2&pricerange=&3
+#RewriteRule ^nv/([^.]+)/([^.]+)/rental/([^.]+)$                         search-result.php?area=$1&proptype=$2&pricerange=$3&searchtype=Rental&url=1
 
-RewriteRule ^fl/([^.]+)/([^.]+)$                    										city.php?area=$1&subdiv=$2
+RewriteRule ^nv/([^.]+)/([^.]+)/([^.]+)$                                search-result.php?area=$1&subdiv=&2&pricerange=&3
+
 
 # load city search
-RewriteRule ^nv/([^.]+)$                            										city.php?city=$1
+RewriteRule ^nv/([^.]+)$                            						city.php?city=$1

@@ -22,12 +22,11 @@ mysql_query($sql) or die(mysql_error() . $sql);
 $sql = 'INSERT INTO custom_listings (listing_id) 
         SELECT listing_id from master_rets_table 
               WHERE property_type = "Residential" 
-                AND city REGEXP "(palm beach gardens|jupiter|WEST PALM BEACH)" 
-                AND listing_price > 800000
-                AND listing_price <= 1500000
-                AND index_photo = 1
+                AND city REGEXP "(las vegas|henderson)" 
+                AND listing_price > 2000000
+                AND listing_price <= 4000000
               ORDER BY rand() DESC
-              LIMIT 3';   
+              LIMIT 5';   
                     
 mysql_query($sql) or die(mysql_error() . $sql);    
   

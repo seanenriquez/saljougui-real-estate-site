@@ -1,6 +1,6 @@
 <?php
 //Start the session
-session_start();
+//session_start();
 date_default_timezone_set("America/New_York");
 error_reporting(E_ALL ^ E_DEPRECATED);
 

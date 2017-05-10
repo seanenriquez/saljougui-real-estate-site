@@ -24,16 +24,18 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                           </button>
-                          <p class="navbar-brand pull-left logo-name">Melanie Saljougui</p>
+                          <a href="http://dev.webwarephpdevelopment.com/">
+                            <p class="navbar-brand pull-left logo-name">Sahar Saljougui</p>
+                          </a>
                         </div>
                         <div class="collapse navbar-collapse">
                           <ul class="nav navbar-nav ">
                             <li ><a id="featured" href="#featured_marker">Featured</a></li>
                             <li ><a id="search" href="#search_marker">Search</a></li>
-                            <li ><a id="about" href="#about_marker">About</a></li>
+                      <!--      <li ><a id="about" href="#about_marker">About</a></li> -->
                           
                           </ul> 
-                          <a class="pull-right nav-phone" href="tel:+1702-313-7003"><i class="fa fa-phone"></i> Call Now! 702-313-7003</a>                                      
+                          <a class="pull-right nav-phone" href="tel:+1702-313-7003"><i class="fa fa-phone"></i> Call 702-313-7003</a>                                      
                         </div><!--/.nav-collapse -->
                       </div>
 </nav>

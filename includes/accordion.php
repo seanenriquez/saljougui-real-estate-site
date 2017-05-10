@@ -1,15 +1,19 @@
-<!-- Accordian start--><div id="search_marker"></div>
+
+<!-- Accordian start-->
+    <div id="search_marker"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
                         <div id="quick-search" class="container jump-container">
                             <div class="row">
                                 <div class="col-xs-12 text-center">
-                                    <h2 class="block-title styler_color sr-header">
+                                    <h2 class="block-title sr-header">
                                     Greater Las Vegas Real Estate Quicksearch
                                         </h2>
                                     <p>Click on a city/town area below to expand the quick search options.<br class="hidden-sm hidden-xs">
-                                        Search MLS by homes, townhomes, condos, or hi-Rise properties with a few easy clicks!</p>
+                                        Search MLS by Homes, townhomes-for-sale, condos-for-sale, or hirise-for-sale properties with a few easy clicks!<br class="hidden-sm hidden-xs">
+                                        Quicksearch price range from $300k to $2mil
+                                    </p>
                                     <br>
                                 </div>
                             </div>
@@ -26,11 +30,14 @@
                                             </div>
                                             <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
                                                 <div class="panel-body">
-                                                    <ul id="capecanaveral" class="list-unstyled">
-                                                        <li><a href="/search/fl/capecanaveral/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/capecanaveral/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/capecanaveral/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hirise</a></li>
+                                                    <ul id="las-vegas" class="list-unstyled">
+                                                        <li>Homes - <a role="button" class="btn btn-primary" href="/nv/quicksearch/las-vegas/homes-for-sale/+1000000"> $1mil+ </a>
+                                                                    <a role="button" class="btn btn-primary" href="/nv/quicksearch/las-vegas/homes-for-sale/1000000-500000"> $1mil-500k </a>
+                                                                    <a type="button" class="btn btn-primary" href="nv/quicksearch/las-vegas/homes-for-sale/500000-100000"> $500k-100k 
+                                                        </li>                                                                        
+                                                        <li><a href="/nv/quicksearch/las-vegas/townhomes-for-sale">Townhomes</a></li>
+                                                        <li><a href="/nv/quicksearch/las-vegas/condos-for-sale">Condos</a></li>
+                                                        <li><a href="/nv/quicksearch/las-vegas/hirise-for-sale/">Hirise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -45,11 +52,11 @@
                                             </div>
                                             <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                                                 <div class="panel-body">
-                                                    <ul id="cocoa" class="list-unstyled">
-                                                        <li><a href="/search/fl/cocoa/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/cocoa/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/cocoa/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                    <ul id="henderson" class="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/henderson/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/henderson/townhomes-for-sale">Townhomes</a></li>
+                                                        <li><a href="/nv/quicksearch/henderson/condos-for-sale">Condos</a></li>
+                                                        <li><a href="/nv/quicksearch/henderson/hirise-for-sale">Hi-Rise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -64,11 +71,11 @@
                                             </div>
                                             <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                                                 <div class="panel-body">
-                                                    <ul id="cocoabeach" class="list-unstyled">
-                                                        <li><a href="/search/fl/cocoabeach/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/cocoabeach/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/cocoabeach/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                    <ul id="north-las-vegas" lass="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/north-las-vegas/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/north-las-vegas/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/north-las-vegas/condos-for-sale">Condos</a></li>
+                                                        <li><a href="/nv/quicksearch/north-las-vegas/hirise-for-sale">Hi-Rise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -84,9 +91,9 @@
                                             <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                                                 <div class="panel-body">
                                                     <ul id="indialantic" class="list-unstyled">
-                                                        <li><a href="/search/fl/indialantic/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/indialantic/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/indialantic/condos/">Condos</a></li>
+                                                        <li><a href="/nv/quicksearch/Pahrump/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Pahrump/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Pahrump/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -107,11 +114,10 @@
                                             </div>
                                             <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
                                                 <div class="panel-body">
-                                                    <ul id="malabar" class="list-unstyled">
-                                                        <li><a href="/search/fl/malabar/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/malabar/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/malabar/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                    <ul id="boulder-city" class="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/boulder-city/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/boulder-city/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/boulder-city/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -126,11 +132,10 @@
                                             </div>
                                             <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
                                                 <div class="panel-body">
-                                                    <ul id="melbourne" class="list-unstyled">
-                                                        <li><a href="/search/fl/melbourne/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/melbourne/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/melbourne/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                    <ul id="overton" class="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/Overton/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Overton/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Overton/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -145,11 +150,10 @@
                                             </div>
                                             <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
                                                 <div class="panel-body">
-                                                    <ul id="melbournebeach" class="list-unstyled">
-                                                        <li><a href="/search/fl/melbournebeach/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/melbournebeach/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/melbournebeach/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                    <ul id="ely" class="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/Ely/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Ely/townhomes-for-sale">Townhomes</a></li>
+                                                        <li><a href="/nv/quicksearch/Ely/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -165,10 +169,10 @@
                                             <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
                                                 <div class="panel-body">
                                                     <ul id="merrittisland" class="list-unstyled">
-                                                        <li><a href="/search/fl/merrittisland/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/merrittisland/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/merrittisland/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                        <li><a href="/nv/quicksearch/merrittisland/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/merrittisland/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/merrittisland/condos-for-sale">Condos</a></li>
+                                                        <li><a href="/nv/quicksearch/ocean-front/rental/">Hi-Rise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -190,10 +194,10 @@
                                             <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
                                                 <div class="panel-body">
                                                     <ul id="titusville" class="list-unstyled">
-                                                        <li><a href="/search/fl/ocean-front/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/ocean-front/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/ocean-front/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                        <li><a href="/nv/quicksearch/ocean-front/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/ocean-front/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/ocean-front/condos-for-sale">Condos</a></li>
+                                                        <li><a href="/nv/quicksearch/ocean-front/rental/">Hi-Rise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -209,10 +213,10 @@
                                             <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
                                                 <div class="panel-body">
                                                     <ul id="tortoiseisland" class="list-unstyled">
-                                                        <li><a href="/search/fl/river-front/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/river-front/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/river-front/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                        <li><a href="/nv/quicksearch/river-front/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/river-front/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/river-front/condos-for-sale">Condos</a></li>
+                                                        <li><a href="/nv/quicksearch/ocean-front/rental/">Hi-Rise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -228,10 +232,10 @@
                                             <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
                                                 <div class="panel-body">
                                                     <ul id="rockledge" class="list-unstyled">
-                                                        <li><a href="/search/fl/rockledge/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/rockledge/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/rockledge/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                        <li><a href="/nv/quicksearch/rockledge/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/rockledge/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/rockledge/condos-for-sale">Condos</a></li>
+                                                        <li><a href="/nv/quicksearch/ocean-front/rental/">Hi-Rise</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -246,11 +250,10 @@
                                             </div>
                                             <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
                                                 <div class="panel-body">
-                                                    <ul id="satellitebeach" class="list-unstyled">
-                                                        <li><a href="/search/fl/satellitebeach/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/satellitebeach/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/satellitebeach/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/satellitebeach/rental/">Hi-Rise</a></li>
+                                                    <ul id="mcgill" class="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/mcgill/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/mcgill/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/mcgill/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -270,11 +273,10 @@
                                             </div>
                                             <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
                                                 <div class="panel-body">
-                                                    <ul id="titusville" class="list-unstyled">
-                                                        <li><a href="/search/fl/titusville/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/titusville/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/titusville/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                    <ul id="indian-springs" class="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/indian-springs/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/indian-springs/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/indian-springs/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -290,10 +292,9 @@
                                             <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
                                                 <div class="panel-body">
                                                     <ul id="tortoiseisland" class="list-unstyled">
-                                                        <li><a href="/search/fl/tortoiseisland/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/tortoiseisland/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/tortoiseisland/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                        <li><a href="/nv/quicksearch/Caliente/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Caliente/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Caliente/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -308,11 +309,10 @@
                                             </div>
                                             <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
                                                 <div class="panel-body">
-                                                    <ul id="verobeach" class="list-unstyled">
-                                                        <li><a href="/search/fl/verobeach/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/verobeach/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/verobeach/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                    <ul id="Pioche" class="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/Pioche/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Pioche/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/Pioche/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -327,11 +327,10 @@
                                             </div>
                                             <div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
                                                 <div class="panel-body">
-                                                    <ul id="viera"  class="list-unstyled">
-                                                        <li><a href="/search/fl/viera/homes/">Homes</a></li>
-                                                        <li><a href="/search/fl/viera/townhomes/">Town Homes</a></li>
-                                                        <li><a href="/search/fl/viera/condos/">Condos</a></li>
-                                                        <li><a href="/search/fl/ocean-front/rental/">Hi-Rise</a></li>
+                                                    <ul id="sandy-valley"  class="list-unstyled">
+                                                        <li><a href="/nv/quicksearch/sandy-valley/homes-for-sale">Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/sandy-valley/townhomes-for-sale">Town Homes</a></li>
+                                                        <li><a href="/nv/quicksearch/sandy-valley/condos-for-sale">Condos</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

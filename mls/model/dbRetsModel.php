@@ -1,6 +1,8 @@
 <?php
 
 include_once('mls/model/pdoConfig.php');
+include_once('mls/model/dbRetsRoomModel.php');
+
 include_once('includes/utils.php');
 include_once('includes/pagination.php');
 
@@ -14,7 +16,11 @@ class dbRets extends PDOConfig {
 	public  $count;
 
 	const MLS_TABLENAME = 'master_rets_table';
-
+    
+    const CARD_FIEDS = ' sysid, listing_id,listing_price, listing_date, street_name,street_dir,street_number, 
+                         street_suffix, city, state_province, postal_code, 3_4_bath ,
+                         sqft_living, sqft_tot, halfbaths, full_bath , bedrooms  ';
+                           
 	public function __construct(){
 		parent::__construct( );
 	}
@@ -41,8 +47,48 @@ class dbRets extends PDOConfig {
 	}
 
 	public function getStreetAddress() {
-		//$str = $this->row['street_number']." ".$this->row['street_dir']." ".$this->row['street_name']." ".$this->row['street_suffix'];
-		$str= $this->row['public_address'];
+        
+        switch ($this->row['street_suffix']) {
+            case "Avenue":
+                $sfx = "Ave";
+            break;
+            case "Boulevard":
+                $sfx = "Blvd";
+            break;
+            case "Circle":
+                $sfx = "Cir";
+            break;
+            case "Court":
+                $sfx = "Ct";
+            break;
+            case "Drive":
+                $sfx = "Dr";
+            break;
+            case "Highway":
+                $sfx = "Hwy";
+            break;
+            case "Parkway":
+                $sfx = "Pkwy";
+            break;
+            case "Place":
+                $sfx = "Pl";
+            break;
+            case "Square":
+                $sfx = "Sq";
+            break;
+            case "Terrace":
+                $sfx = "Ave";
+            break;
+            
+            case "Trail":
+                $sfx = "Tr";
+            break;
+            
+        }
+              
+		$str = $this->row['street_number']." ".$this->row['street_dir']." ".ucwords(strtolower($this->row['street_name']))." ".$sfx;
+        
+		//$str= $this->row['public_address'];
 		if ($str=="   ")
 			$str="No Address Found";
 		return $str;
@@ -52,13 +98,21 @@ class dbRets extends PDOConfig {
 		return $this->row['city'].", NV ".$this->row['postal_code'];
 	}
 
-	public function getMLS() {
+	public function getMLS() {     
 		return $this->row['listing_id'];
 	}
+
+    public function getMUID() {
+        return $this->row['sysid'];
+    }
 
 	public function getSqFt() {
 		return number_format($this->row['sqft_living']);
 	}
+
+    public function getTotalSqFt() {
+        return number_format($this->row['sqft_tot']);
+    }
 
 	public function getCity() {
 		// return $this->row['city'].(strlen($this->row['city'])<=8?"&nbsp;&nbsp;&nbsp;&nbsp;":"");
@@ -75,7 +129,7 @@ class dbRets extends PDOConfig {
 	}
 
 	public function getBaths() {
-		return ($this->row['bathrooms'].".".$this->row['3_4_bath'].".".$this->row['halfbaths']);
+		return ($this->row['full_bath'].".".$this->row['3_4_bath'].".".$this->row['halfbaths']);
 	}
 
 	public function getLat() {
@@ -122,12 +176,12 @@ class dbRets extends PDOConfig {
 	}
 
 	public function getThumbFn() {
-		return "/mls/thumb/".$this->row['sysid']."-1.jpg";
+		return  $BASE_WEB_URL . "mls/thumbs/".$this->row['sysid']."-1.jpg";
 	}
 
 	public function getFrontPicFn() {
 		// return "/mls/photos/".$this->row['sysid']."-1.jpg";
-		return "http://dev.webwarephpdevelopment.com/mls/photos/".$this->row['sysid']."-1.jpg";    
+		return $BASE_WEB_URL . "/mls/photos/".$this->row['sysid']."-1.jpg";    
 	}
 
 
@@ -156,7 +210,6 @@ class dbRets extends PDOConfig {
 		return str_replace(",",", ",$this->row[$inFld]);
 	}
 
-
 	public function notEmpty($inFld) {
 		if (empty($this->row[$inFld]))
 			return false;
@@ -170,18 +223,24 @@ class dbRets extends PDOConfig {
 	}
 	// functions to build quicksearch links
 	public function getImageDisplayList() {
+        
+        global $BASE_WEB_URL;
 
 		$images = $this->getImageArray();
 
 		$first = true;
+
 		foreach ($images as $image) {
 
-			if ($first==true) $stg = "active"; else $stg = "";
+			if ($first==true) $stg = "bugaga"; else $stg = "";
 
-			$img = substr($image,16);
+            $imageArr = explode("/",$image);
+            $fn = array_pop($imageArr);
 
-			echo "<div class='item $stg'><img src='$img' alt=''></div>";
-
+			$img = $BASE_WEB_URL."/mls/photos/".$fn;
+            $thumb = $BASE_WEB_URL."/mls/thumbs96/".$fn;
+            
+            echo "<a class='rsImg $stg' data-rsw='540' data-rsh='374' data-rsBigImg='$img' href='$img'><img width='96' height='72' class='rsTmb' src='$thumb' alt='' /></a>\n\n";
 			$first = false;
 
 		}
@@ -272,10 +331,14 @@ class dbRetsModel extends dbRets {
 	private $tag;
 
 	public $pagination;
-	private $recs_per_page=20;
+	private $recs_per_page=40;   
+    
+    public $rooms;
 
 	public function __construct(){
 		parent::__construct( );
+        $this->min_price = 200000;
+        $this->max_price = 1500000;
 	}
 
 	// the search "title" is at the search level, not row level
@@ -314,19 +377,45 @@ class dbRetsModel extends dbRets {
 	public function isFirst() {
 		return ($this->rowIdx==1?"1":"0");
 	}
-
+    
 	// set functions for searches
 	public function setPropertyType ($inStg) {
 		$this->property_type=PDO::quote($inStg);
 	}
 
 	public function setPropertySubType ($inStg) {
-		$this->property_subtype=PDO::quote($inStg);
+        
+        $this->property_type=PDO::quote("Residential");
+
+        if ($inStg == "homes") {
+            $searchStg = "Single Family";
+        }                                  
+        else if ($inStg == "townhome") {
+            $searchStg = "Townhouse";
+        }
+        else if ($inStg == "condo") {
+            $searchStg = "Condominium";
+        }     
+        else {
+            $this->property_type=PDO::quote("High Rise"); 
+            $searchStg = "";
+        }
+        
+            
+		$this->property_subtype=PDO::quote($searchStg);
 	}
 
 	public function setAgentId ($inStg) {
 		$this->agent_id=PDO::quote($inStg);
 	}
+    
+    public function setLoPrice ($inStg) {
+        $this->min_price=PDO::quote($inStg);
+    }
+    
+    public function setHiPrice ($inStg) {
+        $this->max_price=PDO::quote($inStg);
+    }
 
 	public function setMLS ($inStg) {
 		$this->mls_id=PDO::quote($inStg);
@@ -336,12 +425,10 @@ class dbRetsModel extends dbRets {
 		$this->city=PDO::quote($inStg);
 	}
 
-
 	public function setCommunity ($inStg) {
 		$this->community=fixDashes(PDO::quote($inStg));
 		$this->subdiv=fixDashes(PDO::quote($inStg));
 	}
-
 
 	public function setArea ($inStg) {
 
@@ -446,7 +533,13 @@ class dbRetsModel extends dbRets {
 		$this->rowIdx = 0;
 
 		// set row to first
-		$this->row=$this->rows[$this->rowIdx++];
+        if ($this->count) {
+            
+            $this->row=$this->rows[$this->rowIdx++];
+            // go ahead and try to load the room data as well now...
+            $this->rooms = new dbRetsRoomModel($this->getData('sysid'));
+          
+        }
 
 	}   
 
@@ -524,7 +617,6 @@ class dbRetsModel extends dbRets {
 		limit 1
 		)";            
 
-
 		$this->stm = $this->prepare($sql);
 
 		$this->stm->execute();
@@ -559,6 +651,19 @@ class dbRetsModel extends dbRets {
 		return($rval);
 
 	}
+    
+    public function getSubdivDropdown() {
+        
+        $sql = "SELECT count(*) as cnt, subdivision FROM master_rets_table WHERE 
+                subdivision<>'none' AND 
+                subdivision<>'custom' AND
+                subdivision<>'N/A' AND
+                subdivision<>'0' AND
+                subdivision<>'9999'
+                GROUP BY subdivision 
+                HAVING cnt > 10
+                ORDER BY cnt desc";
+    }
 
 	public function getCityDesc($city) {
 
@@ -577,11 +682,13 @@ class dbRetsModel extends dbRets {
 
 	}
 
-
 	public function getFeaturedListingProps() {
 
-		$sql = 'SELECT * from master_rets_table 
-		WHERE listing_price > 700000 AND listing_price < 1500000 AND photo_count > 0 ORDER BY listing_entry_timestamp DESC LIMIT 9';
+		$sql = "SELECT  ".self::CARD_FIEDS." from master_rets_table 
+		WHERE listing_price > 600000 AND listing_price < 1300000 
+		AND photo_count > 0 
+		AND property_status IN  ( 'active' )
+		ORDER BY listing_entry_timestamp DESC LIMIT 9";
 
 		$this->stm = $this->prepare($sql);
 
@@ -752,6 +859,43 @@ class dbRetsModel extends dbRets {
 		$this->row=$this->rows[$this->rowIdx++];
 
 	}
+
+    public function getAreaSubTypeListings () {
+    
+        $sql = 'SELECT '.self::CARD_FIEDS.' FROM '.self::MLS_TABLENAME. '
+        WHERE city = '.$this->city.'
+        AND property_type REGEXP '.$this->property_type.'
+        AND  property_sub_type REGEXP '.$this->property_subtype.'
+        AND listing_price >= '.$this->min_price.' AND listing_price <= '.$this->max_price.'
+        ORDER BY listing_price DESC ';
+   
+        $this->stm = $this->prepare($sql);
+        $this->stm->execute();
+
+        $this->rows= $this->stm->fetchAll(PDO::FETCH_ASSOC);
+        $this->count = $this->stm->rowCount();
+
+        // adding pagination
+
+        $this->pagination = new zPagination();
+        $this->pagination->records($this->count);
+        $this->pagination->records_per_page($this->recs_per_page);
+        $this->pagination->method('url');
+        $this->pagination->base_url("",false);
+
+        $this->rows = array_slice(
+            $this->rows,
+            (($this->pagination->get_page() - 1) * $this->recs_per_page),
+            $this->recs_per_page);
+
+        $this->count=count($this->rows);
+
+        $this->rowIdx = 0;
+
+        // set row to first
+        if ($this->count > 0)
+            $this->row=$this->rows[$this->rowIdx++];
+    }
 
 	public function getAreaListings () {
 
@@ -998,12 +1142,12 @@ class dbRetsModel extends dbRets {
 			case "townhome":
 			case "townhomes":
 			case "townhouse":
-				$type = " ( property_sub_type='townhouse' OR property_sub_type = 'villa' ) ";
+				$type = " ( property_sub_type='town house' OR property_sub_type = '' ) ";
 				break;
 
 			case "condo":
 			case "condos":
-				$type = " property_sub_type='Condo/Coop' ";
+				$type = " property_sub_type='Condo' ";
 				break;
 
 			case "new":
@@ -1270,12 +1414,11 @@ class dbRetsModel extends dbRets {
 
 	protected function getImageArray() {
 
-		include_once('includes/global.php');
+		include_once('includes/globals.php');
+        
+        global $base_image_dir;
 
-		$listing_id = str_replace("'", "", $this->mls_id);
-
-		$image_count = 0;
-		$images = array();
+		$listing_id = str_replace("'", "", $this->getMUID() );
 
 		$fnArray1 = glob($base_image_dir.$listing_id."-?.jpg");
 		if ($fnArray1==false) {

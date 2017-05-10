@@ -1,17 +1,14 @@
-<div id="footer">
+    <div id="footer">    
         <div class="top">
-<!--            <div class="container appear">  -->
             <div class="container"> 
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-6">
                         <!-- edit footer logo here -->
-                        <a href="#" class="logo"><img src="img/logo.png" alt="" /></a>
-
-
+                        <a href="#" class="logo"><img src="<?= $BASE_WEB_URL ?>/img/logo.png" alt="" /></a>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-6">
                         <!-- edit alt footer logo here -->
-                        <a href="#" class="logo"><img src="img/key-logo-white.png"  alt="" /></a>
+                        <a href="#" class="logo"><img src="<?= $BASE_WEB_URL ?>/img/key-logo-white.png"  alt="" /></a>
                         <div class="text">
                             <!-- edit equal housing opportunity disclaimer here -->
 
@@ -50,7 +47,7 @@
             <div class="container">
                 <div class="row">
                     <!-- edit copyright notice here -->
-                    <div class="copyrights">Design / RETS by Webware Development 2016</div>
+                    <div class="copyrights">Design / RETS by Webware Development 2017</div>
                 </div>
             </div>
         </div>

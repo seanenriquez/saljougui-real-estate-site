@@ -1,6 +1,6 @@
 <?php
 
-//session_start();                  0
+//session_start();                  
 error_reporting(E_ALL);
 include('includes/globals.php');
 include('mls/controller/retsController.php');
@@ -9,16 +9,14 @@ include('mls/controller/retsController.php');
 //$controller = new retsController($action);            // register controller with page action and parameter
 //$controller->invoke();                            // invokde controller to get view
 
-$page_title = "Las Vegas Luxe Realty - Epic Las Vegas and Henderson Nevada Real Estate";
-$page_desc = "Real estate agents specializing in Las Vegas and Henderson Nevada Homes and Condos For Sale";
-$page_keys = "real estate, for sale, mls, las vegas, henderson";
+$page_title = "Las Vegas Luxe Realty - Las Vegas and Henderson Nevada MLS Real Estate";
+$page_desc = "Real estate agents specializing in luxury Las Vegas and Henderson Nevada Homes and Condos For Sale";
+$page_keys = "real estate, for sale, mls, las vegas, henderson, luxury ";
 
 $homepage = true;
 
-
 include('includes/header.php');
 ?>
-
 <body>
 
 	<div id="container" class="main">
@@ -38,8 +36,7 @@ include('includes/header.php');
 			</div>
 
 			-->
-            
-           
+                      
 			<?php include('includes/nav-bar_new.php'); ?>
 
 			<!-- begin slider -->
@@ -56,52 +53,55 @@ include('includes/header.php');
 
 			</div>
 
-
 			<!-- /end slider -->
 
 			<div class="container">
 				<div class="row">
-					<!-- begin real estate agents promo block -->
-					<div class="col-sm-12 col-ms-12">
+                
+                    <div class="col-sm-12 col-ms-12">					
+                
+                        <div class="row">
+                        
+					        <div class="col-sm-12 col-ms-12"> 
+                                                                                               
+						        <div class="promo-block">
+							        <!-- edit real estate agent's promo block heading here -->
+							        <br>
+							        <h2 class="block-title styler_color sr-header"  >
+								        Discover Sahar's Difference...
+							        </h2>
+							        <!-- promo real estate agent's block line divider here -->
+                                                                           
+							        <div class="col-sm-4 col-ms-4">
+								        <!-- edit real estate agent's promo block image here -->
+								        <img class="img-responsive scale-img ease-right-1" src="img/mel_crop3.png" alt="" />
+							        </div>
+							        <div class="col-sm-8 col-ms-8">
+								        <!-- real estate agent's promo block text starts here -->
+								        <div class="promo-text">
+									        <!-- edit real estate agent's promo block sub-heading here -->
+                                            <div class="button-center">
+									            <h3 class="ease-left-1">Trust An Experienced Las Vegas MLS Agent.</h3>
+									        </div>
+                                            <br/>
+									        <!-- edit real estate agent's promo block paragraph text here -->
+									        <p class="ease-left-1">I am dedicated to matching prospective buyers with a house that meets their needs and that they will truly love! I believe in listening to my clients and providing them with listings that are within their price range and matching them with homes that exceed their expectations.</p>
+									        <p class="ease-left-1">I have a diverse skill set with a solid natural sciences and business educational background. I hold a BA in Biology from Sacramento State University and an MBA Marketing from Golden Gate University, San Francisco. </p>
+									        <img class="ease-left-1" style="float: left;padding-bottom: 30px;" src="img/SaharSig.png" alt="" />
 
-						<div class="row">
-							<div class="col-sm-12 col-ms-12">                                         
-								<div class="promo-block">
-									<!-- edit real estate agent's promo block heading here -->
-									<br>
-									<h2 class="block-title styler_color sr-header"  >
-										Discover Melanie's Difference...
-									</h2>
-									<!-- promo real estate agent's block line divider here -->
-									<div class="block-separator clearfix"></div>                                            
-									<div class="col-sm-4 col-ms-4">
-										<!-- edit real estate agent's promo block image here -->
-										<img class="img-responsive block-img ease-right-1" src="img/mel_crop2.png" alt="" />
-									</div>
-									<div class="col-sm-8 col-ms-8">
-										<!-- real estate agent's promo block text starts here -->
-										<div class="promo-text">
-											<!-- edit real estate agent's promo block sub-heading here -->
-											<h3 class="ease-left-1">Trust An Experienced Las Vegas MLS Agent.</h3>
-											<br/>
-											<!-- edit real estate agent's promo block paragraph text here -->
-											<p class="ease-left-1">I am dedicated to matching prospective buyers with a house that meets their needs and that they will truly love! I believe in listening to my clients and providing them with listings that are within their price range and matching them with homes that exceed their expectations.</p>
-											<p class="ease-left-1">I have a diverse skill set with a solid natural sciences and business educational background. I hold a BA in Biology from Sacramento State University and an MBA Marketing from Golden Gate University, San Francisco. <ipsum class=""></ipsum></p>
-											<img class="ease-left-1" style="float: left;" src="img/realtor-signature.jpg" alt="" />
+								        </div>
+							        </div>
 
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<!-- /end promo text block -->
+						        </div>
+                            </div>
+                            
+                        </div>
 
 						<!-- begin featured listings summary block -->                                
+                        <div id="featured_marker"></div>
 						<div class="wide-block">
 							<div class="featured-listings">
 								<div class="row">
-									<div id="featured_marker"></div>
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<!-- edit featured listings headline here -->
 										<h2 class="block-title styler_color sr-header">
@@ -125,8 +125,8 @@ include('includes/header.php');
 							<!-- featured property #1 details start here -->
 							<?php
 
-								$controller = new retsController('property-item'); // register controller with page action and parameter
-								$controller->invoke();                           // invokde controller to get view
+						//		$controller = new retsController('property-item'); // register controller with page action and parameter
+						//		$controller->invoke();                           // invokde controller to get view
 
 							?>
 
@@ -143,8 +143,6 @@ include('includes/header.php');
 						<?php //include('includes/search-form.php'); ?>
 
 						<!-- MLS Search form ends here -->
-
-
 
 						<!-- awards and associations logo block starts here -->
 						<!-- Remove this comment for award sections
@@ -310,7 +308,7 @@ include('includes/header.php');
 									<div class=" about-block">                                                                                        
 										<!-- edit the about heading text here -->
 										<h2 class="block-title styler_color sr-header">
-											About Melanie Saljougui 
+											About Sahar Saljougui 
 										</h2>
 										<div class="block-separator clearfix"></div>
 										<div class="col-sm-8 col-ms-8">
@@ -327,8 +325,8 @@ include('includes/header.php');
 										<!-- realtor about image area starts here -->
 										<div class="col-sm-4 col-ms-4">
 											<!-- edit edit the realtor about image here -->
-											<img class="img-responsive vcenter  img-circle center-block ease-left-2" src="img/Melanie.png" alt="Melanie Saljougui, your real estate pro!" />
-
+											<img class="img-responsive vcenter img-circle center-block ease-left-2" src="img/Melanie.png" alt="Melanie Saljougui, your real estate pro!" />
+                                            <img class="img-responsive vcenter scale-img  center-block ease-left-2" src="img/mel_dog.png" alt="Melanie Saljougui, your real estate pro!" />
 										</div>
 									</div>
 								</div>
@@ -340,7 +338,7 @@ include('includes/header.php');
 
 
 
-					</div>
+					</div>  
 				</div>
 			</div>
 

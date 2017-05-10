@@ -25,7 +25,7 @@
     </script>
   
     <!-- External libraries: jQuery & GreenSock -->
-    <script src="<?= $BASE_WEB_URL ?>/layerslider/js/jquery.js" type="text/javascript"></script>
+    <!-- <script src="<?= $BASE_WEB_URL ?>/layerslider/js/jquery.js" type="text/javascript"></script> -->
     <script src="<?= $BASE_WEB_URL ?>/layerslider/js/greensock.js" type="text/javascript"></script>
     <script src="<?= $BASE_WEB_URL ?>/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
     <script src="<?= $BASE_WEB_URL ?>/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
@@ -33,22 +33,19 @@
     <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 
-    <script type="text/javascript" src='https://www.googl0e.com/recaptcha/api.js'></script>
+    <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     
-    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery.easy-pie-chart.js"></script>
+    <!-- <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery.easy-pie-chart.js"></script> -->
+    
     <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/mail_validation.js"></script>
-    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery.royalslider.min.js"></script>        
 
     <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/library.js"></script>
     <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/function.js"></script>
     
-    <!-- Navbar Shrink JS -->
-    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/nav-shrink.js">
-               
-    </script>
-    <!-- /End of Navbar Shrink JS -->
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="<?= $BASE_WEB_URL ?>/js/jquery.royalslider.min.js"></script>        
+
     <!-- Layer Slider JS controller (view documentation for refrence) -->
     <script type="text/javascript">
         // Running the code when the document is ready
@@ -86,7 +83,7 @@
         var appear ={
             delay      :500,
             distance   :"0px",
-            easting    :"ease-out",
+            easing    :"ease-out",
             scale      : 1,
 
         }
@@ -97,14 +94,14 @@
 
         var easeLeft = {
             origin     :"right",
-            distance   :"100px",
+            distance   :"50px",
             delay      :1000,
             duration   :800,
 
         }
         var easeRight = {
             origin     :"left",
-            distance   :"100px",
+            distance   :"50px",
             delay      :1000,
             duration   :800,
 
@@ -115,13 +112,14 @@
         sr.reveal(".jump", up, 100 );
         sr.reveal(".jump-container", {delay: +100},up);
         sr.reveal(".appear", appear);
-        sr.reveal(".ease-left-1", easeLeft,150);
-        sr.reveal(".ease-right-1", easeRight,150);
+        sr.reveal(".ease-left-1", easeLeft,100);
+        sr.reveal(".ease-right-1", easeRight,100);
         sr.reveal(".ease-left-2", easeLeft,150);
         sr.reveal(".ease-right-2", easeRight,150);
         sr.reveal(".sr-down", down);
 
     </script>
+  
     <!-- /End Scroll Reveal js -->
 
 

@@ -15,7 +15,7 @@ $(function(){
             return false;
         })
     })
-
+6
     $('.checkbox').each(function(){
         var cur = $(this);
         var label = cur.find('label');

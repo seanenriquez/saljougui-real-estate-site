@@ -2,15 +2,10 @@ Options +FollowSymLinks
 RewriteEngine on
 RewriteBase /
 
+AddHandler application/x-httpd-php .asp
+AddType application/x-httpd-php .asp .htm .html
 
-# Enable GZIP
-<ifmodule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-BrowserMatch ^Mozilla/4 gzip-only-text/html
-BrowserMatch ^Mozilla/4\.0[678] no-gzip
-BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-</ifmodule>
-
+#XBitHack full
 
 #browser caching for resources that don't change often
 ## EXPIRES CACHING ##
@@ -27,8 +22,8 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 week"
 </IfModule>
 ## EXPIRES CACHING ##
-     
-     
+
+
 #
 #  bot and other blocking
 #

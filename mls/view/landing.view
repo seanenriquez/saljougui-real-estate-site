@@ -1,0 +1,26 @@
+<?
+
+// load 
+$page_title = $this->page->getPageTitle();
+$page_desc = "<insert page desc here>";
+$page_keys = $this->page->getPageKeywords();
+
+$homepage = false;
+
+$city = $this->page->getPageCity();
+
+include('includes/header.php');   
+?>
+
+  <body id="top">
+
+    <?php include('includes/topbars.php')  ?>
+ 
+
+
+    <?php include('includes/footer.php'); ?>
+ 
+    <?php include('includes/bottom_scripts.php');  ?>
+    
+  </body>
+</html>

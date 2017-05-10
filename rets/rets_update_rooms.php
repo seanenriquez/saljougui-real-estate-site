@@ -16,17 +16,16 @@ $start_time = date('G:ia');
 
 /** Data Config **/
 require('database.php');
-require('flexmls/config.php');
+require('flexmls/config_rooms.php');
 include('simpleImage.php'); 
 
 /** PHPRETS **/
 require('phrets2.php');
 
 /** Start RETS Data Download **/
-foreach ($rets_config as $key => $config)
-{
-	foreach($config['data'] as $data => $setting)
-	{
+foreach ($rets_config as $key => $config) {
+    
+	foreach($config['data'] as $data => $setting) {
 
 		// flexmls_master_update("multifamily");
 		//flexmls_master_update("residential");
@@ -43,7 +42,7 @@ foreach ($rets_config as $key => $config)
 		// Setup Basic Param.
 		$rets->SetParam('disable_follow_location', true);
 		$rets->SetParam('cookie_file',"/home/admin/web/dev.webwarephpdevelopment.com/public_html/rets/cookie.txt");
-        //exec("chmod 777 /home/admin/web/dev.webwarephpdevelopment.com/public_html/rets/cookie.txt");
+        exec("chmod 777 /home/admin/web/dev.webwarephpdevelopment.com/public_html/rets/cookie.txt");
 		//$rets->AddHeader("User-Agent", $config['user_agent']);
 
 		// Connect to RETS
@@ -100,37 +99,32 @@ foreach ($rets_config as $key => $config)
 
 		// Query RETS Server
 
-
 		// this loop controls the number of months to import
-		for ($i=0;$i<=18;$i++) {
+        $rets_results = mysql_query("SELECT Matrix_Unique_Id from `glvar_property_listing` ORDER BY Listing_Contract_Date DESC ");        // TODO:  make this dynamic
+        $totRow=mysql_num_rows($rets_results);
+        $cntRow=0;
+        echo "Updating rooms into master_rets_table_update [$totRows]..."."\n";
+        
+        if( $totRow > 0)
+        {
+        // process the new rows
+            while($row = mysql_fetch_array($rets_results))  {
 
-			$start_date =  date('Y-m-d',strtotime("-$i months"));
-			$end=$i+1;
-			$end_date = date('Y-m-d',strtotime("-$end months +1 day"));
+                $muid = $row['Matrix_Unique_Id'];
+			    $query = "(listing_mui = ".$muid.")";      
+                
+			    echo "Running Query: $query on Resource: {$resource} and Class: {$class} with a Limit: {$limit}"."\n";
 
-			$query = "(ListingContractDate=".$start_date."T00:00:00-),(ListingContractDate=".$end_date."T00:00:00+),$setting[query]";
+			    $search_query = $rets->SearchQuery( $resource,  $class,  $query, $query_options );
+			    $totRecs=$rets->TotalRecordsFound();
 
-			echo "Running Query: $query on Resource: {$resource} and Class: {$class} with a Limit: {$limit}"."\n";
+			    // Check for Rows
+			    if ($totRecs > 0) {
 
-			$search_query = $rets->SearchQuery( $resource,  $class,  $query,  $query_options );
-			$totRecs=$rets->TotalRecordsFound();
-
-			// Check for Rows
-			if ($rets->TotalRecordsFound() < $config['server_query_limit'])
-			{
-
-				echo "Total records found: {$rets->TotalRecordsFound()} "."\n";
-
-				// Check Server Query Limit
-				if ( $rets->NumRows() <= 0 ) {       
-					echo "No Rows Found..."."\n";
-
-				}
-				else {
+				    echo "Total rooms found: {$totRecs} for property id {$muid}"."\n";
 
 					// Fetch Rows
-					while ($listing = $rets->FetchRow($search_query))
-					{
+					while ($listing = $rets->FetchRow($search_query)) {
 
 						// Reset timeout
 						@set_time_limit(0);
@@ -159,40 +153,39 @@ foreach ($rets_config as $key => $config)
 
 					} // End Fetch Rows
 
-				} // End Row Check
+			    }
+			    else {
 
-			}
-			else
-			{
+				    echo "No room records found for property "."\n";
 
-				echo "Total records found: {$rets->TotalRecordsFound()} exceed the server limit of: {$config['server_query_limit']}. Exiting..."."\n";
-
-			} // End Total Row Check
+			    } // End Total Row Check
 
 
-			/** Free SearchQuery Object. Should also free up resources **/
-			$rets->FreeResult($search_query);          
+			    /** Free SearchQuery Object. Should also free up resources **/
+			    $rets->FreeResult($search_query);          
 
-		}
+		    }
 
-		/** Disconnect from RETS server. Should free up resources **/
-		$rets->Disconnect();
-		echo "Disconnecting from RETS server..."."\n";
+		    /** Disconnect from RETS server. Should free up resources **/
+		    $rets->Disconnect();
+		    echo "Disconnecting from RETS server..."."\n";
 
-		/** Update Master Table **/        
-		$update_script = $config['master_update_script'];
-		if(function_exists($update_script))
-		{
-			// Update Master Table
-			// echo "Running Master Update: " . $config['master_update_script']."\n";
-			call_user_func_array($update_script,array($data));
-		}
+		    /** Update Master Table **/        
+		    $update_script = $config['master_update_script'];
+                    
+            
+		    if(function_exists($update_script))
+		    {
+			    // Update Master Table
+			    // echo "Running Master Update: " . $config['master_update_script']."\n";
+			    call_user_func_array($update_script,array($data));
+		    }
 
 
-	}
+	    }
+    }
 
 }
-
 
 /** END TIME */
 $mtime = microtime(); 

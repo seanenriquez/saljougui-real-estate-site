@@ -35,7 +35,10 @@ class retsController {
 	//
 	//  invoke() holds the business logic that connects the data to the view for each page in the switch() conditional
 	//
-	public function invoke() {
+	public function invoke($action="") {
+        
+        // added 
+        if (!empty($action)) $this->action=$action;
 
 		switch ($this->action) {
 
@@ -107,25 +110,24 @@ class retsController {
 				// site landing page...get display data for properties!
 			case 'property-item':
 
-				$this->model = new dbRetsModel();
+				//$this->model = new dbRetsModel();
 
 				//  get data...
-				$this->model->getFeaturedListingProps();
+				//$this->model->getFeaturedListingProps();
 
 				// process view
 
-				do {
-					require ('mls/view/property-item.view.php');
-				} while ($this->model->next());
+				//do {
+				//} while ($this->model->next());
 
-				break;
+				//break;
 
 				// Dynamic Contact Modal for details tablet
 			case 'contact-modal':
 
 				$this->model = new dbRetsModel();
 
-				$this->model->getFeaturedListingProps();
+				//$this->model->getFeaturedListingProps();
 
 				// process view
 
@@ -134,8 +136,6 @@ class retsController {
 				} while ($this->model->next());
 
 				break;
-
-
 
 			case 'index-random':
 
@@ -181,7 +181,6 @@ class retsController {
 				} while ($this->model->next());
 
 				break;
-
 
 			case 'index-newloop':
 
@@ -295,9 +294,18 @@ class retsController {
 				$this->model = new dbRetsModel();
 
 				$city = fixDashes($_GET['city']);
+                $proptype = fixDashes($_GET['proptype']);
+                
+                if (isset($_GET['loprice'])) $this->model->setLoPrice( $_GET['loprice']);
+                if (isset($_GET['hiprice'])) $this->model->setHiPrice( $_GET['hiprice']);
+                
 				$this->model->setCity($city);
-				$this->model->getAreaListings();
-
+				$this->model->setPropertySubType($proptype);
+                
+                $this->model->getAreaSubTypeListings() ;      
+                
+                echo $this->model->pagination->render();
+                
 				if ($this->model->count > 0) {
 					do {
 						require ('mls/view/city-listing.view.php');
@@ -308,6 +316,7 @@ class retsController {
 
 				}
 
+                echo $this->model->pagination->render();
 				//require ('includes/city-quick-search.php');
 				break;
 				
@@ -339,7 +348,6 @@ class retsController {
 
 				require ('includes/city-sale-search.php');
 
-
 				break;
 
 			case 'city-rental-search':
@@ -355,6 +363,7 @@ class retsController {
 				break;
 
 				//  handle news data retreval and display ////////////////////////////////////////////////////////////////////////
+                
 			case 'shownews':
 
 				$this->model = new dbNewsModel();
@@ -443,7 +452,9 @@ class retsController {
 				// set params for search and get data
 				if (!empty($_GET['area']))
 					$this->model->setArea($_GET['area']);
+                    
 				else if (!empty($_GET['area_deep_resi']))
+                
 					$this->model->setArea($_GET['area_deep_resi']);
 					else if (!empty($_GET['area_deep_rent']))
 						$this->model->setArea($_GET['area_deep_rent']);
@@ -455,32 +466,66 @@ class retsController {
 
 				break;
 
+            case 'all-search':
+
+                // load model need for this action
+                $this->model = new dbRetsModel();
+
+                // set params for search and get data
+                if (!empty($_GET['area']))
+                    $this->model->setArea($_GET['area']);
+                    
+                else if (!empty($_GET['area_deep_resi']))
+                
+                    $this->model->setArea($_GET['area_deep_resi']);
+                    else if (!empty($_GET['area_deep_rent']))
+                        $this->model->setArea($_GET['area_deep_rent']);
+
+                        $this->model->getSearchHeaderInfo();
+
+                // process view
+                require ('mls/view/search.php');
+
+                break;
+
 			case 'showmls':
 			case 'single':
 
-			// load model need for this action
-			$this->model = new dbRetsModel();
+			    // load model need for this action
+			    $this->model = new dbRetsModel();
 
-			// set params for search and get data
-			$this->model->setMLS($_GET['mls']);
-			$this->model->getSingleProperty();
+			    // set params for search and get data
+			    $this->model->setMLS($_GET['mls']);
+			    $this->model->getSingleProperty();
 
-			// process view
-			switch ($this->model->getPropertyType()) {
+			    // process view
+			    switch ($this->model->getPropertyType()) {
 
-				case "Residential":
-				case "residential":
-					require ('mls/view/mlsDetail/showRes.php');
-					break;
-				case "Rental":
-				case "rental":
-					require ('mls/view/mlsDetail/showRent.php');
-					break;
+				    case "Residential":
+				    case "RES":
+                    case "High Rise":
+					    require ('mls/view/mlsDetail/showRes.php');
+					    break;
+				    case "Rental":
+				    case "rental":
+					    require ('mls/view/mlsDetail/showRent.php');
+					    break;
 
-			}
+			    }
 
-			break;
+			    break;
 
+            case 'loadmls':
+            
+                // load model need for this action
+                $this->model = new dbRetsModel();
+
+                // set params for search and get data
+                $this->model->setMLS($_GET['mls']);
+                $this->model->getSingleProperty();
+                
+                break;
+            
 			default:
 				throw new Exception('Controller ERROR - unknown action type {'.$this->action.'} Please make sure the filename WITHOUT extension matches the switch/case strings in the invoke() method.');
 		}

@@ -6,13 +6,12 @@ $send_notification_email = true;
 //require('config_imageDL.php') ;
 require('flexmls/config.php');
 include('database.php');
-include('../includes/global.php');
 
-
-
-$rets_name="TSGFL.COM" ;
+$rets_name="LASVEGASLUXEREALTY.COM" ;
+$site_root_dir = "/home/admin/web/dev.webwarephpdevelopment.com/public_html/mls/" ;
 
 $listingId = $argv[1];
+
 
 // image dir
 $base_photo_image_dir = $site_root_dir . 'photos/';
@@ -21,10 +20,10 @@ $base_thumbs_image_dir = $site_root_dir . 'thumb/';
 
 
 // set this to true to force image download from links (backdoor)
-$forceDl=true;
+$forceDl=false;
 
 // set this to true to pull HiRes image download from server
-$hiRes=true;
+$hiRes=false;
 
 // set this to true to force HiRes image download from links (backdoor)  
 // NOT USED YET - marke
@@ -35,8 +34,8 @@ include('phrets.php');
 $rets = new phRETS;
 // set initial paramerts
 $rets->SetParam('disable_follow_location', true);
-$rets->SetParam('cookie_file', 'cookie.txt');
-//$rets->AddHeader("User-Agent",$rets_config['FLEXMLS']['user_agent']);
+$rets->SetParam('cookie_file', '/home/admin/web/dev.webwarephpdevelopment.com/public_html/rets/cookie.txt');
+exec("chmod 777 /home/admin/web/dev.webwarephpdevelopment.com/public_html/rets/cookie.txt");
 
 $rets->Connect($rets_config['FLEXMLS']['login_url'],$rets_config['FLEXMLS']['username'], $rets_config['FLEXMLS']['password'] );
 
@@ -84,7 +83,11 @@ function begin_rets_image_update($rets_object, $rets_name, $rets_config) {
   // pull listing_ids for all properties without update flag being set...
   //$rets_results = mysql_query("SELECT * from `master_rets_table` WHERE `rets_system` = '$rets_name' AND `photo_update` = 0 and photo_count > 0 order by listing_id ASC") or die(mysql_error());
   
-  $rets_results = mysql_query("select * from `master_rets_table_update` WHERE  photo_timestamp >= (select DATE(start_time) from photo_dl_info order by id DESC limit 1) and photo_count > 0 order by photo_timestamp ASC;");
+  $rets_results = mysql_query("SELECT photo_count,sysid,photo_timestamp FROM master_rets_table_update 
+          WHERE photo_timestamp >= (select end_time from photo_dl_info order by id DESC limit 1) 
+            AND photo_count > 0
+            ORDER BY photo_timestamp DESC");
+                        
   $totRows = mysql_num_rows($rets_results);
   $curRow=0;
  
@@ -102,7 +105,7 @@ function begin_rets_image_update($rets_object, $rets_name, $rets_config) {
      
     while ($row = mysql_fetch_assoc($rets_results)) {
         
-      get_images($row['listing_id'], $row['photo_count'], $row['rets_key'], $rets_object, $rets_config);
+      get_images($row['sysid'], $row['photo_count'], $row['sysid'], $rets_object, $rets_config);
       
       // stuff to keep track of and display percent done
       $curRow++;
@@ -170,15 +173,14 @@ function get_images($listing_id, $photo_count, $rets_key, $rets_object, $rets_co
   }
   // end debug stuff
 
-  /*
+  
   if (!$hiRes) {
     // gather all possible photo objects for later processing...
-    $photos = $rets_object->GetObject('Property', "Photo", (string) $rets_key,"*",0);
+    $photos = $rets_object->GetObject('Property', "LargePhoto", (string) $rets_key,"*",0);
     // ..and get "backdoor" links in case we need to force downloads
-    $photosLinks = $rets_object->GetObject('Property', "Photo", (string) $rets_key,"*",1);
+   // $photosLinks = $rets_object->GetObject('Property', "LargePhoto", (string) $rets_key,"*",1);
   }
- 
- */
+
  
   if ($hiRes) {
 
@@ -422,7 +424,7 @@ function makeTable(){
   // if sucessful init table with one "old" record
   $rowCnt=mysql_query("select * from photo_dl_info");
   if (mysql_num_rows($rowCnt)==0) {
-    $initTbl=mysql_query("INSERT INTO photo_dl_info set start_time = '1900-01-01';");
+    $initTbl=mysql_query("INSERT INTO photo_dl_info set start_time = '1900-01-01',end_time = '1900-01-01';");
   }
 
 }
@@ -485,7 +487,7 @@ function stampThumb($mls,$width) {
 
   if (!file_exists($base_thumbs_image_dir)) {
    if (mkdir($base_thumbs_image_dir, 0755)) {
-     echo "Created Thumbnail Dr."
+     echo "Created Thumbnail Dir";
    }
    else {
      throw new Exception("stampThumb.php - cannot create new directory for thumbs...") ;

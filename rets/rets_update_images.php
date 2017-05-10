@@ -8,7 +8,6 @@ require('flexmls/config.php');
 include('database.php');
 // include('../includes/global.php');
 
-
 $rets_name="LASVEGASLUXEREALTY.COM" ;
 $site_root_dir = "/home/admin/web/dev.webwarephpdevelopment.com/public_html/mls/" ;
 
@@ -34,10 +33,15 @@ $hiResForceDl=false;
 include('phrets2.php');
 $rets = new phRETS;
 // set initial paramerts
-$rets->SetParam('disable_follow_location', true);
-$rets->SetParam('cookie_file', 'cookie.txt');
 
-$rets->Connect($rets_config['FLEXMLS']['login_url'],$rets_config['FLEXMLS']['username'], $rets_config['FLEXMLS']['password'] );
+$rets->SetParam('disable_follow_location', true);
+$rets->SetParam('cookie_file', '/home/admin/web/dev.webwarephpdevelopment.com/public_html/rets/cookie.txt');
+exec("chmod 777 /home/admin/web/dev.webwarephpdevelopment.com/public_html/rets/cookie.txt");
+
+echo "Connecting to RETS Server..."."\n";
+if (!$rets->Connect($config['login_url'], $config['username'], $config['password'])) {
+    throw new Exception("RETS_UPDATE.PHP - Unable to log in...probably can't write cookie.txt");
+}
 
 if ($listingId){
 	get_single_image_set($listingId,$rets);
@@ -68,10 +72,10 @@ function begin_rets_image_update($rets_object, $rets_name, $rets_config) {
 
 	// pull listing_ids for all properties without update flag being set...    
 	$rets_results = mysql_query(
-		"SELECT * FROM master_rets_table_update where photo_timestamp >= (select end_time from photo_dl_info order by id DESC limit 1) 
-			AND photo_count > 0
-			AND property_status IN  ( 'Contingent Offer', 'Active-Exclusive Right' )
-			ORDER BY photo_timestamp DESC"
+		"SELECT photo_count,sysid,photo_timestamp FROM master_rets_table_update 
+          WHERE photo_timestamp >= (select end_time from photo_dl_info order by id DESC limit 1) 
+            AND photo_count > 0
+            ORDER BY photo_timestamp DESC"
 		);
 			 
 	$totRows = mysql_num_rows($rets_results);
@@ -163,17 +167,18 @@ function get_images($listing_id, $photo_count, $rets_key, $rets_object, $rets_co
 
 	// debug stuff...
 	echo "Getting Photo Objects for Listing ID $listing_id " . PHP_EOL;
-	$object_types = $rets_object->GetMetadataObjects("Property");
-	foreach ($object_types as $type) {
+    
+	//$object_types = $rets_object->GetMetadataObjects("Property");
+	//foreach ($object_types as $type) {
 		//    echo "+ Object {$type['ObjectType']} described as " . $type['Description'] . "\n";
-	}
+	//}
 	// end debug stuff
 
 
 	if (!$hiRes) {
 		// gather all possible photo objects for later processing...
-		$photos = $rets_object->GetObject('Property', "Photo", (string) $rets_key, "*",0);
-		$photosLinks = $rets_object->GetObject('Property', "Photo",  $rets_key, "*", 1);
+		$photos = $rets_object->GetObject('Property', "LargePhoto", (string) $rets_key, "*",0);
+		//$photosLinks = $rets_object->GetObject('Property', "LargePhoto",  $rets_key, "*", 1);
 		// ..and get "backdoor" links in case we need to force downloads
 		// $photosLinks = $rets_object->GetObject('Property', "Photo", (string) $rets_key,"*",1);
 	}
@@ -421,7 +426,7 @@ function makeTable(){
 	// if sucessful init table with one "old" record
 	$rowCnt=mysql_query("select * from photo_dl_info");
 	if (mysql_num_rows($rowCnt)==0) {
-		$initTbl=mysql_query("INSERT INTO photo_dl_info set start_time = '1900-01-01';");
+		$initTbl=mysql_query("INSERT INTO photo_dl_info set start_time = '1900-01-01', end_time = '1900-01-01';");
 	}
 
 }

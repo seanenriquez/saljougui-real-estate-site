@@ -2,14 +2,16 @@ $(document).ready(function() {
    setBindings();
 });
 
-function setBindings() {
+function setBindings() {      
+    
     $("nav .navbar-nav a").click(function(e){
+        
         e.preventDefault();
         
         var sectionID = e.currentTarget.id + "_marker";
        
         $("html,body").animate({
-            scrollTop: $("#" + sectionID).offset().top
+            scrollTop: $("#" + sectionID).offset().top-70
             
         }, 1000)
         

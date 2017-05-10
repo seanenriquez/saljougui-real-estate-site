@@ -26,6 +26,7 @@
 		<link type="text/css" rel="stylesheet" href="css/owl.theme.css" />                -->
 		<link type="text/css" rel="stylesheet" href="<?= $BASE_WEB_URL ?>/css/royalslider.css" />        
 		<link type="text/css" rel="stylesheet" href="<?= $BASE_WEB_URL ?>/css/rs-default.css" />  
+        <link type="text/css" rel="stylesheet" href="<?= $BASE_WEB_URL ?>/css/pagination.css" />  
 		<!-- LayerSlider stylesheet -->
 		<link rel="stylesheet" href="<?= $BASE_WEB_URL ?>/layerslider/css/layerslider.css" type="text/css">
 

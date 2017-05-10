@@ -14,8 +14,8 @@ include('../includes/global.php');
 //
 //  CONFIG OPTIONS 
 //  
-$rets_name="tsgfl.com";
-$rets_from="marke@webwarephpdevelopment.com";
+$rets_name="lasvegasluxerealty.com";
+$rets_from="mark@webwarephpdevelopment.com";
 
 // set this to true to force image download from links instead of using photo array - FLEXMLS advises this is best way
 $forceDl=true;

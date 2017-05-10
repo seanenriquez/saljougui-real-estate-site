@@ -1,270 +1,516 @@
-         <!-- begin:article -->
-         	
-				 <div class="col-md-2 ">
+                <!-- begin:article -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <!-- edit featured listings headline here -->
+                        <h2 class="block-title sr-header">
+                            Detail Listing for <?= $this->model->getStreetAddress(); ?>
+                        </h2>                      
+                    </div>
+                </div>
 
-					 <div class="row">   
+                    <!-- <div class="col-md-12 single-post">   -->
 
-						 <!-- MORTGAGE RATES BEGIN -->
-						 <script type="text/javascript">
-						 if(typeof jQuery == "undefined"){document.write(unescape("%3Cscript src='" + (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));mlcalc_jquery_noconflict=1;};</script>
-						 <div style="line-height:10px;font-weight:normal;font-size:9px;font-family:Tahoma;padding:0;margin:0;border:0;text-align:right;background:transparent;color:#EEEEEE;width:300px;padding-right:10px;" class="mlcalcRatesWidgetHolder" id="mlcalcRatesWidgetHolderFL"><script type="text/javascript">document.write(unescape("%3Cscript src='" + (document.location.protocol == 'https:' ? 'https://ssl.mlcalc.com' : 'http://cdn.mlcalc.com') + "/mortgage-rates/florida/widget-wide.js' type='text/javascript'%3E%3C/script%3E"));</script>Powered by <a href="http://www.mlcalc.com/mortgage-rates/florida/" style="font-weight:normal;font-size:9px;font-family:Tahoma;color:#EEEEEE;text-decoration:none;">FL Mortgage Rate</a></div>
-						 <!-- MORTGAGE RATES END -->
-					 </div>
+                    <div class="inner-block" id="property-item" >
 
-					 <div class="row">   
-						 <script type="text/javascript">
-							 mlcalc_default_calculator = 'mortgage';
-							 mlcalc_currency_code = 'usd';
-							 mlcalc_amortization = 'year_nc';
-							 mlcalc_purchase_price = '<?= $this->model->getPriceRaw(); ?>';
-							 mlcalc_down_payment = '10';
-							 mlcalc_mortgage_term = '30';
-							 mlcalc_interest_rate = '4.5';
-							 mlcalc_property_tax = '<?= $this->model->getData('tax_amount'); ?>';
-							 mlcalc_property_insurance = '1,500';
-							 mlcalc_pmi = '0.52';
-							 mlcalc_loan_amount = '200000';
-							 mlcalc_loan_term = '15';
-						 </script>
-						 <script type="text/javascript">
-							 if(typeof jQuery == "undefined"){document.write(unescape("%3Cscript src='" + (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));mlcalc_jquery_noconflict=1;};
-						 </script>
-						 <div style="font-weight:normal;font-size:9px;font-family:Tahoma;padding:0;margin:0;border:0;text-align:center;background:transparent;color:#EEEEEE;width:300px;text-align:right;padding-right:10px;" id="mlcalcWidgetHolder"><script type="text/javascript">document.write(unescape("%3Cscript src='" + (document.location.protocol == 'https:' ? 'https://ssl.mlcalc.com' : 'http://cdn.mlcalc.com') + "/widget-wide.js' type='text/javascript'%3E%3C/script%3E"));</script>
-							 Powered by <a href="http://www.mlcalc.com/" style="font-weight:normal;font-size:9px;font-family:Tahoma;color:#EEEEEE;text-decoration:none;">Car Loan Calculator</a></div>
-					 </div>
-				 </div>
-
-	          <!-- MORTGAGE LOAN CALCULATOR END -->
-	          
-          <div class="col-md-8 col-md-push-2">
-            <div class="row">                                      
-              <!-- <div class="col-md-12 single-post">   -->
-              
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h2><?= $this->model->getStreetAddress(); ?><br /><?= $this->model->getCityStZip();?></h2>
-                        <div id="slider-property" class="carousel slide" data-ride="carousel">
-
-                          <div class="carousel-inner">
-                            <?= $this->model->getImageDisplayList(); ?>     
-                          </div>
-                          <a class="left carousel-control" href="#slider-property" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                          </a>
-                          <a class="right carousel-control" href="#slider-property" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                          </a>
-                        </div>
-                        
-                        <h3>Property Overview</h3>
-                        <table class="table table-bordered">
-                          <tr>
-                            <td width="20%"><strong>ID</strong></td>
-                            <td><?= $this->model->getMls(); ?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Year Built</strong></td>
-                            <td><?= $this->model->getData("year_built"); ?></td>
-                          </tr>
-
-                          <tr>
-                            <td><strong>Price</strong></td>
-                            <td><?= $this->model->getPrice(); ?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Taxes</strong></td>
-                            <td> $<?= $this->model->getData('tax_amount'); ?> [<?= $this->model->getData('tax_year'); ?>]</td>
-                          </tr>  
-                          <tr>
-                            <td><strong>Short Sale/REO</strong></td>
-                            <td><?= $this->model->getData('short_sale'); ?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Type</strong></td>
-                            <td><?= $this->model->getPropertyTypeTag(); ?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Pets</strong></td>
-                            <td><?= $this->model->getData("pets"); ?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Style</strong></td>
-                            <td><?= $this->model->getData('home_style'); ?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Location</strong></td>
-                            <td><?= $this->model->getStreetAddress(); ?>, <?= $this->model->getCityStZip();?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Bathrooms</strong></td>
-                            <td><?= $this->model->getBaths(); ?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Bedrooms</strong></td>
-                            <td><?= $this->model->getBeds(); ?></td>
-                          </tr>
-                          <tr>
-                            <td><strong>Area</strong></td>
-                            <td><?= $this->model->getSqft(); ?> ft<sup>2</sup> </td>
-                          </tr>
-                          <tr>
-                            <td><strong>Construction</strong></td>
-                            <td><?= $this->model->getData('construction'); ?> </td>
-                          </tr>
-                          <tr>
-                            <td><strong>Roof</strong></td>
-                            <td><?= $this->model->getData('roof_type'); ?> </td>
-                          </tr>
-                          <tr>
-                            <td><strong>Private Pool</strong></td>
-                            <td><?= $this->model->getData('private_pool'); ?> </td>
-                          </tr>
-                          <tr>
-                            <td><strong>Floor</strong></td>
-                            <td><?= $this->model->getData('floor'); ?> </td>
-                          </tr>
-                        
-                          <tr>
-                            <td><strong>Garage</strong></td>
-                            <td><?= $this->model->getData('garage'); ?> </td>
-                          </tr>                          
-                          <tr>
-                            <td><strong>Security</strong></td>
-                            <td><?= $this->model->getData('security'); ?> </td>
-                          </tr>
-                          <tr>
-                            <td><strong>Restrictions</strong></td>
-                            <td><?= $this->model->getData('restrictions'); ?> </td>
-                          </tr>
-                          <tr>
-                            <td><strong>Waterfront</strong></td>
-                            <td><?= $this->model->getData('waterfront'); ?> </td>
-                          </tr>
-                          <? if ($this->model->getData('waterfront')=="Yes") { ?>
-                            <tr>
-                              <td><strong>Waterfront Type</strong></td>
-                              <td><?= $this->model->getData('water_type'); ?> </td>
-                            </tr>
-                          <? } ?>
-                          <tr>
-                            <td><strong>Community</strong></td>
-                            <td><?= $this->model->getData('subdivision'); ?> </td>
-                          </tr>
-                          <? if ($this->model->getData('membership')!="") { ?>
-                            <tr>
-                              <td><strong>Membership</strong></td>
-                              <td><?= $this->model->getData('membership'); ?> </td>
-                            </tr>
-                          <? } ?>
-                        </table>
-                        <h3>Property Features</h3>
                         <div class="row">
-                          <div class="col-md-4 col-sm-4">
-                            <strong>Exterior</strong>
-                            <ul>
-                              <?= $this->model->getExtFeatsList(); ?>        
-                            </ul>
-                            <? if ($this->model->getData('amenities')!="None") { ?>
-                              <strong>Amenities</strong>
-                              <ul>
-                                <?= $this->model->getAmenityList(); ?>        
-                              </ul>
-                            <? } ?>
-                          </div>
-                          <div class="col-md-4 col-sm-4">
-                            <strong>Appliances<span></span></strong>
-                            <ul>
-                                <?= $this->model->getEquipApplList(); ?>
-                            </ul>
-                              <strong>HOA Type/Dues</strong>
-                              <ul>
-                                <?= $this->model->getHOAList(); ?>        
-                              </ul>
-                          </div>
-                          <div class="col-md-4 col-sm-4">
-                            <strong>Interior</strong>
-                            <ul>
-                              <?= $this->model->getIntFeatsList(); ?>
-                            </ul>
-                                          
-                            <strong>Utilities</strong>
-                            <ul>
-                              <?= $this->model->getUtilityList(); ?>
-                            </ul>
-                          </div>  
+                            <div class="col-md-8 col-sm-8">
+                                <!-- edit featured property #1 address -->
+                                <div class="address">
+                                    <div class="address-top">
+                                        <?= $this->model->getStreetAddress()?>
+                                    </div>    
+                                    <div class="address-bottom">
+                                        <?= $this->model->getCityStZip()?>
+                                    </div>
+                                </div>                                                
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-4">
+                                <!-- edit featured property #1 price -->
+                                <div class="price styler_color">
+                                    <?= $this->model->getPrice()?>
+                                </div>
+                            </div>
+                            
                         </div>
 
-                        <h3>Property Description</h3>
-                        <p><?= $this->model->getData('remarks');?></p>
-                      </div>
-                    </div>            
-                           
-                  <!-- break -->
-                  
-                 
-                    <div class="row">
-                      <div class="embed-responsive embed-responsive-4by3">
-                       <iframe  frameborder="0" style="border:0" height="500" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-LkyO4WqQDY0UV5ZT-Xr7qAywVcMsC7I&q=<?= $this->model->getGMapsAddress() ?>&zoom=18&maptype=satellite"></iframe>  
-                        
-                        
-                        
-                        
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h3>Contact Agent</h3>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6">
-                        <div class="team-container team-dark">
-                          <div class="team-image">
-                              <img src="/img/debbibizcardpic.png" alt="the team - the shattow group">
-                          </div>
-                          <div class="team-description">
-                            <h3>Debbie Shattow</h3>
-                            <p><i class="fa fa-phone"></i> Office : (561) 371-9119<br>
-                            <i class="fa fa-mobile"></i> Mobile : (561) 371-9119<br>
-                            <i class="fa fa-print"></i> Fax : (561) 371-9119</p>
-                            <p>Please, contact me for more information about this property.</p>
-                            <div class="team-social">
-                              <span><a href="#" title="Twitter" rel="tooltip" data-placement="top"><i class="fa fa-twitter"></i></a></span>
-                              <span><a href="#" title="Facebook" rel="tooltip" data-placement="top"><i class="fa fa-facebook"></i></a></span>
-                              <span><a href="#" title="Google Plus" rel="tooltip" data-placement="top"><i class="fa fa-google-plus"></i></a></span>
-                              <span><a href="#" title="Email" rel="tooltip" data-placement="top"><i class="fa fa-envelope"></i></a></span> 
-                              <span><a href="#" title="LinkedIn" rel="tooltip" data-placement="top"><i class="fa fa-linkedin"></i></a></span> 
-                            </div>                       
-                          </div>
+                        <div class="row">
+
+                            <div class="col-md-8 col-sm-8">
+                            
+                                <!-- featured property #1 photo gallery starts here -->
+                                <div class="slider-block">
+                                
+                                    <div id="rs_gallery1" class="royalSlider rsDefault">
+                                    
+                                        <?php
+                                                $this->model->getImageDisplayList();             
+                                        ?>
+                                        
+                                        <!-- edit featured property #1 photo #1 here 
+                                        <a class="rsImg bugaga" data-rsw="540" data-rsh="374" data-rsBigImg="img/gal1-house1.jpg" href="img/gal1-house1.jpg">Gallery 1: House Image #1<img width="96" height="72" class="rsTmb" src="img/gal1-house1_t.jpg" alt="" /></a>
+                                        <!-- edit featured property #1 photo #2 here     
+                                        <a class="rsImg" data-rsw="540" data-rsh="374" data-rsBigImg="img/gal1-house2.jpg" href="img/gal1-house2.jpg">Gallery 1: House Image #2<img width="96" height="72" class="rsTmb" src="img/gal1-house2_t.jpg" alt="" /></a>
+                                         -->
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <!-- featured property #1 details summary info starts here -->
+                                <div class="details-info">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <!-- edit featured property #1 details summary info (mls #) here -->
+                                            <div class="item-id">
+                                                MLS #: <?= $this->model->getMLS()?>
+                                            </div>
+                                            <!-- edit featured property #1 details summary info (characteristics) here -->
+                                            <div class="characteristics">
+                                                <ul>
+                                                    <li><?= $this->model-> getTotalSqFt()?> ft<sub>2</sub></li>
+                                                    <li><?= $this->model-> getBeds()?> Bedrooms</li>
+                                                    <li><?= $this->model-> getBaths()?> Baths</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-6 col-sm-6">
+                                            <!-- edit featured property #1 details summary info (listing agent image) -->
+                                            <div class="realtor-mini">
+                                                <img class="img-responsive " src="<?= $base_image_dir ?>/img/Melanie.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- edit featured property #1 details summary info (listing agent name, address and phone number) -->
+                                        <div class="col-md-6 col-sm-6">                                                                                                                                                                                                                                                                             
+                                            <div class="agent-block">
+                                                <div class="details-name">Sahar Saljougui</div>
+                                                <div class="details-place">Key Realty</div>        
+                                            </div>
+
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="row">
+                                    
+                                        <div class="col-md-12 col-xs-12">
+                                        
+                                            <div class="details-phone"><a href="tel:415-815-9079"><i class="fa fa-mobile-phone"></i> 415-815-9079</a><br><a href="tel:702-313-7003"><i class="fa fa-phone"></i> 702-313-7003</a></div>
+                                            <div class="details-phone"><a TARGET="_blank"  href="mailto:Melaniesaljougui@gmail.com?&subject=Intrested%20in%20<?= $this->model->getStreetAddress()?>,%20<?= $this->model->getCityStZip()?>,%20MLS#%20<?= $this->model-> getMLS()?>&body=Hi%20Melanie,">Melaniesaljougui@gmail.com</a> </div><br />            
+                                            <div class="button-center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal<?= $this->model->rowIdx ?>"><i class="fa fa-envelope" aria-hidden="true"></i> Let Me Help You!</button> </div>
+                                            
+                                            <?php 
+                                                require ('mls/view/contact_modal.view.php');
+                                            ?>
+
+                                        </div>  
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-6 col-sm-6">
-                        <form>
-                          <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control input-lg" placeholder="Enter name : ">
-                          </div>
-                          <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control input-lg" placeholder="Enter email : ">
-                          </div>
-                          <div class="form-group">
-                            <label for="telp">Telp.</label>
-                            <input type="text" class="form-control input-lg" placeholder="Enter phone number : ">
-                          </div>
-                          <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control input-lg" rows="7" placeholder="Type a message : "></textarea>
-                          </div>
-                          <div class="form-group">
-                            <input type="submit" name="submit" value="Send Message" class="btn btn-success btn-lg">
-                          </div>
-                        </form>
-                      </div>
+
+                        <div class="row">
+                            <!-- featured listings house #1 property tabs -->
+                            <div class="details-tabs">
+                                <div class="col-md-12 col-sm-12">
+                                
+                                    <ul class="tabs">
+                                        <!-- edit featured listings house #1 property tab label #1 (property details) here -->
+                                        <li class="active"><a class="styler_bg_color" href="#details1" data-toggle="tab">PROPERTY DETAILS </a></li>
+                                        <!-- edit featured listings house #1 property tab label #2 (map) here -->
+                                        <li><a class="styler_bg_color" href="#tab-map" data-toggle="tab">MAP</a></li>
+                                    </ul>
+                                    
+                                    <div class="tab-content tabs_blocks">
+                                        <div class="active" id="details1">
+
+                                            <!-- featured listings house #1 property details tab info slides start here -->
+                                            <ul class="info_slides">
+                       
+                                                <li class="active">
+                                                    <!-- edit featured listings house #1 property tab info slide #1 (details) label here -->
+                                                    <a href="#" class="styler_color"><i class="arr styler_color"></i>Details</a>
+                                                    <!-- edit featured listings house #1 property tab info slide #1 (details) summary text here -->
+                                                    <div class="text" style="display: block;">
+                                                        <p><?= $this->model-> getData("tax_places")?></p>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <!-- edit featured listings house #1 left-side details content here -->
+                                                                <div class="left-tab-wrapper">
+                                                                    <table class="details-values">
+                                                                        <tr>
+                                                                            <td><strong>Year Built:</strong></td>
+                                                                            <td><?= $this->model-> getData("year_built")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Property Type:</strong></td>
+                                                                            <td><?= $this->model-> getPropertyType() ?></td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td><strong>Property Tax:</strong></td>
+                                                                            <td>$<?= $this->model-> getData("tax_amount")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Subdivision:</strong></td>
+                                                                            <td><?= $this->model-> getData("subdivision")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Pet info:</strong></td>
+                                                                            <td><?= $this->model-> getData("pets")?>  <?= $this->model-> getData("pet_fee")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Age restricted:</strong></td>
+                                                                            <td> <?= $this->model-> getData("over_55")?>   </td> 
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Accessibility features:</strong></td>
+                                                                            <td> <?= $this->model-> getData("accessibility_desc")?>   </td> 
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Ranching:</strong></td>
+                                                                            <td> <?= $this->model-> getData("ranching")?>   </td> 
+                                                                        </tr>
+
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <!-- edit featured listings house #1 right-side details content here -->
+                                                                <div class="right-tab-wrapper">
+                                                                    <table class="details-values">
+                                                                        <tr>
+                                                                            <td><strong>Bedrooms:</strong></td>
+                                                                            <td><?= $this->model-> getBeds()?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Baths:</strong></td>
+                                                                            <td><?= $this->model-> getBaths()?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Lot Size:</strong></td>
+                                                                            <td><?= $this->model-> getData("sqft_tot")?> sq/ft</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Stories:</strong></td>
+                                                                            <td><?= $this->model-> getData("building_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Garage:</strong></td>
+                                                                            <td><?= $this->model-> getData("garage")?> cars | <?= $this->model-> getData("garage_desc")?>  <?= $this->model-> getData("parking")?>  </td> 
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Carport:</strong></td>
+                                                                            <td><?= $this->model-> getData("carport")?> | <?= $this->model-> getData("carport_desc")?>   </td> 
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Construction Info:</strong></td>
+                                                                            <td> <?= $this->model-> getData("construction")?>   </td> 
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Gated Community:</strong></td>
+                                                                            <td> <?= $this->model-> getData("gated_community")?>   </td> 
+                                                                        </tr>
+                                                                    </table>     
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>                                                                
+                                                <li>
+                                                    <!-- edit featured listings house #1 interior slide label here -->
+                                                    <a href="#" class="styler_color"><i class="arr styler_color"></i>Interior</a>
+                                                    <!-- edit featured listings house #1 interior slide text summary here -->
+                                                    <div class="text">
+                                                        <p>Features: <?= $this->model-> getData("interior_features")?></p>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <!-- edit featured listings house #1 interior slide left-side content here -->
+                                                                <div class="left-tab-wrapper">
+                                                                    <table class="details-values">
+                                                                        <tr>
+                                                                            <td><strong>Living Area:</strong></td>
+                                                                            <td><?= $this->model-> getData("live_room_dim")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Family Room:</strong></td>
+                                                                            <td><?= $this->model-> getData("fam_room_dim")?> | <?= $this->model-> getData("fam_room_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Den:</strong></td>
+                                                                            <td><?= $this->model-> getData("den_dim")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Dining Room:</strong></td>
+                                                                            <td><?= $this->model-> getData("dining_area")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Kitchen:</strong></td>
+                                                                            <td>22 x 24</td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td><strong>Fireplace:</strong></td>
+                                                                            <td><?= $this->model-> getData("fireplace")?> | <?= $this->model-> getData("fireplace_desc")?> | <?= $this->model-> getData("fireplace_loc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Flooring:</strong></td>
+                                                                            <td><?= $this->model-> getData("floor")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Furnishing:</strong></td>
+                                                                            <td><?= $this->model-> getData("furnishing")?> <br>
+                                                                            <?= $this->model-> getData("furnishing_desc")?> </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <!-- edit featured listings house #1 interior slide right-side content here -->
+                                                                <div class="right-tab-wrapper">
+                                                                    <table class="details-values">
+                                                                        <tr>
+                                                                            <td><strong>Master Bedroom:</strong></td>
+                                                                            <td><?= $this->model-> getData("master_bed_dim")?> | <?= $this->model-> getData("master_bedbath")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Master Bath:</strong></td>
+                                                                            <td><?= $this->model-> getData("master_bed_dim")?> | <?= $this->model-> getData("master_bath_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Bedroom 2:</strong></td>
+                                                                            <td><?= $this->model-> getData("2nd_bed_dim")?> | <?= $this->model-> getData("2nd_bed_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Bedroom 3:</strong></td>
+                                                                            <td><?= $this->model-> getData("3rd_bed_dim")?> | <?= $this->model-> getData("3rd_bed_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Bedroom 4:</strong></td>
+                                                                            <td><?= $this->model-> getData("4th_bed_dim")?> | <?= $this->model-> getData("4th_bed_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Bedroom 5:</strong></td>
+                                                                            <td><?= $this->model-> getData("5th_bed_dim")?> | <?= $this->model-> getData("5th_bed_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Study:</strong></td>
+                                                                            <td>22 x 24</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Utility Room:</strong></td>
+                                                                            <td>22 x 24</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>                                                                
+                                                <li>
+                                                    <!-- edit featured listings house #1 exterior slide label here -->
+                                                    <a href="#" class="styler_color"><i class="arr styler_color"></i>Exterior</a>
+                                                    <!-- edit featured listings house #1 exterior slide text summary here -->
+                                                    <div class="text">
+                                                        <p>Features: <?= $this->model-> getData("exterior_features")?></p>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <!-- edit featured listings house #1 exterior slide left-side content here -->
+                                                                <div class="left-tab-wrapper">
+                                                                    <table class="details-values">
+                                                                        <tr>
+                                                                            <td><strong>Fence:</strong></td>
+                                                                            <td><?= $this->model-> getData("fence_type")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Sprinkler System:</strong></td>
+                                                                            <td>Yes</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Lot Dimensions:</strong></td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Pool:</strong></td>
+                                                                            <td><?= $this->model-> getData("pool_features")?> <?= $this->model-> getData("private_pool")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Pool Dimensions:</strong></td>
+                                                                            <td><?= $this->model-> getData("pool_length")?> x <?= $this->model-> getData("pool_width")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Private Spa:</strong></td>
+                                                                            <td><?= $this->model-> getData("pv_spa_yn")?>  <?= $this->model-> getData("spa_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Roof:</strong></td>
+                                                                            <td><?= $this->model-> getData("roof_type")?></td>
+                                                                        </tr>
+                                                                    </table>                     
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <!-- edit featured listings house #1 exterior slide right-side content here -->
+                                                                <div class="right-tab-wrapper">
+                                                                    <table class="details-values">
+                                                                        <tr>
+                                                                            <td><strong>Home face direction:</strong></td>
+                                                                            <td><?= $this->model-> getData("street_dir")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Landscaping:</strong></td>
+                                                                            <td><?= $this->model-> getData("landscape_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Solar:</strong></td>
+                                                                            <td> <?= $this->model-> getData("solar")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Balcony:</strong></td>
+                                                                            <td><?= $this->model-> getData("interior_improvements")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Gutters:</strong></td>
+                                                                            <td>Yes</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Exterior Lighting:</strong></td>
+                                                                            <td>Yes</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>                                                                
+                                                <li>
+                                                    <!-- edit featured listings house #1 additional details slide label here -->
+                                                    <a href="#" class="styler_color"><i class="arr styler_color"></i>Additional Details</a>
+                                                    <!-- edit featured listings house #1 exterior slide text summary here -->
+                                                    <div class="text">
+                                                        <p><?= $this->model-> getData("show_additional")?></p>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <!-- edit featured listings house #1 additional details slide left-side content here -->
+                                                                <div class="left-tab-wrapper">
+                                                                    <table class="details-values">
+                                                                        <tr>
+                                                                            <td><strong>Listing Status:</strong></td>
+                                                                            <td><?= $this->model-> getData("property_status")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Days On Market:</strong></td>
+                                                                            <td><?= $this->model-> getData("active_DOM")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Water info:</strong></td>
+                                                                            <td><?= $this->model-> getData("water_type")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Sewer info:</strong></td>
+                                                                            <td><?= $this->model-> getData("sewer")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Utility info:</strong></td>
+                                                                            <td><?= $this->model-> getData("utilities")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Cooling:</strong></td>
+                                                                            <td><?= $this->model-> getData("cooling")?> <br> Type: <?= $this->model-> getData("heating_fuel")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Heating:</strong></td>
+                                                                            <td><?= $this->model-> getData("heating")?> <br> Type: <?= $this->model-> getData("heating_fuel")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Hot Water Heater:</strong></td>
+                                                                            <td><?= $this->model-> getData("water_heat_desc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Appliances:</strong></td>
+                                                                            <td><?= $this->model-> getData("equipment_appliances")?></td>
+                                                                        </tr>
+
+
+
+                                                                    </table>     
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6">
+                                                                <!-- edit featured listings house #1 additional details slide right-side content here -->
+                                                                <div class="right-tab-wrapper">
+                                                                    <table class="details-values">
+                                                                        <tr>
+                                                                            <td><strong>School District:</strong></td>
+                                                                            <td><?= $this->model-> getData("county")?></td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td><strong>Year Round School:</strong></td>
+                                                                            <td><?= $this->model-> getData("yr_round_school")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Elementary School:</strong></td>
+                                                                            <td><?= $this->model-> getData("elem_school")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Middle School:</strong></td>
+                                                                            <td><?= $this->model-> getData("middle_school")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>High School:</strong></td>
+                                                                            <td><?= $this->model-> getData("high_school")?></td>
+                                                                        </tr>
+
+
+                                                                        <tr>
+                                                                            <td><strong>Internet:</strong></td>
+                                                                            <td><?= $this->model-> getData("internet_yn")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Washer included:</strong></td>
+                                                                            <td><?= $this->model-> getData("inc_washer_yn")?> | Location: <?= $this->model-> getData("washer_dryer_loc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Dryer included:</strong></td>
+                                                                            <td><?= $this->model-> getData("inc_dryer_yn")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Dishwasher included:</strong></td>
+                                                                            <td><?= $this->model-> getData("dishwasher_inc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Disposal included:</strong></td>
+                                                                            <td><?= $this->model-> getData("disposal_inc")?></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><strong>Fridge included:</strong></td>
+                                                                            <td><?= $this->model-> getData("fridge_inc")?></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>                                                                
+                                            </ul>
+
+                                        </div>
+                                        <!-- edit featured listings house #1 map tab info here -->
+                                        <div class="tab-map">
+                                            <!-- begin map -->
+                                            <iframe width="1000px" height="480px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.it/maps?q=<?= $this->model->getStreetAddress()?> <?= $this->model->getCityStZip()?>&output=embed"></iframe>
+                                            <!-- /end map -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  
-               
-            <!--  </div> -->
-            </div>
-          </div>
-          <!-- end:article -->
+                    
+                <!-- end:article -->

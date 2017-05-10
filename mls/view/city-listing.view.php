@@ -16,8 +16,8 @@
                                                         <!-- house #1 summary content: characteristics -->
                                                         <div class="characteristics">
                                                             <ul>
-                                                                <li><?= $this->model->getSqFt() ?> sqFt</li>
-                                                                <li><?= $this->model->getBeds() ?> Bedrooms</li>
+                                                                <li><?= $this->model->getSqFt() ?> ft<sup>2</sup></li>
+                                                                <li><?= $this->model->getBeds() ?> Beds</li>
                                                                 <li><?= $this->model->getBaths() ?> Baths</li>
                                                             </ul>
                                                         </div>
@@ -25,14 +25,14 @@
                                                             <div class="row">
                                                                 <div class="col-md-6 col-sm-6">
                                                                     <!-- house #1 summary content: price -->
-                                                                    <div class="price styler_color">
-                                                                        MLS #: <?= $this->model->getMLS()?>
+                                                                    <div class="characteristics">
+                                                                        #<?= $this->model->getMLS()?>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6 col-sm-6">
                                                                     <!-- link to house #1 featured item detail -->
                                                                     <div class="more">
-                                                                        <a id="item<?= $this->model->rowIdx ?>" href="javascript:void(0)" class="styler_color property-link">View Details</a>
+                                                                        <a id="mls-<?= $this->model->getMLS() ?>" href="<?= $BASE_WEB_URL ?>/mlsid/<?= $this->model->getMLS() ?>" class="styler_color">View Details</a>
                                                                     </div>
                                                                 </div>
                                                             </div>                                                            

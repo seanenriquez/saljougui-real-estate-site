@@ -21,7 +21,7 @@ html {
     visibility:hidden;
 }
 body {
-    padding-top:70px;
+    padding-top:70px !important;
     line-height:20px;
 }
 
@@ -76,11 +76,16 @@ h1, h2, h3 {
     width:100%;
     min-height:100%;
     overflow:hidden;
-    position:relative;}
+    position:relative;
+/*    margin-left: 5px;
+    margin-right: 5px;  */
+}
+/*
 .container {
 	padding-right: 10px;
 	padding-left: 10px;
 }
+*/
 #out {
     position:relative;
     background:rgba(255, 255, 255, .8);
@@ -222,7 +227,7 @@ h1, h2, h3 {
 }
 
 .logo-name {
-    font-size:30px !important;
+    font-size:28px !important;
     font-weight:600;
     color:#000;
 
@@ -847,6 +852,7 @@ form {
     background:#1F1032;
     padding-top:40px;
     padding-bottom:20px;
+    margin-top: 50px;
 }
 #footer .top .logo {
     display: block;
@@ -2077,6 +2083,12 @@ form {
     content:' ';
 }
 
+.price {
+    font-weight: 800;
+    font-size: 24px;
+    padding-top: 5px;
+}
+
 #wrapper  #recaptcha_widget_div input[type="text"] {
     height:34px;
     line-height:32px;
@@ -2136,8 +2148,8 @@ form {
     height: 30px;
 }
 .promo-text {
+    padding-top: 20px;
     color: #c044e5;
-    font-size: 15px;
 }
 .promo-text p {
     margin-bottom: 30px;
@@ -2523,7 +2535,7 @@ form {
     padding: 20px 0;
     color: #fff;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 24px;
     background-color: #6CBECC;
 }
 .featured-listings .featured-item address {
@@ -2532,8 +2544,8 @@ form {
     margin-bottom: 15px;
     color: #666;
     padding: 0 0 10px 20px;
-    font-size: 13px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 22px;
 }
 .featured-listings .featured-item .characteristics ul {
     margin-left: -5px;
@@ -2546,8 +2558,8 @@ form {
     float: left;
     border-right: 1px solid #666666;
     margin-left: 5px;
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 20px;
     padding-right: 5px;
     color: #666;
     text-transform: capitalize;
@@ -2557,7 +2569,7 @@ form {
 }
 .featured-listings .featured-item .item-info .price {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 24px;
     padding-top: 5px;
 }
 .featured-listings .featured-item .item-info .more {
@@ -2568,8 +2580,8 @@ form {
     border: 1px solid #d6d5d5;
     border-radius: 5px;
     float: right;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 @media screen and (max-width: 768px)  {
@@ -2579,8 +2591,8 @@ form {
     border: 2px solid #d6d5d5;
     border-radius: 5px;
     float: right;
-    font-size: 18px;
-    line-height: 12px;
+    font-size: 15px;
+    line-height: 18px;
 }
     
 
@@ -2630,8 +2642,13 @@ form {
     width: 60px;
     height: 60px;
 }
+
+.agent-block {
+    padding-left: 2px;
+    padding-right: 2px;
+}
 .property-item {
-	padding:0 1000px;
+	padding:28px 1000px;
 	margin:0 -1000px;
 	position:relative;
 	display:none;
@@ -2679,6 +2696,11 @@ form {
     font-weight: bold;
     line-height: 46px;
 }
+.property-item #details-info {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .property-item .details-info .item-id {
     color: #666;
     font-size: 15px;
@@ -2706,7 +2728,7 @@ form {
 }
 .property-item .details-info .details-name {
     color: #666;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: bold;
     line-height: 22px;
 }
@@ -2723,6 +2745,9 @@ form {
 }
 .details-tabs {
     margin-bottom: 113px;
+}
+.button-center {
+    text-align: center;
 }
 .details-tabs .tab-content {
     background-color: #fff;
@@ -2785,7 +2810,6 @@ form {
     width: 100%;
 }
 .details-values td {
-    font-size: 13px;
     color: #000;
     border-bottom: 1px solid #d6d5d5;
     padding: 8px 0 3px 0;
@@ -2795,7 +2819,7 @@ form {
     min-width: 155px;
 }
 .details-values tr:last-child td {
-    border-bottom: none;
+    
 }
 .left-tab-wrapper {
     border-right: 1px solid #d6d5d5;
@@ -2833,7 +2857,7 @@ form {
     margin-bottom: 50px;
 }
 .rsThumbsBlock {
-    background-color: #999999;
+    background-color: #d9bce8;
 }
 .slider-block .rsDefault .rsArrowIcn {
     width: 33px;
@@ -3006,7 +3030,7 @@ box-shadow: 0px 0px 4px 1px rgba(82,82,82,0.7);
 }
                  
 .btn-block {
-    margin:0;
+    margin:4px;
     border-radius:0;
 }
 
